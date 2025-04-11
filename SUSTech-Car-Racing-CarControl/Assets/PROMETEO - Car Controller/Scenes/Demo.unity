@@ -858,7 +858,7 @@ GameObject:
   - component: {fileID: 259866794}
   - component: {fileID: 259866793}
   - component: {fileID: 259866792}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Placeholder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -924,7 +924,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter your password
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1139,7 +1139,7 @@ GameObject:
   - component: {fileID: 307171601}
   - component: {fileID: 307171603}
   - component: {fileID: 307171602}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: sustec
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1219,7 +1219,7 @@ GameObject:
   - component: {fileID: 309202372}
   - component: {fileID: 309202371}
   - component: {fileID: 309202370}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: idIntup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2523,7 +2523,7 @@ GameObject:
   - component: {fileID: 529719985}
   - component: {fileID: 529719987}
   - component: {fileID: 529719986}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: id
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3070,7 +3070,7 @@ GameObject:
   - component: {fileID: 716093634}
   - component: {fileID: 716093636}
   - component: {fileID: 716093635}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3203,7 +3203,7 @@ GameObject:
   m_Component:
   - component: {fileID: 811049187}
   - component: {fileID: 811049188}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Text Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3339,7 +3339,7 @@ GameObject:
   - component: {fileID: 890002912}
   - component: {fileID: 890002914}
   - component: {fileID: 890002913}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4138,6 +4138,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1166051424}
   m_Mesh: {fileID: 3613567641014311022, guid: aa35326e084c5774b9fea1733afca70f, type: 3}
+--- !u!1 &1249112444
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1249112447}
+  - component: {fileID: 1249112446}
+  - component: {fileID: 1249112445}
+  m_Layer: 5
+  m_Name: MenuUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1249112445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249112444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1249112446
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249112444}
+  m_CullTransparentMesh: 1
+--- !u!224 &1249112447
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249112444}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0491667, y: 1.0491667, z: 1.0491667}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 526.9658, y: 300}
+  m_SizeDelta: {x: 1053.9316, y: 600}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1255932164
 GameObject:
   m_ObjectHideFlags: 0
@@ -4150,7 +4225,7 @@ GameObject:
   - component: {fileID: 1255932168}
   - component: {fileID: 1255932167}
   - component: {fileID: 1255932166}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LoginButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4416,7 +4491,7 @@ GameObject:
   - component: {fileID: 1297729533}
   - component: {fileID: 1297729535}
   - component: {fileID: 1297729534}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: password
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4819,7 +4894,7 @@ GameObject:
   - component: {fileID: 1328788806}
   - component: {fileID: 1328788805}
   - component: {fileID: 1328788804}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Placeholder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4885,7 +4960,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter your student id
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5769,7 +5844,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1466245074}
   - component: {fileID: 1466245075}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Text Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6038,7 +6113,7 @@ GameObject:
   - component: {fileID: 1518404608}
   - component: {fileID: 1518404612}
   - component: {fileID: 1518404613}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Login-UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6379,7 +6454,7 @@ GameObject:
   - component: {fileID: 1627505560}
   - component: {fileID: 1627505562}
   - component: {fileID: 1627505561}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7297,7 +7372,7 @@ GameObject:
   - component: {fileID: 1890393749}
   - component: {fileID: 1890393751}
   - component: {fileID: 1890393750}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7902,7 +7977,7 @@ GameObject:
   - component: {fileID: 2098982940}
   - component: {fileID: 2098982939}
   - component: {fileID: 2098982938}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: passwordInput
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9035,6 +9110,7 @@ SceneRoots:
   - {fileID: 500328634}
   - {fileID: 36085618}
   - {fileID: 19221424}
+  - {fileID: 1249112447}
   - {fileID: 1518404611}
   - {fileID: 1115178523}
   - {fileID: 853186568}
