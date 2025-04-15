@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace PROMETEO___Car_Controller.Scripts.Manager
+namespace Manager
 {
     public class TimeManager : Singleton<TimeManager>
     {

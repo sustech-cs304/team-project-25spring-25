@@ -1,7 +1,8 @@
-﻿using PROMETEO___Car_Controller.Scripts.Manager.PROMETEO___Car_Controller.Scripts.Manager;
+﻿
+using Manager;
 using UnityEngine;
 
-namespace PROMETEO___Car_Controller.Scripts.Manager
+namespace Manager
 {
     public class GameManager : Singleton<GameManager>
     {
