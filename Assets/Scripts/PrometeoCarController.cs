@@ -546,7 +546,7 @@ public class PrometeoCarController : MonoBehaviour
     //
 
     // This method apply positive torque to the wheels in order to go forward.
-    private void GoForward(){
+    public void GoForward(){
       //If the forces applied to the rigidbody in the 'x' asis are greater than
       //3f, it means that the car is losing traction, then the car will start emitting particle systems.
       isDrifting = Mathf.Abs(localVelocityX) > 2.5f;
@@ -586,7 +586,7 @@ public class PrometeoCarController : MonoBehaviour
     }
 
     // This method apply negative torque to the wheels in order to go backwards.
-    private void GoReverse(){
+    public void GoReverse(){
       //If the forces applied to the rigidbody in the 'x' asis are greater than
       //3f, it means that the car is losing traction, then the car will start emitting particle systems.
       isDrifting = Mathf.Abs(localVelocityX) > 2.5f;
