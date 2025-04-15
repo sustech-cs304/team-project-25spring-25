@@ -11,6 +11,7 @@ namespace Manager
             TimeManager.Instance.ResumeGame();
             TimeManager.Instance.CurrentTime = 0;
             CarManager.Instance.InitCar(4,1);
+            CameraManager.Instance.SetPlayerCamera(CarManager.Instance.GetCarTransform());
         }
     }
 }

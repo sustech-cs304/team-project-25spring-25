@@ -292,7 +292,7 @@ public class Car : MonoBehaviour
     }
     
     public void TurnLeft(){
-      steeringAxis = steeringAxis - (Time.deltaTime * 10f * steeringSpeed);
+      steeringAxis -= (Time.deltaTime * 10f * steeringSpeed);
       if(steeringAxis < -1f){
         steeringAxis = -1f;
       }
@@ -317,8 +317,8 @@ public class Car : MonoBehaviour
     public void ResetSteeringAngle(){
       steeringAxis = steeringAxis switch
       {
-        < 0f => steeringAxis + (Time.deltaTime * 10f * steeringSpeed),
-        > 0f => steeringAxis - (Time.deltaTime * 10f * steeringSpeed),
+        < 0f => steeringAxis + Time.deltaTime * 10f * steeringSpeed,
+        > 0f => steeringAxis - Time.deltaTime * 10f * steeringSpeed,
         _ => steeringAxis
       };
       if(Mathf.Abs(frontLeftCollider.steerAngle) < 1f){

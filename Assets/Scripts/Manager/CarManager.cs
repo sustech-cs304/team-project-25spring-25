@@ -61,5 +61,10 @@ namespace Manager
             car.transform.position = targetTransform.position;
             car.transform.rotation = targetTransform.rotation;
         }
+
+        public Transform GetCarTransform()
+        {
+            return cars[0].transform;
+        }
     }
 }
