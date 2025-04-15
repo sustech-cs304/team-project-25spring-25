@@ -73,10 +73,6 @@ public class Car : MonoBehaviour
         currentNitro = nitroCapacity;
         carRigidbody = gameObject.GetComponent<Rigidbody>();
         carRigidbody.centerOfMass = bodyMassCenter;
-        FLwheelFriction = new WheelFrictionCurve
-        {
-          extremumSlip = frontLeftCollider.sidewaysFriction.extremumSlip
-        };
         InitializeWheelFriction(frontLeftCollider, ref FLwheelFriction, ref FLWextremumSlip);
         InitializeWheelFriction(frontRightCollider, ref FRwheelFriction, ref FRWextremumSlip);
         InitializeWheelFriction(rearLeftCollider, ref RLwheelFriction, ref RLWextremumSlip);
@@ -111,7 +107,7 @@ public class Car : MonoBehaviour
     }
     public void UpdateData()
     {
-      carSpeed = 2 * Mathf.PI * frontLeftCollider.radius * frontLeftCollider.rpm * 60 / 1000;
+      carSpeed = carRigidbody.velocity.magnitude * 3.6f;
       localVelocityX = transform.InverseTransformDirection(carRigidbody.velocity).x;
       localVelocityZ = transform.InverseTransformDirection(carRigidbody.velocity).z;
       AnimateWheelMeshes();
@@ -175,7 +171,7 @@ public class Car : MonoBehaviour
     }
     
     public void GoForward(){
-      isDrifting = Mathf.Abs(localVelocityX) > 2.5f;
+      isDrifting = Mathf.Abs(localVelocityX) > 4f + 0.2 * carSpeed;
       DriftCarPS();
       throttleAxis += Time.deltaTime * 3f;
       if(throttleAxis > 1f) throttleAxis = 1f;
@@ -191,7 +187,7 @@ public class Car : MonoBehaviour
       }
     }
     public void GoReverse(){
-      isDrifting = Mathf.Abs(localVelocityX) > 2.5f;
+      isDrifting = Mathf.Abs(localVelocityX) > 4f + 0.2 * carSpeed;
       DriftCarPS();
       throttleAxis -= Time.deltaTime * 3f;
       if(throttleAxis < -1f) throttleAxis = -1f;
@@ -210,7 +206,7 @@ public class Car : MonoBehaviour
       SetMotorTorque(0);
     }
     public void DecelerateCar(){
-      isDrifting = Mathf.Abs(localVelocityX) > 2.5f;
+      isDrifting = Mathf.Abs(localVelocityX) > 4f + 0.2 * carSpeed;
       DriftCarPS();
       throttleAxis = Mathf.MoveTowards(throttleAxis, 0f, Time.deltaTime * 10f);
       if (Mathf.Abs(throttleAxis) < 0.15f) throttleAxis = 0f;
@@ -234,7 +230,7 @@ public class Car : MonoBehaviour
       if(driftingAxis > 1f){
         driftingAxis = 1f;
       }
-      isDrifting = Mathf.Abs(localVelocityX) > 2.5f;
+      isDrifting = Mathf.Abs(localVelocityX) > 2f + 0.1 * carSpeed;
       if(driftingAxis < 1f){
         UpdateWheelFriction();
       }
@@ -273,7 +269,6 @@ public class Car : MonoBehaviour
         if (RRWTireSkid) RRWTireSkid.emitting = false;
         if (NitroParticleSystem && NitroParticleSystem.isPlaying) NitroParticleSystem.Stop();
       }
-
     }
     public void RecoverTraction(){
       isTractionLocked = false;

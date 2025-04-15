@@ -22,6 +22,7 @@ namespace Manager
                 {
                     playerStartPositions[i] = car.transform;
                     car.GetComponent<Car>().isPlayer = true;
+                    car.GetComponent<Car>().EnableCarSpeedUI();
                     car.AddComponent<PlayerController>();
                 }
                 else
@@ -30,7 +31,6 @@ namespace Manager
                     car.GetComponent<Car>().isPlayer = false;
                     car.AddComponent<AiController>();
                 }
-                
                 cars.Add(car.GetComponent<Car>());
             }
         }
