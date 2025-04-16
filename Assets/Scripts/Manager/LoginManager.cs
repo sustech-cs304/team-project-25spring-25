@@ -10,11 +10,11 @@ namespace Manager
         public TMP_InputField idInput; // 用户ID输入框
         public TMP_InputField passwordInput; // 密码输入框
         public Button loginButton; // 登录按钮
-        public CameraController cameraSwitcher; // 摄像机切换器
+        // public CameraController cameraSwitcher; // 摄像机切换器
         public GameObject loginPanel; // 登录界面的父GameObject
         public GameObject gamePanel; // 一些不需要显示的游戏内GameObject
         public Button switchModeButton; // 切换登录/注册模式的按钮
-        // public GameObject menuPanel;  //菜单面板
+        public GameObject menuPanel;  //菜单面板
         private bool isLoginMode = true; // 当前是否为登录模式
 
         private void Start()
@@ -25,7 +25,7 @@ namespace Manager
             
             // 初始化UI状态
             UpdateUIMode();
-            // HideMenuPanel();   // 隐藏菜单界面
+            HideMenuPanel();   // 隐藏菜单界面
             HideGamePanel();
         }
 
@@ -52,12 +52,12 @@ namespace Manager
                 if (id == "123" && password == "123")
                 {
                     // 登录成功，调用摄像机切换器切换摄像机
-                    cameraSwitcher.OnLoginSuccess();
-                    HideLoginPanel();
-                    GameManager.Instance.InitRace();
-                    ShowGamePanel();
+                    // cameraSwitcher.OnLoginSuccess();
+                    // HideLoginPanel();
+                    // GameManager.Instance.InitRace();
+                    // ShowGamePanel();
                     // 登录成功，切换到菜单界面
-                    // OnLoginSuccess();
+                    OnLoginSuccess();
                 }
                 else
                 {
@@ -79,7 +79,7 @@ namespace Manager
         private void OnLoginSuccess()
         {
             HideLoginPanel();
-            // ShowMenuPanel();  // 显示菜单界面
+            ShowMenuPanel();  // 显示菜单界面
             
             // 不切换摄像机，保持原状
             // 不初始化游戏，保持未开始状态
@@ -135,7 +135,7 @@ namespace Manager
         {
             gamePanel.SetActive(true);
         }
-        // private void ShowMenuPanel() => menuPanel.SetActive(true);
-        // private void HideMenuPanel() => menuPanel.SetActive(false);
+        private void ShowMenuPanel() => menuPanel.SetActive(true);
+        private void HideMenuPanel() => menuPanel.SetActive(false);
     }
 }
