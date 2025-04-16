@@ -6,10 +6,16 @@ namespace Scripts
     {
         public Car car;
         public Transform[] targets;
-        public float turnSensitivity = 1.5f;
-        public float brakingDistance = 5f;
-        public float switchTargetDistance = 2f;
+        public float turnSensitivity = 10f;
+        public float brakingDistance = 1f;
+        public float switchTargetDistance = 10f;
+        public float maxSpeed = 30f;
+        public float maxSteeringAngle = 90f;
         private int currentTargetIndex = 0;
+        private void Awake()
+        {
+            car = GetComponent<Car>();
+        }
         private void Update()
         {
             if (targets == null || targets.Length == 0) return;
@@ -17,32 +23,23 @@ namespace Scripts
             var toTarget = target.position - transform.position;
             var distance = toTarget.magnitude;
             
-            var localTarget = transform.InverseTransformPoint(target.position);
-            var steering = Mathf.Clamp(localTarget.x / turnSensitivity, -1f, 1f);
-            if (distance <= switchTargetDistance)
-            {
-                currentTargetIndex = (currentTargetIndex + 1) % targets.Length;
-                target = targets[currentTargetIndex];
-                toTarget = target.position - transform.position;
-                distance = toTarget.magnitude;
-            }
-            if (steering < -0.1f) car.TurnLeft();
-            else if (steering > 0.1f) car.TurnRight();
+            var directionToTarget = toTarget.normalized;
+            var angleToTarget = Vector3.SignedAngle(transform.forward, directionToTarget, Vector3.up);
+            var steering = Mathf.Clamp(angleToTarget / maxSteeringAngle, -1f, 1f);
+            if (distance <= switchTargetDistance) currentTargetIndex = (currentTargetIndex + 1) % targets.Length;
+            if (steering < -0.4f) car.TurnLeft();
+            else if (steering > 0.4f) car.TurnRight();
             else if (car.steeringAxis != 0f) car.ResetSteeringAngle();
-            
-            if (distance > brakingDistance) {
-                CancelInvoke(nameof(car.DecelerateCar));
-                car.deceleratingCar = false;
-                car.GoForward();
-            } else {
-                CancelInvoke(nameof(car.DecelerateCar));
-                car.deceleratingCar = false;
+            if (car.carSpeed>=maxSpeed && !car.deceleratingCar) {
                 car.GoReverse();
             }
-            
-            if (distance <= brakingDistance && !car.deceleratingCar) {
-                InvokeRepeating(nameof(car.DecelerateCar), 0f, 0.1f);
-                car.deceleratingCar = true;
+            else
+            {
+                if (distance > brakingDistance) {
+                    CancelInvoke(nameof(car.DecelerateCar));
+                    car.deceleratingCar = false;
+                    car.GoForward();
+                }
             }
             car.UpdateData();
         }

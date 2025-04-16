@@ -19,17 +19,14 @@ namespace Manager
         {
             if (!isPaused)
             {
-                // 增加时间，使用 Time.deltaTime 与 timeScale 控制时间流逝
                 currentTime += Time.deltaTime;
             }
         }
-        // 时间初始化
         public void InitTime()
         {
             currentTime = 0f;
             isPaused = false;
         }
-        // 暂停游戏时间
         public void PauseGame()
         {
             isPaused = true;

@@ -10,14 +10,21 @@ namespace Manager
         [SerializeField] private Transform[] aiStartPositions;
         [SerializeField] private GameObject carPrefab;
         [SerializeField] private GameObject carsContainer;
+        [SerializeField] private GameObject checkpoint;
         [SerializeField] private List<Car> cars;
+
         public void InitCar(int carNum,int playerNum)
         {
+            var checkpoints = new Transform[checkpoint.transform.childCount];
+            for (var i = 0; i < checkpoint.transform.childCount; i++)
+            {
+                checkpoints[i] = checkpoint.transform.GetChild(i).GetComponent<Transform>();
+            }
             playerStartPositions = new Transform[playerNum];
             aiStartPositions = new Transform[carNum - playerNum];
             for (var i = 0; i < carNum; i++)
             {
-                var car = Instantiate(carPrefab, new Vector3(190 + i * 3, -48, 690), Quaternion.identity, carsContainer.transform);
+                var car = Instantiate(carPrefab, new Vector3(187 + i * 2, -50, 680 + i * 0.8f), Quaternion.Euler(0, 160, 0), carsContainer.transform);
                 if (i < playerNum)
                 {
                     playerStartPositions[i] = car.transform;
@@ -29,7 +36,8 @@ namespace Manager
                 {
                     aiStartPositions[i-playerNum] = car.transform;
                     car.GetComponent<Car>().isPlayer = false;
-                    car.AddComponent<AiController>();
+                    var carController = car.AddComponent<AiController>();
+                    carController.targets = checkpoints;
                 }
                 cars.Add(car.GetComponent<Car>());
             }
