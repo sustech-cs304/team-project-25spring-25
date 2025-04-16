@@ -59,7 +59,7 @@ namespace Scripts
           if (Input.GetKeyUp(KeyCode.Space)) car.RecoverTraction();
           if (!isAccelerating && !isBraking) car.ThrottleOff();
           if (!isAccelerating && !isBraking && !isHandbraking && !car.deceleratingCar) {
-            InvokeRepeating(nameof(car.DecelerateCar), 0f, 0.1f);
+            // InvokeRepeating(nameof(car.DecelerateCar), 0f, 0.1f);
             car.deceleratingCar = true;
           }
           if (!isTurningLeft && !isTurningRight && car.steeringAxis != 0f) car.ResetSteeringAngle();

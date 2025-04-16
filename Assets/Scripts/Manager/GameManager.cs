@@ -13,5 +13,12 @@ namespace Manager
             CarManager.Instance.InitCar(4,1);
             CameraManager.Instance.SetPlayerCamera(CarManager.Instance.GetCarTransform());
         }
+        public void HandleClick()
+        {
+            if (UIManager.Instance.IsUIOn())
+            {
+                UIManager.Instance.HandleClick();
+            }
+        }
     }
 }

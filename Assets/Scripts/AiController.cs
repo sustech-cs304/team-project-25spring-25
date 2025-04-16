@@ -22,7 +22,7 @@ namespace Scripts
             var target = targets[currentTargetIndex];
             var toTarget = target.position - transform.position;
             var distance = toTarget.magnitude;
-            
+
             var directionToTarget = toTarget.normalized;
             var angleToTarget = Vector3.SignedAngle(transform.forward, directionToTarget, Vector3.up);
             var steering = Mathf.Clamp(angleToTarget / maxSteeringAngle, -1f, 1f);

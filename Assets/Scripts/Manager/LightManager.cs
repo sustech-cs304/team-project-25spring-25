@@ -28,10 +28,17 @@ namespace Manager
                 sunLight.intensity = intensity;
             }
         }
+        /**
+         * AI-generated-content
+         * tool: GPT
+         * version: 4o-mini
+         * usage: I ask GPT to generate a UpdateDayNightCycle method for it.
+         * I slightly adapt the generated code by modifying the value of rotation Angle.
+         */
         private void UpdateDayNightCycle()
         {
             var normalizedTime = TimeManager.Instance.CurrentTime % dayDuration / dayDuration;
-            var rotationAngle = normalizedTime * 360f - 30f;
+            var rotationAngle = normalizedTime * 360f + 30f;
             sunLight.transform.rotation = Quaternion.Euler(rotationAngle, 0f, 0f);
             var intensityFactor = Mathf.Clamp01(Mathf.Sin(normalizedTime * Mathf.PI));
             sunLight.intensity = Mathf.Lerp(nightIntensity, dayIntensity, intensityFactor);
