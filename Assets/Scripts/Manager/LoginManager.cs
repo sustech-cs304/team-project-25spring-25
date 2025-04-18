@@ -51,12 +51,6 @@ namespace Manager
                 string password = passwordInput.text;
                 if (id == "123" && password == "123")
                 {
-                    // 登录成功，调用摄像机切换器切换摄像机
-                    // cameraSwitcher.OnLoginSuccess();
-                    // HideLoginPanel();
-                    // GameManager.Instance.InitRace();
-                    // ShowGamePanel();
-                    // 登录成功，切换到菜单界面
                     OnLoginSuccess();
                 }
                 else
