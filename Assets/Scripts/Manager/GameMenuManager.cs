@@ -112,7 +112,7 @@ namespace Manager
         private void OnMultiModeClicked()
         {
             // 隐藏主菜单，显示多人模式界面
-            menuPanel.SetActive(false);
+            // menuPanel.SetActive(false);
             
             if (multiModePanel != null)
             {

@@ -2,10 +2,10 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class rankingManager : MonoBehaviour, IPointerClickHandler
+public class MultimodeManager : MonoBehaviour, IPointerClickHandler
 {
-    public GameObject rankingPanel; // 设置界面面板
-    public Image rankingBackgroundImage; // 设置界面的背景Image（需拖拽赋值）
+    public GameObject multiPanel; // 设置界面面板
+    public Image multiBackgroundImage; // 设置界面的背景Image（需拖拽赋值）
 
     private void Start()
     {
@@ -14,15 +14,15 @@ public class rankingManager : MonoBehaviour, IPointerClickHandler
     }
 
     // 打开设置界面
-    public void OpenRanking()
-    {
-        if (rankingPanel != null) rankingPanel.SetActive(true);
-    }
+    // public void OpenSettings()
+    // {
+    //     if (multiPanel != null) multiPanel.SetActive(true);
+    // }
 
     // 关闭设置界面
-    public void CloseRanking()
+    public void CloseMulti()
     {
-        if (rankingPanel != null) rankingPanel.SetActive(false);
+        if (multiPanel != null) multiPanel.SetActive(false);
     }
 
     // 检测全局点击事件
@@ -30,7 +30,7 @@ public class rankingManager : MonoBehaviour, IPointerClickHandler
     {
         // 检查点击是否在 settingBackgroundImage 上
         bool isClickOnImage = RectTransformUtility.RectangleContainsScreenPoint(
-            rankingBackgroundImage.rectTransform,
+            multiBackgroundImage.rectTransform,
             eventData.position,
             eventData.pressEventCamera
         );
@@ -38,7 +38,7 @@ public class rankingManager : MonoBehaviour, IPointerClickHandler
         // 如果点击不在 Image 上，则关闭设置界面
         if (!isClickOnImage)
         {
-            CloseRanking();
+            CloseMulti();
         }
     }
 }
