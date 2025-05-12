@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
+public class CameraController : Singleton<CameraController>
 {
     public Camera loginCamera; // 登录时使用的摄像机
     public Camera Camera; // 游戏时使用的摄像机
@@ -25,7 +25,7 @@ public class CameraController : MonoBehaviour
             if (switchTimer < switchTime)
             {
                 switchTimer += Time.deltaTime;
-                float t = switchTimer / switchTime;
+                var t = switchTimer / switchTime;
                 loginCamera.transform.position = Vector3.Lerp(loginCamera.transform.position, Camera.transform.position, t);
                 loginCamera.transform.rotation = Quaternion.Lerp(loginCamera.transform.rotation, Camera.transform.rotation, t);
             }
