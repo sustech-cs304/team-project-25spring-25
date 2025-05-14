@@ -100,7 +100,7 @@ namespace Manager
                 rankingPanel.SetActive(false);
             }
 
-            GarageManager.Instance.Init();
+            GameManager.Instance.InitRace();
         }
         /// <summary>
         /// 点击排行榜按钮的处理
