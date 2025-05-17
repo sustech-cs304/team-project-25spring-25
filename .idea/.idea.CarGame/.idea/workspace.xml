@@ -4,15 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78889eac-6809-43a2-b93d-020be0b95b99" name="Changes" comment="">
+    <list default="true" id="78889eac-6809-43a2-b93d-020be0b95b99" name="Changes" comment="improve the experience of driving">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CarInputData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CarInputData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CarNetworkController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CarNetworkController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/NetworkManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/NetworkManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NetworkInputProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NetworkInputProvider.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/PrometeoEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/PrometeoEditor.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Muscle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Muscle.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Muscle2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Muscle2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prometheus 1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prometheus 1.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Roadster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Roadster.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SUV.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SUV.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sports.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Sports.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Car.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Car.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DatabaseController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DatabaseController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/GameMenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameMenuManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/MultimodeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/MultimodeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NetworkRunnerController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NetworkRunnerController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OnlinePlayerController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OnlinePlayerController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrometeoCarController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrometeoCarController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrometeoTouchInput.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrometeoTouchInput.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,12 +63,12 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d038881699124df9a9f83b30bdbe99c320e00/a7/7443432e/NetAddress.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Project/Rider Project/CityGame/Assets/Scripts/Manager/GameManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Project/Rider Project/CityGame/Assets/Scripts/Manager/InputManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Project/Rider Project/CityGame/Assets/Scripts/Manager/SaveManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Project/Rider Project/CityGame/Assets/Scripts/Manager/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Project/Rider Project/CityGame/Assets/Scripts/UI/GameMenu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scripts/LoginManager/CameraController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/RankingManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Shaders/Lit.shader" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -151,7 +172,7 @@
       <workItem from="1747054118762" duration="999000" />
       <workItem from="1747057504604" duration="1129000" />
       <workItem from="1747218595961" duration="70000" />
-      <workItem from="1747407456232" duration="4680000" />
+      <workItem from="1747407456232" duration="10225000" />
     </task>
     <task id="LOCAL-00001" summary="merge the branch main">
       <option name="closed" value="true" />
@@ -249,7 +270,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747058404910</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="improve the experience of driving">
+      <option name="closed" value="true" />
+      <created>1747468818005</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1747468818005</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,7 +317,8 @@
     <MESSAGE value="add gamemenu UI" />
     <MESSAGE value="add meta file" />
     <MESSAGE value="achieve the garage system" />
-    <option name="LAST_COMMIT_MESSAGE" value="achieve the garage system" />
+    <MESSAGE value="improve the experience of driving" />
+    <option name="LAST_COMMIT_MESSAGE" value="improve the experience of driving" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

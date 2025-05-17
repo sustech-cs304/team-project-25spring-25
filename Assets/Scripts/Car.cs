@@ -12,7 +12,6 @@ public class Car : MonoBehaviour
       [Range(0.01f, 1f)] public float steeringSpeed = 0.5f; 
       [Range(100, 600)] public int brakeForce = 350; 
       [Range(1, 10)] public int decelerationMultiplier = 2; 
-      [Range(1, 10)] public int handbrakeDriftMultiplier = 5; 
       [Space(10)] public Vector3 bodyMassCenter; 
       //WHEELS
       public GameObject frontLeftMesh;
