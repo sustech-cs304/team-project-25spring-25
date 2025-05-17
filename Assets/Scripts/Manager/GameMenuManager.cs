@@ -1,20 +1,21 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Manager
 {
-    public class MenuManager : MonoBehaviour
+    public class MenuManager : Singleton<MenuManager>
     {
         public Button singleModeButton;    // 单机模式按钮
         public Button multiModeButton;     // 
         public Button settingsButton;      // 设置按钮
+        public Button garageButton;      // 车库按钮
         public Button rankingButton;   // 排行榜按钮
         public GameObject menuPanel;       // 当前菜单面板
         public GameObject multiModePanel;  // 多人模式界面
         public GameObject settingsPanel;   // 设置界面
         public GameObject rankingPanel;// 排行榜界面
-        public CameraController cameraSwitcher; // 摄像机切换控制器
         public GameObject gamePanel;
 
         private void Start()
@@ -29,12 +30,15 @@ namespace Manager
             singleModeButton.onClick.AddListener(OnSingleModeClicked);
             multiModeButton.onClick.AddListener(OnMultiModeClicked);
             settingsButton.onClick.AddListener(OnSettingsClicked);
+            garageButton.onClick.AddListener(OnGarageClicked);
             rankingButton.onClick.AddListener(OnRankingClicked);
         }
+        
 
         private void OnDestroy()
         {
             // 移除事件监听
+            garageButton.onClick.RemoveListener(OnGarageClicked);
             singleModeButton.onClick.RemoveListener(OnSingleModeClicked);
             multiModeButton.onClick.RemoveListener(OnMultiModeClicked);
             settingsButton.onClick.RemoveListener(OnSettingsClicked);
@@ -50,10 +54,7 @@ namespace Manager
             menuPanel.SetActive(false);
             
             // 切换摄像机（使用LoginManager中的相同逻辑）
-            if (cameraSwitcher != null)
-            {
-                cameraSwitcher.OnLoginSuccess();
-            }
+            CameraManager.Instance.OnLoginSuccess();
             HideMenuPanel();
             
             // 初始化游戏（根据你的GameManager实现调整）
@@ -84,7 +85,23 @@ namespace Manager
             // 最后，打开 Setting 界面
             settingsPanel.SetActive(true);
         }
+        private void OnGarageClicked()
+        {
+            // 如果 Setting 界面已经开启，则直接关闭它
+            if (settingsPanel.activeSelf)
+            {
+                settingsPanel.SetActive(false);
+                return;
+            }
 
+            // 如果 Ranking 界面开启，则关闭它
+            if (rankingPanel != null && rankingPanel.activeSelf)
+            {
+                rankingPanel.SetActive(false);
+            }
+
+            GameManager.Instance.InitRace();
+        }
         /// <summary>
         /// 点击排行榜按钮的处理
         /// </summary>
@@ -102,8 +119,7 @@ namespace Manager
             {
                 settingsPanel.SetActive(false);
             }
-
-            // 最后，打开 Ranking 界面
+            
             rankingPanel.SetActive(true);
         }
         /// <summary>
@@ -122,15 +138,17 @@ namespace Manager
             Debug.Log("进入多人模式界面");
         }
         
-        private void ShowGamePanel()
+        public void ShowGamePanel()
         {
             gamePanel.SetActive(true);
         }
         
-        private void HideGamePanel()
+        public void HideGamePanel()
         {
             gamePanel.SetActive(false);
         }
-        private void HideMenuPanel() => menuPanel.SetActive(false);
+        public void ShowMenuPanel() => menuPanel.SetActive(true);
+
+        public void HideMenuPanel() => menuPanel.SetActive(false);
     }
 }

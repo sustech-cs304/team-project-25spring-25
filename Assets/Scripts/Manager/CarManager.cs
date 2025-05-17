@@ -74,5 +74,11 @@ namespace Manager
         {
             return cars[0].transform;
         }
+
+        public GameObject CarPrefab
+        {
+            get => carPrefab;
+            set => carPrefab = value;
+        }
     }
 }

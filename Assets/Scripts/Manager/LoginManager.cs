@@ -4,13 +4,12 @@ using UnityEngine.UI;
 
 namespace Manager
 {
-    public class LoginManager : MonoBehaviour
+    public class LoginManager : Singleton<LoginManager>
     {
         public TMP_Text idLabel; // "Student ID"或"User name"的文本标签
         public TMP_InputField idInput; // 用户ID输入框
         public TMP_InputField passwordInput; // 密码输入框
         public Button loginButton; // 登录按钮
-        // public CameraController cameraSwitcher; // 摄像机切换器
         public GameObject loginPanel; // 登录界面的父GameObject
         public GameObject gamePanel; // 一些不需要显示的游戏内GameObject
         public Button switchModeButton; // 切换登录/注册模式的按钮
