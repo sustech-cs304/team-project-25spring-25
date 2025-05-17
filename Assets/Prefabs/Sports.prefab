@@ -452,10 +452,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 120
   maxReverseSpeed: 45
-  accelerationMultiplier: 6
-  maxSteeringAngle: 35
-  steeringSpeed: 0.03
-  brakeForce: 450
+  accelerationMultiplier: 8
+  maxSteeringAngle: 30
+  steeringSpeed: 0.25
+  brakeForce: 550
   decelerationMultiplier: 2
   handbrakeDriftMultiplier: 10
   bodyMassCenter: {x: 0, y: 0, z: 0}
@@ -481,12 +481,12 @@ MonoBehaviour:
   nitroRechargeRate: 5
   nitroBoostMultiplier: 2
   carSpeed: 0
-  isDrifting: 0
   isTractionLocked: 0
   steeringAxis: 0
   deceleratingCar: 0
   currentNitro: 0
   isNitroActive: 0
+  isDrifting: 0
   isPlayer: 0
 --- !u!1 &3960200389269561896
 GameObject:

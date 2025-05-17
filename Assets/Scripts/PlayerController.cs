@@ -51,12 +51,7 @@ namespace Scripts
           }
           if (isTurningLeft) car.TurnLeft();
           if (isTurningRight) car.TurnRight();
-          if (isHandbraking) {
-            CancelInvoke(nameof(car.DecelerateCar));
-            car.deceleratingCar = false;
-            car.Handbrake();
-          }
-          if (Input.GetKeyUp(KeyCode.Space)) car.RecoverTraction();
+          car.TryDrift(isHandbraking);
           if (!isAccelerating && !isBraking) car.ThrottleOff();
           if (!isAccelerating && !isBraking && !isHandbraking && !car.deceleratingCar) {
             // InvokeRepeating(nameof(car.DecelerateCar), 0f, 0.1f);

@@ -114,8 +114,8 @@ MonoBehaviour:
   maxReverseSpeed: 45
   accelerationMultiplier: 6
   maxSteeringAngle: 35
-  steeringSpeed: 0.03
-  brakeForce: 450
+  steeringSpeed: 0.3
+  brakeForce: 550
   decelerationMultiplier: 2
   handbrakeDriftMultiplier: 10
   bodyMassCenter: {x: 0, y: 0, z: 0}
@@ -141,12 +141,12 @@ MonoBehaviour:
   nitroRechargeRate: 5
   nitroBoostMultiplier: 2
   carSpeed: 0
-  isDrifting: 0
   isTractionLocked: 0
   steeringAxis: 0
   deceleratingCar: 0
   currentNitro: 0
   isNitroActive: 0
+  isDrifting: 0
   isPlayer: 0
 --- !u!1 &934883528070179459
 GameObject:

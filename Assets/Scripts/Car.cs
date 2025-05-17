@@ -46,13 +46,11 @@ public class Car : MonoBehaviour
       public float nitroBoostMultiplier = 2f;
       
       public float carSpeed;
-      public bool isDrifting;
       public bool isTractionLocked; 
       
       private Rigidbody carRigidbody;
       public float steeringAxis;
       private float throttleAxis; 
-      private float driftingAxis;
       private float localVelocityZ;
       private float localVelocityX;
 
@@ -67,6 +65,7 @@ public class Car : MonoBehaviour
       private float RRWextremumSlip;
       public float currentNitro;
       public bool isNitroActive;
+      public bool isDrifting;
       public bool isPlayer;
     private void Start()
     {
@@ -137,25 +136,26 @@ public class Car : MonoBehaviour
       }
     }
     
-    private void SetSteeringAngle(float targetSteeringAxis){
+    private void SetSteeringAngle(float targetSteeringAxis) {
       steeringAxis = Mathf.Clamp(targetSteeringAxis, -1f, 1f);
-      var steeringAngle = steeringAxis * maxSteeringAngle;
-      frontLeftCollider.steerAngle = Mathf.Lerp(frontLeftCollider.steerAngle, steeringAngle, steeringSpeed);
-      frontRightCollider.steerAngle = Mathf.Lerp(frontRightCollider.steerAngle, steeringAngle, steeringSpeed);
+      float steeringAngle = steeringAxis * maxSteeringAngle;
+      frontLeftCollider.steerAngle = steeringAngle;
+      frontRightCollider.steerAngle = steeringAngle;
     }
 
-    public void TurnLeft(){
-      SetSteeringAngle(steeringAxis - Time.deltaTime * 10f * steeringSpeed);
+    public void TurnLeft() {
+      float newAxis = steeringAxis - Time.deltaTime * steeringSpeed;
+      SetSteeringAngle(newAxis);
     }
 
-    public void TurnRight(){
-      SetSteeringAngle(steeringAxis + Time.deltaTime * 10f * steeringSpeed);
+    public void TurnRight() {
+      float newAxis = steeringAxis + Time.deltaTime * steeringSpeed;
+      SetSteeringAngle(newAxis);
     }
 
-    public void ResetSteeringAngle(){
-      steeringAxis = Mathf.MoveTowards(steeringAxis, 0f, Time.deltaTime * 10f * steeringSpeed);
-      if(Mathf.Abs(frontLeftCollider.steerAngle) < 1f) steeringAxis = 0f;
-      SetSteeringAngle(steeringAxis);
+    public void ResetSteeringAngle() {
+      float newAxis = Mathf.MoveTowards(steeringAxis, 0f, Time.deltaTime * steeringSpeed);
+      SetSteeringAngle(newAxis);
     }
     private void AnimateWheelMeshes(){
       SetWheelMesh(frontLeftCollider, frontLeftMesh.transform);
@@ -171,8 +171,6 @@ public class Car : MonoBehaviour
     }
     
     public void GoForward(){
-      isDrifting = Mathf.Abs(localVelocityX) > 4f + 0.2 * carSpeed;
-      DriftCarPS();
       throttleAxis += Time.deltaTime * 3f;
       if(throttleAxis > 1f) throttleAxis = 1f;
       if(localVelocityZ < -1f){
@@ -187,8 +185,6 @@ public class Car : MonoBehaviour
       }
     }
     public void GoReverse(){
-      isDrifting = Mathf.Abs(localVelocityX) > 4f + 0.2 * carSpeed;
-      DriftCarPS();
       throttleAxis -= Time.deltaTime * 3f;
       if(throttleAxis < -1f) throttleAxis = -1f;
       if(localVelocityZ > 1f){
@@ -206,8 +202,6 @@ public class Car : MonoBehaviour
       SetMotorTorque(0);
     }
     public void DecelerateCar(){
-      isDrifting = Mathf.Abs(localVelocityX) > 4f + 0.2 * carSpeed;
-      DriftCarPS();
       throttleAxis = Mathf.MoveTowards(throttleAxis, 0f, Time.deltaTime * 10f);
       if (Mathf.Abs(throttleAxis) < 0.15f) throttleAxis = 0f;
       carRigidbody.velocity *= 1f / (1f + 0.025f * decelerationMultiplier);
@@ -219,92 +213,64 @@ public class Car : MonoBehaviour
     private void Brakes(){
       SetBrakeTorque(brakeForce);
     }
-    
-    public void Handbrake(){
-      CancelInvoke(nameof(RecoverTraction));
-      driftingAxis += Time.deltaTime;
-      var secureStartingPoint = driftingAxis * FLWextremumSlip * handbrakeDriftMultiplier;
-      if(secureStartingPoint < FLWextremumSlip){
-        driftingAxis = FLWextremumSlip / (FLWextremumSlip * handbrakeDriftMultiplier);
-      }
-      if(driftingAxis > 1f){
-        driftingAxis = 1f;
-      }
-      isDrifting = Mathf.Abs(localVelocityX) > 2f + 0.1 * carSpeed;
-      if(driftingAxis < 1f){
-        UpdateWheelFriction();
-      }
-      isTractionLocked = true;
-      DriftCarPS();
-    }
     private void SetMotorTorque(float value) {
       frontLeftCollider.motorTorque = value;
       frontRightCollider.motorTorque = value;
       rearLeftCollider.motorTorque = value;
       rearRightCollider.motorTorque = value;
     }
-
     private void SetBrakeTorque(float value) {
       frontLeftCollider.brakeTorque = value;
       frontRightCollider.brakeTorque = value;
       rearLeftCollider.brakeTorque = value;
       rearRightCollider.brakeTorque = value;
     }
-    private void DriftCarPS(){
-      if(useEffects){
-          if(isDrifting){
-            RLWParticleSystem.Play();
-            RRWParticleSystem.Play();
-          }else{
-            RLWParticleSystem.Stop();
-            RRWParticleSystem.Stop();
-          }
-          var isSkid = (isTractionLocked || Mathf.Abs(localVelocityX) > 5f) && Mathf.Abs(carSpeed) > 12f;
-          RLWTireSkid.emitting = isSkid;
-          RRWTireSkid.emitting = isSkid;
-      }else{
-        if (RLWParticleSystem && RLWParticleSystem.isPlaying) RLWParticleSystem.Stop();
-        if (RRWParticleSystem && RRWParticleSystem.isPlaying) RRWParticleSystem.Stop();
-        if (RLWTireSkid) RLWTireSkid.emitting = false;
-        if (RRWTireSkid) RRWTireSkid.emitting = false;
-        if (NitroParticleSystem && NitroParticleSystem.isPlaying) NitroParticleSystem.Stop();
-      }
-    }
-    public void RecoverTraction(){
-      isTractionLocked = false;
-      driftingAxis = Mathf.Max(0f, driftingAxis - Time.deltaTime / 1.5f); 
-      if(FLwheelFriction.extremumSlip > FLWextremumSlip)
-      {
-        UpdateWheelFriction();
-        Invoke(nameof(RecoverTraction), Time.deltaTime);
-      }else if (FLwheelFriction.extremumSlip < FLWextremumSlip){
-        ResetWheelFriction();
-        driftingAxis = 0f;
-      }
-    }
-
-    private void UpdateWheelFriction()
+    public void TryDrift(bool isDriftKeyPressed)
     {
-      FLwheelFriction.extremumSlip = FLWextremumSlip * handbrakeDriftMultiplier * driftingAxis;
-      frontLeftCollider.sidewaysFriction = FLwheelFriction;
-      FRwheelFriction.extremumSlip = FRWextremumSlip * handbrakeDriftMultiplier * driftingAxis;
-      frontRightCollider.sidewaysFriction = FRwheelFriction;
-      RLwheelFriction.extremumSlip = RLWextremumSlip * handbrakeDriftMultiplier * driftingAxis;
-      rearLeftCollider.sidewaysFriction = RLwheelFriction;
-      RRwheelFriction.extremumSlip = RRWextremumSlip * handbrakeDriftMultiplier * driftingAxis;
-      rearRightCollider.sidewaysFriction = RRwheelFriction;
+      if (isDriftKeyPressed)
+      {
+        EnterDrift();
+      }
+      else
+      {
+        ExitDrift();
+      }
     }
-    private void ResetWheelFriction() {
-      FLwheelFriction.extremumSlip = FLWextremumSlip;
-      frontLeftCollider.sidewaysFriction = FLwheelFriction;
-      FRwheelFriction.extremumSlip = FRWextremumSlip;
-      frontRightCollider.sidewaysFriction = FRwheelFriction;
-      RLwheelFriction.extremumSlip = RLWextremumSlip;
-      rearLeftCollider.sidewaysFriction = RLwheelFriction;
-      RRwheelFriction.extremumSlip = RRWextremumSlip;
-      rearRightCollider.sidewaysFriction = RRwheelFriction;
+    private void EnterDrift()
+    {
+      isDrifting = Mathf.Abs(localVelocityX) > 2f + 0.1f * carSpeed;
+      SetBrakeTorque(brakeForce * 0.8f);
+      isTractionLocked = true;
+      PlayDriftEffects();
+    }
+    private void ExitDrift()
+    {
+      isTractionLocked = false;
+      isDrifting = false;
+      SetBrakeTorque(0f); 
+      StopDriftEffects();
+    }
+    private void PlayDriftEffects()
+    {
+      if (!useEffects) return;
+      if (isDrifting)
+      {
+        if (!RLWParticleSystem.isPlaying) RLWParticleSystem.Play();
+        if (!RRWParticleSystem.isPlaying) RRWParticleSystem.Play();
+      }
+      bool isSkid = (isTractionLocked || Mathf.Abs(localVelocityX) > 5f) && Mathf.Abs(carSpeed) > 12f;
+      RLWTireSkid.emitting = isSkid;
+      RRWTireSkid.emitting = isSkid;
     }
 
+    private void StopDriftEffects()
+    {
+      if (!useEffects) return;
+      if (RLWParticleSystem.isPlaying) RLWParticleSystem.Stop();
+      if (RRWParticleSystem.isPlaying) RRWParticleSystem.Stop();
+      RLWTireSkid.emitting = false;
+      RRWTireSkid.emitting = false;
+    }
     public void ResetPhysics()
     {
       var rb = GetComponent<Rigidbody>();

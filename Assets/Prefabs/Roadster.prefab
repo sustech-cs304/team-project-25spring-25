@@ -322,12 +322,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b5b2b5aaa20490883a465d30540a870, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 120
+  maxSpeed: 100
   maxReverseSpeed: 45
   accelerationMultiplier: 6
-  maxSteeringAngle: 35
-  steeringSpeed: 0.03
-  brakeForce: 450
+  maxSteeringAngle: 30
+  steeringSpeed: 0.4
+  brakeForce: 400
   decelerationMultiplier: 2
   handbrakeDriftMultiplier: 10
   bodyMassCenter: {x: 0, y: 0, z: 0}
@@ -353,12 +353,12 @@ MonoBehaviour:
   nitroRechargeRate: 5
   nitroBoostMultiplier: 2
   carSpeed: 0
-  isDrifting: 0
   isTractionLocked: 0
   steeringAxis: 0
   deceleratingCar: 0
   currentNitro: 0
   isNitroActive: 0
+  isDrifting: 0
   isPlayer: 0
 --- !u!1 &2950181299508495868
 GameObject:
