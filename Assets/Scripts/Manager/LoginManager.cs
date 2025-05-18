@@ -21,11 +21,12 @@ namespace Manager
             // 添加登录按钮点击事件
             loginButton.onClick.AddListener(OnLoginButtonClicked);
             switchModeButton.onClick.AddListener(OnSwitchModeClicked);
-            
             // 初始化UI状态
             UpdateUIMode();
             HideMenuPanel();   // 隐藏菜单界面
             HideGamePanel();
+            idInput.text = "123";
+            passwordInput.text = "123";
         }
 
         private void OnDestroy()

@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace Manager
 {
-    public class RankingManager : MonoBehaviour, IPointerClickHandler
+    public class RankingManager : Singleton<RankingManager>, IPointerClickHandler
     {
         public GameObject rankingPanel; // 设置界面面板
         public Image rankingBackgroundImage; // 设置界面的背景Image（需拖拽赋值）

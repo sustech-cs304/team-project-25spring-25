@@ -1,83 +1,100 @@
 using System.Net;
-using Fusion;
-using Manager;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class MultimodeManager : MonoBehaviour, IPointerClickHandler
+namespace Manager
 {
-    public GameObject multiPanel; // 设置界面面板
-    public Image multiBackgroundImage; // 设置界面的背景Image（需拖拽赋值）
-    public Button createRoomButton;
-    public Button joinRoomButton;
-    public InputField ipInputField;
-    public Text ipDisplayText;
+    public class MultimodeManager : Singleton<MultimodeManager>, IPointerClickHandler
+    {
+        public GameObject multiPanel; // 设置界面面板
+        public Image multiBackgroundImage; // 设置界面的背景Image（需拖拽赋值）
+        public Button createRoomButton;
+        public Button joinRoomButton;
+        public Button startGameButton;
+        public TMP_InputField  ipInputField;
+        public TMP_Text  ipDisplayText;
     
-    // 关闭设置界面
-    public void CloseMulti()
-    {
-        if (multiPanel != null) multiPanel.SetActive(false);
-    }
-    private void Start()
-    {
-        createRoomButton.onClick.AddListener(OnCreateRoomClicked);
-        joinRoomButton.onClick.AddListener(OnJoinRoomClicked);
-        ipDisplayText.text = ""; // 清空 IP 显示
-    }
-
-    private void OnCreateRoomClicked()
-    {
-        NetworkManager.Instance.StartHost();
-        // 显示本机IP地址
-        var ip = GetLocalIPAddress();
-        ipDisplayText.text = $"房间创建成功，IP: {ip}";
-    }
-
-    private void OnJoinRoomClicked()
-    {
-        var ip = ipInputField.text.Trim();
-        if (string.IsNullOrEmpty(ip))
+        // 关闭设置界面
+        public void CloseMulti()
         {
-            ipDisplayText.text = "请输入有效的IP地址！";
-            return;
+            if (multiPanel != null) multiPanel.SetActive(false);
         }
-        NetworkManager.Instance.StartClient(ip);
-        ipDisplayText.text = "加入房间请求已发送...";
-    }
-    // 检测全局点击事件
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        // 检查点击是否在 settingBackgroundImage 上
-        bool isClickOnImage = RectTransformUtility.RectangleContainsScreenPoint(
-            multiBackgroundImage.rectTransform,
-            eventData.position,
-            eventData.pressEventCamera
-        );
-
-        // 如果点击不在 Image 上，则关闭设置界面
-        if (!isClickOnImage)
+        private void Start()
         {
-            CloseMulti();
+            createRoomButton.onClick.AddListener(OnCreateRoomClicked);
+            joinRoomButton.onClick.AddListener(OnJoinRoomClicked);
+            startGameButton.onClick.AddListener(OnStartGameClicked);
+            startGameButton.gameObject.SetActive(false);
+            ipInputField.text = "10.25.28.40";
+            ipDisplayText.text = ""; // 清空 IP 显示
         }
-    }
-    private string GetLocalIPAddress()
-    {
-        var localIP = "未知";
-        try
+
+        private void OnStartGameClicked()
         {
-            var host = Dns.GetHostEntry(Dns.GetHostName());
-            foreach (var ip in host.AddressList)
+            NetworkManager.Instance.rpcController.RpcStartRace();
+        }
+        
+        private void OnCreateRoomClicked()
+        {
+            NetworkManager.Instance.StartHost();
+            // 显示本机IP地址
+            var ip = GetLocalIPAddress();
+            ipDisplayText.text = $"Create room successfully!\nIP: {ip}";
+            createRoomButton.gameObject.SetActive(false);
+            joinRoomButton.gameObject.SetActive(false);
+            startGameButton.gameObject.SetActive(true);
+        }
+
+        private void OnJoinRoomClicked()
+        {
+            var ip = ipInputField.text.Trim();
+            ipInputField.gameObject.SetActive(true);
+            if (string.IsNullOrEmpty(ip))
             {
-                if (ip.AddressFamily != System.Net.Sockets.AddressFamily.InterNetwork) continue;
-                localIP = ip.ToString();
-                break;
+                ipDisplayText.text = "Please enter a valid IP address!";
+                return;
+            }
+            ipDisplayText.text = "The request has been sent...";
+            NetworkManager.Instance.StartClient(ip);
+            createRoomButton.gameObject.SetActive(false);
+            joinRoomButton.gameObject.SetActive(false);
+        }
+        // 检测全局点击事件
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            // 检查点击是否在 settingBackgroundImage 上
+            bool isClickOnImage = RectTransformUtility.RectangleContainsScreenPoint(
+                multiBackgroundImage.rectTransform,
+                eventData.position,
+                eventData.pressEventCamera
+            );
+
+            // 如果点击不在 Image 上，则关闭设置界面
+            if (!isClickOnImage)
+            {
+                CloseMulti();
             }
         }
-        catch
+        private string GetLocalIPAddress()
         {
-            localIP = "获取失败";
+            var localIP = "未知";
+            try
+            {
+                var host = Dns.GetHostEntry(Dns.GetHostName());
+                foreach (var ip in host.AddressList)
+                {
+                    if (ip.AddressFamily != System.Net.Sockets.AddressFamily.InterNetwork) continue;
+                    localIP = ip.ToString();
+                    break;
+                }
+            }
+            catch
+            {
+                localIP = "获取失败";
+            }
+            return localIP;
         }
-        return localIP;
     }
 }

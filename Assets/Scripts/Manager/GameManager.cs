@@ -1,16 +1,29 @@
 ﻿
-using Manager;
+using Fusion;
 using UnityEngine;
 
 namespace Manager
 {
-    public class GameManager : Singleton<GameManager>
+    public class GameManager : Singleton<GameManager> 
     {
-        public void InitRace()
+        public void InitSingleRace()
         {
+            CameraManager.Instance.OnGameStart();
             TimeManager.Instance.ResumeGame();
             TimeManager.Instance.CurrentTime = 0;
-            CarManager.Instance.InitCar(4,1);
+            MenuManager.Instance.ShowGamePanel();
+            MenuManager.Instance.HideMenuPanel();
+            CarManager.Instance.InitCarSinglePlayer(4,1);
+            CameraManager.Instance.SetPlayerCamera(CarManager.Instance.GetCarTransform());
+        }
+        public void InitNetworkRace()
+        {
+            CameraManager.Instance.OnGameStart();
+            TimeManager.Instance.ResumeGame();
+            TimeManager.Instance.CurrentTime = 0;
+            MenuManager.Instance.ShowGamePanel();
+            MenuManager.Instance.HideMenuPanel();
+            CarManager.Instance.InitCarNetwork(NetworkManager.Instance.connectedPlayers);
             CameraManager.Instance.SetPlayerCamera(CarManager.Instance.GetCarTransform());
         }
         public void HandleClick()

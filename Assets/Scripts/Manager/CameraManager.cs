@@ -14,7 +14,7 @@ namespace Manager
         [SerializeField] private GameObject carCamera;
         private int cameraMode;
         private float switchTimer;
-
+    
         void Start()
         {
             cameraMode = 1;
@@ -50,7 +50,7 @@ namespace Manager
             }
         }
 
-        public void OnLoginSuccess()
+        public void OnGameStart()
         {
             cameraMode = 0;
             switchTimer = 1f;

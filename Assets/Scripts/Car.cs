@@ -24,8 +24,6 @@ public class Car : MonoBehaviour
       public WheelCollider rearRightCollider;
       
       public bool useEffects;
-      public ParticleSystem RLWParticleSystem;
-      public ParticleSystem RRWParticleSystem;
       [Space(10)]
 
       public TrailRenderer RLWTireSkid;
@@ -45,9 +43,8 @@ public class Car : MonoBehaviour
       public float nitroBoostMultiplier = 2f;
       
       public float carSpeed;
-      public bool isTractionLocked; 
       
-      private Rigidbody carRigidbody;
+      public Rigidbody carRigidbody;
       public float steeringAxis;
       private float throttleAxis; 
       private float localVelocityZ;
@@ -66,7 +63,7 @@ public class Car : MonoBehaviour
       public bool isNitroActive;
       public bool isDrifting;
       public bool isPlayer;
-    private void Start()
+    private void Awake()
     {
         currentNitro = nitroCapacity;
         carRigidbody = gameObject.GetComponent<Rigidbody>();
@@ -85,8 +82,6 @@ public class Car : MonoBehaviour
           if(tireScreechSound != null) tireScreechSound.Stop();
         }
         if (useEffects) return;
-        if(RLWParticleSystem != null) RLWParticleSystem.Stop();
-        if(RRWParticleSystem != null) RRWParticleSystem.Stop();
         if(RLWTireSkid != null) RLWTireSkid.emitting = false;
         if(RRWTireSkid != null) RRWTireSkid.emitting = false;
         if(NitroParticleSystem != null) NitroParticleSystem.Stop();
@@ -126,9 +121,9 @@ public class Car : MonoBehaviour
             var engineSoundPitch = initialCarEngineSoundPitch + Mathf.Abs(carRigidbody.velocity.magnitude) / 25f;
             carEngineSound.pitch = engineSoundPitch;
           }
-          if(isDrifting || (isTractionLocked && Mathf.Abs(carSpeed) > 12f)){
+          if(isDrifting || Mathf.Abs(carSpeed) > 12f){
             if(!tireScreechSound.isPlaying) tireScreechSound.Play();
-          }else if(!isDrifting && (!isTractionLocked || Mathf.Abs(carSpeed) < 12f)) tireScreechSound.Stop();
+          }else if(!isDrifting && Mathf.Abs(carSpeed) < 12f) tireScreechSound.Stop();
       }else{
         if(carEngineSound != null && carEngineSound.isPlaying) carEngineSound.Stop();
         if(tireScreechSound != null && tireScreechSound.isPlaying) tireScreechSound.Stop();
@@ -226,12 +221,10 @@ public class Car : MonoBehaviour
     }
     public void TryDrift(bool isDriftKeyPressed)
     {
-      if (isDriftKeyPressed)
-      {
+      if (isDriftKeyPressed) {
         EnterDrift();
       }
-      else
-      {
+      else {
         ExitDrift();
       }
     }
@@ -239,34 +232,24 @@ public class Car : MonoBehaviour
     {
       isDrifting = Mathf.Abs(localVelocityX) > 2f + 0.1f * carSpeed;
       SetBrakeTorque(brakeForce * 0.8f);
-      isTractionLocked = true;
       PlayDriftEffects();
     }
     private void ExitDrift()
     {
-      isTractionLocked = false;
       isDrifting = false;
       SetBrakeTorque(0f); 
       StopDriftEffects();
     }
-    private void PlayDriftEffects()
+    public void PlayDriftEffects()
     {
       if (!useEffects) return;
-      if (isDrifting)
-      {
-        if (!RLWParticleSystem.isPlaying) RLWParticleSystem.Play();
-        if (!RRWParticleSystem.isPlaying) RRWParticleSystem.Play();
-      }
-      bool isSkid = (isTractionLocked || Mathf.Abs(localVelocityX) > 5f) && Mathf.Abs(carSpeed) > 12f;
-      RLWTireSkid.emitting = isSkid;
-      RRWTireSkid.emitting = isSkid;
+      RLWTireSkid.emitting = isDrifting;
+      RRWTireSkid.emitting = isDrifting;
     }
-
-    private void StopDriftEffects()
+    
+    public void StopDriftEffects()
     {
       if (!useEffects) return;
-      if (RLWParticleSystem.isPlaying) RLWParticleSystem.Stop();
-      if (RRWParticleSystem.isPlaying) RRWParticleSystem.Stop();
       RLWTireSkid.emitting = false;
       RRWTireSkid.emitting = false;
     }

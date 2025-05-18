@@ -18,14 +18,14 @@ namespace Manager
         public GameObject rankingPanel;// 排行榜界面
         public GameObject gamePanel;
 
-        private void Start()
+        private void Awake()
         {
             // 确保初始状态正确
             menuPanel.SetActive(true);
             if (multiModePanel != null) multiModePanel.SetActive(false);
             if (settingsPanel != null) settingsPanel.SetActive(false);
             if (rankingPanel != null) rankingPanel.SetActive(false);
-            
+            if (gamePanel != null) gamePanel.SetActive(false);
             // 添加按钮事件监听
             singleModeButton.onClick.AddListener(OnSingleModeClicked);
             multiModeButton.onClick.AddListener(OnMultiModeClicked);
@@ -35,15 +35,15 @@ namespace Manager
         }
         
 
-        private void OnDestroy()
-        {
-            // 移除事件监听
-            garageButton.onClick.RemoveListener(OnGarageClicked);
-            singleModeButton.onClick.RemoveListener(OnSingleModeClicked);
-            multiModeButton.onClick.RemoveListener(OnMultiModeClicked);
-            settingsButton.onClick.RemoveListener(OnSettingsClicked);
-            rankingButton.onClick.RemoveListener(OnRankingClicked);
-        }
+        // private void OnDestroy()
+        // {
+        //     // 移除事件监听
+        //     garageButton.onClick.RemoveListener(OnGarageClicked);
+        //     singleModeButton.onClick.RemoveListener(OnSingleModeClicked);
+        //     multiModeButton.onClick.RemoveListener(OnMultiModeClicked);
+        //     settingsButton.onClick.RemoveListener(OnSettingsClicked);
+        //     rankingButton.onClick.RemoveListener(OnRankingClicked);
+        // }
 
         /// <summary>
         /// 点击单机模式按钮的处理
@@ -52,17 +52,12 @@ namespace Manager
         {
             // 隐藏菜单界面
             menuPanel.SetActive(false);
-            
-            // 切换摄像机（使用LoginManager中的相同逻辑）
-            CameraManager.Instance.OnLoginSuccess();
-            HideMenuPanel();
-            
             // 初始化游戏（根据你的GameManager实现调整）
             if (GameManager.Instance != null)
             {
-                GameManager.Instance.InitRace();
+                GameManager.Instance.InitSingleRace();
             }
-            ShowGamePanel();
+            
             Debug.Log("单机模式游戏开始");
         }
         
@@ -137,15 +132,8 @@ namespace Manager
             Debug.Log("进入多人模式界面");
         }
         
-        public void ShowGamePanel()
-        {
-            gamePanel.SetActive(true);
-        }
-        
-        public void HideGamePanel()
-        {
-            gamePanel.SetActive(false);
-        }
+        public void ShowGamePanel() => gamePanel.SetActive(true);
+        public void HideGamePanel() => gamePanel.SetActive(false);
         public void ShowMenuPanel() => menuPanel.SetActive(true);
 
         public void HideMenuPanel() => menuPanel.SetActive(false);

@@ -13,7 +13,6 @@ namespace Scripts
         {
           car = GetComponent<Car>();
         }
-
         private void Update()
         {
           var isAccelerating = Input.GetKey(KeyCode.W);
@@ -59,6 +58,11 @@ namespace Scripts
           }
           if (!isTurningLeft && !isTurningRight && car.steeringAxis != 0f) car.ResetSteeringAngle();
           car.UpdateData();
+        }
+
+        public void SetCar()
+        {
+          car = GetComponent<Car>();
         }
     }
 }
