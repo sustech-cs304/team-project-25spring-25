@@ -32,7 +32,7 @@ namespace Menu
         }
 
         public void QuitGame()
-        {
+        {   
             Application.Quit();
         }
     }

@@ -15,39 +15,34 @@ namespace Manager
         private NetworkRunner runner;
         public List<PlayerRef> connectedPlayers = new List<PlayerRef>();
         
+        void Awake() {
+            runner = Instantiate(runnerPrefab);
+            runner.ProvideInput = true;
+            runner.AddCallbacks(this);
+            runner.JoinSessionLobby(SessionLobby.Shared);
+        }
+        
         public async void StartHost()
         {
-            if (runner == null)
+            try
             {
-                runner = Instantiate(runnerPrefab);
-                runner.ProvideInput = true;
-                runner.AddCallbacks(this);
+                await runner.StartGame(new StartGameArgs
+                {
+                    GameMode = GameMode.Host,
+                    SessionName = "RaceRoom",
+                    Scene = SceneRef.FromIndex(SceneManager.GetActiveScene().buildIndex),
+                    SceneManager = runner.gameObject.AddComponent<NetworkSceneManagerDefault>(),
+                    PlayerCount = 4,
+                    IsVisible = true,    
+                    IsOpen = true
+                });
+                var obj = runner.Spawn(rpcControllerPrefab, Vector3.zero, Quaternion.identity);
+                rpcController = obj.GetComponent<RpcController>();
             }
-            await runner.StartGame(new StartGameArgs
+            catch (Exception e)
             {
-                GameMode = GameMode.Host,
-                SessionName = "RaceRoom",
-                Scene = SceneRef.FromIndex(SceneManager.GetActiveScene().buildIndex),
-                SceneManager = runner.gameObject.AddComponent<NetworkSceneManagerDefault>()
-            });
-            var obj = runner.Spawn(rpcControllerPrefab, Vector3.zero, Quaternion.identity);
-            rpcController = obj.GetComponent<RpcController>();
-        }
-        public async void StartClient(string address)
-        {
-            if (runner == null)
-            {
-                runner = Instantiate(runnerPrefab);
-                runner.ProvideInput = true;
-                runner.AddCallbacks(this);
+                throw; // TODO handle exception
             }
-            await runner.StartGame(new StartGameArgs
-            {
-                GameMode = GameMode.Client,
-                SessionName = "RaceRoom",
-                Address = NetAddress.CreateFromIpPort(address, 27015),
-                SceneManager = runner.gameObject.AddComponent<NetworkSceneManagerDefault>()
-            });
         }
 
         public NetworkRunner Runner
@@ -146,6 +141,7 @@ namespace Manager
             {
                 Debug.Log($"Session: {session.Name}, Players: {session.PlayerCount}/{session.MaxPlayers}");
             }
+            MultimodeManager.Instance.UpdateRoomListUI(sessionList,this.runner);
         }
 
         public void OnCustomAuthenticationResponse(NetworkRunner runner, Dictionary<string, object> data)
