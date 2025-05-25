@@ -9,7 +9,7 @@ public class Car : MonoBehaviour
       [Range(10, 120)] public int maxReverseSpeed = 45; 
       [Range(1, 10)] public int accelerationMultiplier = 2; 
       [Range(10, 45)] public int maxSteeringAngle = 27; 
-      [Range(0.01f, 1f)] public float steeringSpeed = 0.5f; 
+      [Range(0.01f, 10f)] public float steeringSpeed = 10f; 
       [Range(100, 600)] public int brakeForce = 350; 
       [Range(1, 10)] public int decelerationMultiplier = 2; 
       [Space(10)] public Vector3 bodyMassCenter; 

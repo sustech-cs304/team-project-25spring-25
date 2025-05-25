@@ -116,7 +116,7 @@ MonoBehaviour:
   maxReverseSpeed: 45
   accelerationMultiplier: 6
   maxSteeringAngle: 35
-  steeringSpeed: 0.3
+  steeringSpeed: 5
   brakeForce: 550
   decelerationMultiplier: 2
   bodyMassCenter: {x: 0, y: 0, z: 0}
@@ -129,8 +129,6 @@ MonoBehaviour:
   rearRightMesh: {fileID: 2077481708272809950}
   rearRightCollider: {fileID: 8706808774334851022}
   useEffects: 1
-  RLWParticleSystem: {fileID: 4402756320724654539}
-  RRWParticleSystem: {fileID: 4402756320999286479}
   RLWTireSkid: {fileID: 7045468751846977024}
   RRWTireSkid: {fileID: 7045468751210077382}
   NitroParticleSystem: {fileID: 0}
@@ -142,7 +140,7 @@ MonoBehaviour:
   nitroRechargeRate: 5
   nitroBoostMultiplier: 2
   carSpeed: 0
-  isTractionLocked: 0
+  carRigidbody: {fileID: 0}
   steeringAxis: 0
   deceleratingCar: 0
   currentNitro: 0
@@ -161,6 +159,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 880309e6d4e04fa2becb8b4af9f1d737, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  car: {fileID: 0}
+  phaseLagDistance: 1
 --- !u!114 &6350210384504695279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1121,11 +1121,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4121091811543137509, guid: ddf4ea2625767fd4bb4153e7e4009ad5, type: 3}
   m_PrefabInstance: {fileID: 299688004732257706}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &4402756320724654539 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 4121091811527957601, guid: ddf4ea2625767fd4bb4153e7e4009ad5, type: 3}
-  m_PrefabInstance: {fileID: 299688004732257706}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &299688004994316974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1198,11 +1193,6 @@ PrefabInstance:
 --- !u!4 &4402756320985155147 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4121091811543137509, guid: ddf4ea2625767fd4bb4153e7e4009ad5, type: 3}
-  m_PrefabInstance: {fileID: 299688004994316974}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &4402756320999286479 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 4121091811527957601, guid: ddf4ea2625767fd4bb4153e7e4009ad5, type: 3}
   m_PrefabInstance: {fileID: 299688004994316974}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &299688005070745398
