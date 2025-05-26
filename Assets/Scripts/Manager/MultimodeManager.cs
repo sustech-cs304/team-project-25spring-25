@@ -40,26 +40,35 @@ namespace Manager
                 var roomUI = roomObj.GetComponent<RoomItemUI>();
                 if (roomUI != null)
                 {
-                    roomUI.SetInfo($"Session: {session.Name}\nPlayers: {session.PlayerCount}/{session.MaxPlayers}");
+                    roomUI.SetInfo($"Room: {session.Name}\nPlayers: {session.PlayerCount}/{session.MaxPlayers}");
                     roomUI.SetJoinCallback(() =>
                     {
+                        runner.ProvideInput = true;
                         runner.StartGame(new StartGameArgs
                         {
                             GameMode = GameMode.Client,
                             SessionName = session.Name,
                             SceneManager = runner.gameObject.AddComponent<NetworkSceneManagerDefault>()
                         });
+                        roomListUI.gameObject.SetActive(false);
+                        roomInfoUI.gameObject.SetActive(true);
                     });
                 }
                 roomItems.Add(roomObj);
             }
         }
-
+        public void UpdateRoomUI(string roomInfo)
+        {
+            var text = roomInfoUI.GetComponentInChildren<TMP_Text>();
+            text.text = roomInfo;
+        }
         private void Start()
         {
+            
             createRoomButton.onClick.AddListener(OnCreateRoomClicked);
             startGameButton.onClick.AddListener(OnStartGameClicked);
             startGameButton.gameObject.SetActive(false);
+            roomInfoUI.SetActive(false);
         }
 
         private void OnStartGameClicked()
@@ -70,6 +79,7 @@ namespace Manager
         private void OnCreateRoomClicked()
         {
             NetworkManager.Instance.StartHost();
+            roomListUI.SetActive(false);
             roomInfoUI.SetActive(true);
             createRoomButton.gameObject.SetActive(false);
             startGameButton.gameObject.SetActive(true);

@@ -35,7 +35,7 @@ namespace Manager
                     playerStartPositions[i] = carObj.transform;
                     car.isPlayer = true;
                     carObj.AddComponent<PlayerController>();  // 本地控制
-                    car.EnableCarSpeedUI();
+                    car.useUI = true;
                 }
                 else {
                     aiStartPositions[i - playerNum] = carObj.transform;
@@ -114,7 +114,7 @@ namespace Manager
             if (netObj.HasInputAuthority)
             {
                 playerCar = car;
-                car.EnableCarSpeedUI();
+                car.useUI = true;
             }
             cars.Add(car);
         }
