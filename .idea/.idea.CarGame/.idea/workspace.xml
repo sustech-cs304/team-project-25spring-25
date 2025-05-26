@@ -4,7 +4,678 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78889eac-6809-43a2-b93d-020be0b95b99" name="Changes" comment="" />
+    <list default="true" id="78889eac-6809-43a2-b93d-020be0b95b99" name="Changes" comment="achieve Nitro accelerate">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/shelf/Uncommitted_changes_before_Update_at_2025_5_24_13_59_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/shelf/Uncommitted_changes_before_Update_at_2025_5_24_13_59__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/shelf/Uncommitted_changes_before_Update_at_2025_5_24_16_13_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/shelf/Uncommitted_changes_before_Update_at_2025_5_24_16_13__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/shelf/Uncommitted_changes_before_Update_at_2025_5_26_13_45_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/shelf/Uncommitted_changes_before_Update_at_2025_5_26_13_45__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/Terrain.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/Terrain.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor/Utils.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor/Utils/Object2Terrain.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor/Utils/Object2Terrain.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game Resources/discuss-line 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game Resources/discuss-line 1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Floor.physicMaterial" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Floor.physicMaterial.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Animations.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Animations/Camera Movement.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Animations/Camera Movement.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/Alpha-Diffuse.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/Alpha-Diffuse.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Asphalt_Cross and Corner.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Asphalt_Cross and Corner.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Asphalt_Road Texture_M_01.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Asphalt_Road Texture_M_01.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Building_B_diffuse.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Building_B_diffuse.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Footpath.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Footpath.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Plants_Alpha.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Plants_Alpha.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_SkyBox.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_SkyBox.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Sky_Scrappers_diffuse.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Sky_Scrappers_diffuse.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Tree_Bark.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Tree_Bark.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Models.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Models/MC_City_Pack_01.FBX" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Models/MC_City_Pack_01.FBX.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Models/MC_Collider_02.FBX" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Models/MC_Collider_02.FBX.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Asphalt_Cross and Corner.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Asphalt_Cross and Corner.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Asphalt_Road Texture_M_01.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Asphalt_Road Texture_M_01.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Building_B_diffuse.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Building_B_diffuse.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Footpath.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Footpath.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/No Name.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/No Name.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Plants_Alpha.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Plants_Alpha.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Sky_Scrappers_diffuse.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Sky_Scrappers_diffuse.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Tree_Bark.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Tree_Bark.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_A.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_A.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_B.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_B.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_C.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_C.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_D.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_D.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_E.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_E.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_F.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_F.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_G.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_G.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_H.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_H.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_I.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_I.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_A.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_A.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_B.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_B.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_C.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_C.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_D.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_D.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_E.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_E.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_F.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_F.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_G.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_G.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_I.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_I.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_J.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_J.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_K.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_K.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_L.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_L.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_A.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_A.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_B.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_B.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_C.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_C.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_D.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_D.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_E.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_E.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_F.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_F.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_G.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_G.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_H.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_H.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_I.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_I.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_J.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_J.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_A.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_A.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_B.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_B.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_C.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_C.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_D.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_D.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_E.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_E.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_F.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_F.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_G.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_G.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/City.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/City/MC_CityPrefab.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/City/MC_CityPrefab.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/City/MC_CityPrefabWithColliders.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/City/MC_CityPrefabWithColliders.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/MC_Colliders.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/MC_Colliders.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/MC_RoadBlock.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/MC_RoadBlock.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_02.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_02.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_03.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_03.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_04.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_04.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_05.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_05.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_06.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_06.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_07.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_07.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_08.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_08.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_09.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_09.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_10.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_10.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_11.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_11.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_12.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_12.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_13.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_13.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_14.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_14.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_15.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_15.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_16.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_16.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_17.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_17.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_18.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_18.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_19.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_19.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_20.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_20.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_21.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_21.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_22.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_22.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_23.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_23.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_24.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_24.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_25.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_25.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_26.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_26.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_27.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_27.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_28.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_28.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_29.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_29.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_30.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_30.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_31.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_31.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_32.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_32.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_33.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_33.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_34.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_34.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_35.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_35.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_36.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_36.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_37.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_37.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_38.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_38.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_39.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_39.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_40.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_40.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_41.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_41.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_42.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_42.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_43.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_43.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_44.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_44.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_45.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_45.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_46.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_46.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_47.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_47.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_48.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_48.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_02.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_02.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_03.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_03.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_04.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_04.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_05.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_05.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_06.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_06.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_07.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_07.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_08.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_08.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_09.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_09.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_10.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_10.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_11.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_11.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_12.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_12.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_13.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_13.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_14.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_14.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_15.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_15.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_16.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_16.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_17.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_17.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_18.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_18.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_19.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_19.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_20.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_20.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_21.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_21.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_22.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_22.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_23.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_23.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_24.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_24.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_25.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_25.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_26.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_26.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_27.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_27.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_28.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_28.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_29.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_29.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_30.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_30.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_31.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_31.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_32.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_32.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_33.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_33.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_34.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_34.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_35.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_35.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_36.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_36.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_37.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_37.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_38.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_38.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_39.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_39.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_40.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_40.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_41.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_41.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_42.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_42.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_43.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_43.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_44.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_44.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_45.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_45.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_46.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_46.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_47.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_47.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_48.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_48.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Bench.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Bench.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Bench_Single.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Bench_Single.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Bus_Stop.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Bus_Stop.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Bush.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Bush.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Hydrant.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Hydrant.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Mail_Box.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Mail_Box.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Newspaper_Machine.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Newspaper_Machine.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Plant.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Plant.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Plant2.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Plant2.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Plant3.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Plant3.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Rectangle_Grass.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Rectangle_Grass.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Rounded_Grass.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Rounded_Grass.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Speed_Limit_Sign.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Speed_Limit_Sign.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Street_Lamp.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Street_Lamp.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Street_Lamp_Small.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Street_Lamp_Small.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Street_Lamp_double.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Street_Lamp_double.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Taxi_Pole.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Taxi_Pole.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Telephone_Booth.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Telephone_Booth.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Traffic_Signal.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Traffic_Signal.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Trash_Can.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Trash_Can.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Trash_Can2.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Trash_Can2.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Tree.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Tree.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Bench.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Bench.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Bench_Single.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Bench_Single.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Bus_Stop.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Bus_Stop.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Bush.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Bush.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Hydrant.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Hydrant.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Mail_Box.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Mail_Box.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Newspaper_Machine.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Newspaper_Machine.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Plant.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Plant.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Plant2.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Plant2.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Plant3.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Plant3.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Rectangle_Grass.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Rectangle_Grass.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Rounded_Grass.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Rounded_Grass.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Speed_Limit_Sign.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Speed_Limit_Sign.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Street_Lamp.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Street_Lamp.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Street_Lamp_Small.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Street_Lamp_Small.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Street_Lamp_double.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Street_Lamp_double.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Taxi_Pole.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Taxi_Pole.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Telephone_Booth.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Telephone_Booth.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Traffic_Signal.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Traffic_Signal.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Trash_Can.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Trash_Can.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Trash_Can2.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Trash_Can2.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Tree.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Tree.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/DemoWithColliders.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/DemoWithColliders/LightingData.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/DemoWithColliders/LightingData.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/DemoWithColliders/MC_ReflectionProbe-0.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/DemoWithColliders/MC_ReflectionProbe-0.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/DemoWithColliders/MC_ReflectionProbe-1.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/DemoWithColliders/MC_ReflectionProbe-1.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/DemoWithCollidersSettings.lighting" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/DemoWithCollidersSettings.lighting.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/MC_DemoWithColliders.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/MC_DemoWithColliders.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/MC_DemoWithReflections.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/MC_DemoWithReflections.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/MC_DemoWithReflectionsSettings.lighting" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/MC_DemoWithReflectionsSettings.lighting.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/main.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/main/MC_ReflectionProbe-0.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/main/MC_ReflectionProbe-0.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/main/MC_ReflectionProbe-1.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/main/MC_ReflectionProbe-1.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/Camera.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/Camera.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/CameraAnimation.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/CameraAnimation.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_04-23_Day_B.hdr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_04-23_Day_B.hdr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Asphalt_Cross and Corner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Asphalt_Cross and Corner.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Asphalt_NRM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Asphalt_NRM.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Asphalt_Road Texture_M_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Asphalt_Road Texture_M_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Buildings_n_Props[Normal].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Buildings_n_Props[Normal].png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Buildings_n_Props_Emessive_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Buildings_n_Props_Emessive_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Buildings_n_Props_diffuse_N.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Buildings_n_Props_diffuse_N.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Buildings_n_Props_specular.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Buildings_n_Props_specular.psd.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Footpath.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Footpath.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Pavement_NRM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Pavement_NRM.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Plants_Alpha.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Plants_Alpha.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Sky_Scrappers[Normal].png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Sky_Scrappers[Normal].png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Sky_Scrappers_Emessive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Sky_Scrappers_Emessive.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Sky_Scrappers_diffuse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Sky_Scrappers_diffuse.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Sky_Scrappers_specular.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Sky_Scrappers_specular.psd.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Tree_Bark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Tree_Bark.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Tree_Bark_NRM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Tree_Bark_NRM.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/shelf/Uncommitted_changes_before_Update_at_2025_5_12_17_52_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/shelf/Uncommitted_changes_before_Update_at_2025_5_12_17_52__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/CTI Runtime Components URP 14plus.pdf.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/CTI Runtime Components URP 14plus.pdf.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Known Issues.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Known Issues.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Known Issues.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Known Issues.txt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Prefabs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Prefabs/CTI Windzone URP.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Prefabs/CTI Windzone URP.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Prefabs/CTI Windzone URP.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Prefabs/CTI Windzone URP.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Resources.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Resources.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Resources/CTI_Default_NST.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Resources/CTI_Default_NST.psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Scripts/CTI_URP_CustomWind.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Scripts/CTI_URP_CustomWind.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Scripts/CTI_URP_CustomWind.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Scripts/CTI_URP_CustomWind.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Scripts/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Scripts/Editor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Scripts/Editor/CTI_URPTransDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Scripts/Editor/CTI_URPTransDrawer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Scripts/Editor/CTI_URPTransDrawer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Scripts/Editor/CTI_URPTransDrawer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Scripts/Editor/CTI_URPWindDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Scripts/Editor/CTI_URPWindDrawer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Scripts/Editor/CTI_URPWindDrawer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Scripts/Editor/CTI_URPWindDrawer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Scripts/Editor/CTI_URP_ShaderGUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Scripts/Editor/CTI_URP_ShaderGUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Scripts/Editor/CTI_URP_ShaderGUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Scripts/Editor/CTI_URP_ShaderGUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/CTI URP SG Bark Array.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/CTI URP SG Bark Array.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/CTI URP SG Bark Array.shadergraph.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/CTI URP SG Bark Array.shadergraph.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/CTI URP SG Bark.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/CTI URP SG Bark.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/CTI URP SG Bark.shadergraph.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/CTI URP SG Bark.shadergraph.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/CTI URP SG Billboard Simple.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/CTI URP SG Billboard Simple.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/CTI URP SG Billboard Simple.shadergraph.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/CTI URP SG Billboard Simple.shadergraph.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/CTI URP SG Billboard.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/CTI URP SG Billboard.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/CTI URP SG Billboard.shadergraph.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/CTI URP SG Billboard.shadergraph.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/CTI URP SG Leaves.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/CTI URP SG Leaves.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/CTI URP SG Leaves.shadergraph.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/CTI URP SG Leaves.shadergraph.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes/CTI URP SG BillboardFragment.hlsl" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes/CTI URP SG BillboardFragment.hlsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes/CTI URP SG BillboardFragment.hlsl.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes/CTI URP SG BillboardFragment.hlsl.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes/CTI URP SG BillboardVertex.hlsl" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes/CTI URP SG BillboardVertex.hlsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes/CTI URP SG BillboardVertex.hlsl.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes/CTI URP SG BillboardVertex.hlsl.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes/CTI URP SG BillboardVertexSimple.hlsl" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes/CTI URP SG BillboardVertexSimple.hlsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes/CTI URP SG BillboardVertexSimple.hlsl.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes/CTI URP SG BillboardVertexSimple.hlsl.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes/CTI URP SG Lighting.hlsl" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes/CTI URP SG Lighting.hlsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes/CTI URP SG Lighting.hlsl.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes/CTI URP SG Lighting.hlsl.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes/CTI URP SG Utils.hlsl" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes/CTI URP SG Utils.hlsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes/CTI URP SG Utils.hlsl.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes/CTI URP SG Utils.hlsl.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes/CTI URP SG Wind.hlsl" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes/CTI URP SG Wind.hlsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes/CTI URP SG Wind.hlsl.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/CTI Runtime Components/CTI Runtime Components URP 14plus/Shaders/Includes/CTI URP SG Wind.hlsl.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD].meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD].meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Conifers [BOTD] 2.0.pdf.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Conifers [BOTD] 2.0.pdf.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Installer.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Installer.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Installer/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Installer/Editor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Installer/Editor/ConifersInstaller.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Installer/Editor/ConifersInstaller.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Demo.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Demo.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Demo/Conifers Cast URP Lighting Settings.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Demo/Conifers Cast URP Lighting Settings.lighting" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Demo/Conifers Cast URP Lighting Settings.lighting.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Demo/Conifers Cast URP Lighting Settings.lighting.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Demo/Conifers Cast URP.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Demo/Conifers Cast URP.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Demo/Conifers Cast URP.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Demo/Conifers Cast URP.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Demo/Gray.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Demo/Gray.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Demo/Gray.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Demo/Gray.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Known Issues.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Known Issues.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Known Issues.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Known Issues.txt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Prefabs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Prefabs/PF Conifer Bare BOTD URP.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Prefabs/PF Conifer Bare BOTD URP.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Prefabs/PF Conifer Bare BOTD URP.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Prefabs/PF Conifer Bare BOTD URP.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Prefabs/PF Conifer Medium BOTD URP.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Prefabs/PF Conifer Medium BOTD URP.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Prefabs/PF Conifer Medium BOTD URP.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Prefabs/PF Conifer Medium BOTD URP.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Prefabs/PF Conifer Small BOTD URP.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Prefabs/PF Conifer Small BOTD URP.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Prefabs/PF Conifer Small BOTD URP.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Prefabs/PF Conifer Small BOTD URP.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Prefabs/PF Conifer Tall BOTD URP.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Prefabs/PF Conifer Tall BOTD URP.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Prefabs/PF Conifer Tall BOTD URP.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Prefabs/PF Conifer Tall BOTD URP.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Bare_BillboardAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Bare_BillboardAsset.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Bare_BillboardAsset.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Bare_BillboardAsset.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Bare_BillboardMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Bare_BillboardMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Bare_BillboardMaterial.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Bare_BillboardMaterial.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Medium_BillboardAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Medium_BillboardAsset.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Medium_BillboardAsset.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Medium_BillboardAsset.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Medium_BillboardMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Medium_BillboardMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Medium_BillboardMaterial.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Medium_BillboardMaterial.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Small_BillboardAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Small_BillboardAsset.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Small_BillboardAsset.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Small_BillboardAsset.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Small_BillboardMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Small_BillboardMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Small_BillboardMaterial.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Small_BillboardMaterial.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Tall_BillboardAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Tall_BillboardAsset.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Tall_BillboardAsset.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Tall_BillboardAsset.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Tall_BillboardMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Tall_BillboardMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Tall_BillboardMaterial.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Billboards/Conifer Tall_BillboardMaterial.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Materials.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Materials/M Conifer Bark Array URP.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Materials/M Conifer Bark Array URP.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Materials/M Conifer Bark Array URP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Materials/M Conifer Bark Array URP.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Materials/M Conifer Bark Simple URP.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Materials/M Conifer Bark Simple URP.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Materials/M Conifer Bark Simple URP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Materials/M Conifer Bark Simple URP.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Materials/M Conifer Leaves URP.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Materials/M Conifer Leaves URP.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Materials/M Conifer Leaves URP.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Materials/M Conifer Leaves URP.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Textures.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Textures.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Textures/BODT Conifer Branches NTS.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Render Pipeline Support/URP/Sources/Textures/BODT Conifer Branches NTS.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Bare.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Bare.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Bare/SM Conifer Bare LOD0.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Bare/SM Conifer Bare LOD0.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Bare/SM Conifer Bare LOD0.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Bare/SM Conifer Bare LOD0.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Bare/SM Conifer Bare LOD1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Bare/SM Conifer Bare LOD1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Bare/SM Conifer Bare LOD1.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Bare/SM Conifer Bare LOD1.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Medium.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Medium.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Medium/SM Conifer Medium LOD0.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Medium/SM Conifer Medium LOD0.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Medium/SM Conifer Medium LOD0.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Medium/SM Conifer Medium LOD0.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Medium/SM Conifer Medium LOD1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Medium/SM Conifer Medium LOD1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Medium/SM Conifer Medium LOD1.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Medium/SM Conifer Medium LOD1.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Small.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Small.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Small/SM Conifer Small LOD0.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Small/SM Conifer Small LOD0.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Small/SM Conifer Small LOD0.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Small/SM Conifer Small LOD0.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Small/SM Conifer Small LOD1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Small/SM Conifer Small LOD1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Small/SM Conifer Small LOD1.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Small/SM Conifer Small LOD1.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Tall.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Tall.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Tall/SM Conifer Tall LOD0.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Tall/SM Conifer Tall LOD0.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Tall/SM Conifer Tall LOD0.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Tall/SM Conifer Tall LOD0.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Tall/SM Conifer Tall LOD1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Tall/SM Conifer Tall LOD1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Tall/SM Conifer Tall LOD1.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Conifer Tall/SM Conifer Tall LOD1.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/BODT Conifer  Branches [Albedo] [Alpha].tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/BODT Conifer  Branches [Albedo] [Alpha].tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/BODT Conifer Bark Array [Albedo] [Smoothness].asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/BODT Conifer Bark Array [Albedo] [Smoothness].asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/BODT Conifer Bark Array [Albedo] [Smoothness].asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/BODT Conifer Bark Array [Albedo] [Smoothness].asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/BODT Conifer Bark Array [Normal] [AO] [Specular].asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/BODT Conifer Bark Array [Normal] [AO] [Specular].asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/BODT Conifer Bark Array [Normal] [AO] [Specular].asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/BODT Conifer Bark Array [Normal] [AO] [Specular].asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/BODT Conifer Branches [Trans] [Smoothness].psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/BODT Conifer Branches [Trans] [Smoothness].psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/BODT Conifer Branches_Normal combined.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/BODT Conifer Branches_Normal combined.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/BODT Conifer Trunk [Albedo] [Smoothness].tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/BODT Conifer Trunk [Albedo] [Smoothness].tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/BODT Conifer Trunk [Normal] [AO] [Specular].psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/BODT Conifer Trunk [Normal] [AO] [Specular].psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/BODT Conifer x Stump [Albedo] [Smoothness].tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/BODT Conifer x Stump [Albedo] [Smoothness].tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/BODT Conifer x Stump [Normal] [AO] [Specular].tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/BODT Conifer x Stump [Normal] [AO] [Specular].tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Bare.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Bare.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Bare/Conifer Bare A.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Bare/Conifer Bare A.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Bare/Conifer Bare DA.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Bare/Conifer Bare DA.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Bare/Conifer Bare DO.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Bare/Conifer Bare DO.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Bare/Conifer Bare [Albedo].png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Bare/Conifer Bare [Albedo].png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Bare/Conifer Bare [Normal] [Trans] [Smoothness].png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Bare/Conifer Bare [Normal] [Trans] [Smoothness].png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Medium.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Medium.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Medium/Conifer Medium A.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Medium/Conifer Medium A.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Medium/Conifer Medium DA.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Medium/Conifer Medium DA.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Medium/Conifer Medium DO.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Medium/Conifer Medium DO.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Medium/Conifer Medium [Albedo].png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Medium/Conifer Medium [Albedo].png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Medium/Conifer Medium [Normal] [Trans] [Smoothness].png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Medium/Conifer Medium [Normal] [Trans] [Smoothness].png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Small.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Small.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Small/Conifer Small A.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Small/Conifer Small A.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Small/Conifer Small DA.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Small/Conifer Small DA.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Small/Conifer Small DO.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Small/Conifer Small DO.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Small/Conifer Small [Albedo].png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Small/Conifer Small [Albedo].png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Small/Conifer Small [Normal] [Trans] [Smoothness].png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Small/Conifer Small [Normal] [Trans] [Smoothness].png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Tall.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Tall.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Tall/Conifer Tall  [Normal] [Trans] [Smoothness].png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Tall/Conifer Tall  [Normal] [Trans] [Smoothness].png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Tall/Conifer Tall A.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Tall/Conifer Tall A.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Tall/Conifer Tall DA.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Tall/Conifer Tall DA.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Tall/Conifer Tall DO.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Tall/Conifer Tall DO.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Tall/Conifer Tall [Albedo].png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Forst/Conifers [BOTD]/Sources/Textures/Billboards/Billboard Tall/Conifer Tall [Albedo].png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Universal Render Pipeline Asset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Universal Render Pipeline Asset.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AiController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Car.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Car.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CarNetworkController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CarNetworkController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CarSync.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CarSync.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/CameraManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/CameraManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/CarManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/CarManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/MultimodeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/MultimodeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/NetworkManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/NetworkManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/Object2Terrain.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/Object2Terrain.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +691,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -36,34 +706,33 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d038881699124df9a9f83b30bdbe99c320e00/a7/7443432e/NetAddress.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f68865d630f84dbe83e4490ea2afd98a176800/fa/5914e7f6/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Project/Rider Project/CityGame/Assets/Scripts/Manager/GameManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Project/Rider Project/CityGame/Assets/Scripts/Manager/InputManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Project/Rider Project/CityGame/Assets/Scripts/Manager/SaveManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Project/Rider Project/CityGame/Assets/Scripts/Manager/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Project/Rider Project/CityGame/Assets/Scripts/UI/GameMenu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/App.config" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/App.config" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Forst/Conifers [BOTD]/Installer/Editor/ConifersInstaller.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Photon/Fusion/Editor/Fusion.Unity.Editor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scripts/AiController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scripts/CarNetworkController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scripts/Manager/CameraManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scripts/Manager/MultimodeManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scripts/Manager/MultimodeManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scripts/Manager/NetworkManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scripts/Manager/NetworkManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/RankingManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scripts/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scripts/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.purchasing@4.11.0/Editor/UnityPurchasingEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Shaders/Lit.shader" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.7/Scripts/Runtime/TMPro_UGUI_Private.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../CarGame_copy/Assets/Scripts/Car.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../CarGame_copy/Assets/Scripts/Manager/CarManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../CarGame_copy/Assets/Scripts/Manager/MultimodeManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CarGame_copy/Assets/Scripts/Manager/MultimodeManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../CarGame_copy/Assets/Scripts/Manager/NetworkManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CarGame_copy/Library/PackageCache/com.unity.purchasing@4.11.0/Editor/UnityPurchasingEditor.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -177,6 +846,11 @@
       <workItem from="1747486374978" duration="16363000" />
       <workItem from="1747511215131" duration="21849000" />
       <workItem from="1747533775676" duration="182000" />
+      <workItem from="1748082332031" duration="35000" />
+      <workItem from="1748144365870" duration="108000" />
+      <workItem from="1748147452723" duration="384000" />
+      <workItem from="1748238270368" duration="1825000" />
+      <workItem from="1748240665534" duration="10107000" />
     </task>
     <task id="LOCAL-00001" summary="merge the branch main">
       <option name="closed" value="true" />
@@ -290,7 +964,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747477355307</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="achieve game room">
+      <option name="closed" value="true" />
+      <created>1748075157211</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1748075157211</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +991,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="develop" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -331,7 +1025,28 @@
     <MESSAGE value="achieve the garage system" />
     <MESSAGE value="improve the experience of driving" />
     <MESSAGE value="modify the garage system" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify the garage system" />
+    <MESSAGE value="achieve game room" />
+    <MESSAGE value="achieve Nitro accelerate" />
+    <option name="LAST_COMMIT_MESSAGE" value="achieve Nitro accelerate" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.unity.purchasing@4.11.0/Editor/UnityPurchasingEditor.cs</url>
+          <line>114</line>
+          <properties documentPath="D:\Users\weixuan\RiderProjects\CarGame\Library\PackageCache\com.unity.purchasing@4.11.0\Editor\UnityPurchasingEditor.cs" containingFunctionPresentation="Method 'IsUdpAssetStorePackageInstalled'">
+            <startOffsets>
+              <option value="4983" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4984" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

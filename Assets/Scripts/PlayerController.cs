@@ -21,42 +21,18 @@ namespace Scripts
           var isTurningRight = Input.GetKey(KeyCode.D);
           var isHandbraking = Input.GetKey(KeyCode.Space);
           var isNitroPressed = Input.GetKey(KeyCode.LeftShift);
-          if (isNitroPressed && car.currentNitro > 0 && isAccelerating) {
-            car.isNitroActive = true;
-            car.currentNitro -= car.nitroConsumptionRate * Time.deltaTime;
-            if (car.currentNitro < 0f)
-            {
-              car.currentNitro = 0f;
-              car.isNitroActive = false;
-            }
-          }
-          else{
-            car.isNitroActive = false;
-            if (car.currentNitro < car.nitroCapacity)
-            {
-              car.currentNitro += car.nitroRechargeRate * Time.deltaTime;
-              if (car.currentNitro > car.nitroCapacity) car.currentNitro = car.nitroCapacity;
-            }
-          }
           if (isAccelerating) {
-            CancelInvoke(nameof(car.DecelerateCar));
-            car.deceleratingCar = false;
             car.GoForward();
           }
           if (isBraking) {
-            CancelInvoke(nameof(car.DecelerateCar));
-            car.deceleratingCar = false;
             car.GoReverse();
           }
           if (isTurningLeft) car.TurnLeft();
           if (isTurningRight) car.TurnRight();
-          car.TryDrift(isHandbraking);
           if (!isAccelerating && !isBraking) car.ThrottleOff();
-          if (!isAccelerating && !isBraking && !isHandbraking && !car.deceleratingCar) {
-            // InvokeRepeating(nameof(car.DecelerateCar), 0f, 0.1f);
-            car.deceleratingCar = true;
-          }
           if (!isTurningLeft && !isTurningRight && car.steeringAxis != 0f) car.ResetSteeringAngle();
+          car.TryDrift(isHandbraking);
+          car.TryNitroActive(isNitroPressed);
           car.UpdateData();
         }
 

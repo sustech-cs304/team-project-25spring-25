@@ -29,8 +29,6 @@ public class CarSync : NetworkBehaviour
                 SteeringAxis = car.steeringAxis,
                 IsDrifting = car.isDrifting
             };
-            // Debug.Log($"[CarSync] 同步车辆: {id} | Pos: {data.Position:F2}, Rot Mag: {data.Rotation:F3}, " +
-            //           $"Vel: {data.Velocity.magnitude:F2}, Drift: {data.IsDrifting}");
             CarStates.Set(id, data);
         }
     }

@@ -12,43 +12,46 @@ namespace Manager
         public NetworkRunner runnerPrefab;
         public NetworkObject rpcControllerPrefab;
         public RpcController rpcController;
-        private NetworkRunner runner;
+        private NetworkRunner networkRunner;
         public List<PlayerRef> connectedPlayers = new List<PlayerRef>();
-        
+        public string roomName;
+        public int playerCount;
         void Awake() {
-            runner = Instantiate(runnerPrefab);
-            runner.ProvideInput = true;
-            runner.AddCallbacks(this);
-            runner.JoinSessionLobby(SessionLobby.Shared);
+            networkRunner = Instantiate(runnerPrefab);
+            networkRunner.ProvideInput = true;
+            networkRunner.AddCallbacks(this);
+            networkRunner.JoinSessionLobby(SessionLobby.Shared);
+            roomName = "RaceRoom";
+            playerCount = 4;
         }
         
         public async void StartHost()
         {
             try
             {
-                await runner.StartGame(new StartGameArgs
+                await networkRunner.StartGame(new StartGameArgs
                 {
                     GameMode = GameMode.Host,
-                    SessionName = "RaceRoom",
+                    SessionName = roomName,
                     Scene = SceneRef.FromIndex(SceneManager.GetActiveScene().buildIndex),
-                    SceneManager = runner.gameObject.AddComponent<NetworkSceneManagerDefault>(),
-                    PlayerCount = 4,
+                    SceneManager = networkRunner.gameObject.AddComponent<NetworkSceneManagerDefault>(),
+                    PlayerCount = playerCount,
                     IsVisible = true,    
                     IsOpen = true
                 });
-                var obj = runner.Spawn(rpcControllerPrefab, Vector3.zero, Quaternion.identity);
+                var obj = networkRunner.Spawn(rpcControllerPrefab, Vector3.zero, Quaternion.identity);
                 rpcController = obj.GetComponent<RpcController>();
             }
             catch (Exception e)
             {
-                throw e; // TODO handle exception
+                throw; 
             }
         }
 
         public NetworkRunner Runner
         {
-            get => runner;
-            set => runner = value;
+            get => networkRunner;
+            set => networkRunner = value;
         }
         public void OnObjectExitAOI(NetworkRunner runner, NetworkObject obj, PlayerRef player)
         {
@@ -64,6 +67,7 @@ namespace Manager
         {
             connectedPlayers.Add(player);
             Debug.Log($"Player {player} joined. Total players: {connectedPlayers.Count}");
+            MultimodeManager.Instance.UpdateRoomUI($"Room: {roomName}\nPlayers: {connectedPlayers.Count}/{playerCount}");
         }
 
         public void OnPlayerLeft(NetworkRunner runner, PlayerRef player)
@@ -133,7 +137,6 @@ namespace Manager
         {
             Debug.Log("Successfully connected to server.");
         }
-
         public void OnSessionListUpdated(NetworkRunner runner, List<SessionInfo> sessionList)
         {
             Debug.Log("Session list updated:");
@@ -141,7 +144,7 @@ namespace Manager
             {
                 Debug.Log($"Session: {session.Name}, Players: {session.PlayerCount}/{session.MaxPlayers}");
             }
-            MultimodeManager.Instance.UpdateRoomListUI(sessionList,this.runner);
+            MultimodeManager.Instance.UpdateRoomListUI(sessionList,networkRunner);
         }
 
         public void OnCustomAuthenticationResponse(NetworkRunner runner, Dictionary<string, object> data)

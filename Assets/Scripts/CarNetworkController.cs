@@ -27,13 +27,13 @@ public class CarNetworkController : NetworkBehaviour
         public bool IsDrifting;
     }
 
-    private CarGhostState ghostState = new CarGhostState();
-    private float syncTimer = 0f;
-    private const float SyncInterval = 0.1f; // 每 0.1 秒同步一次（10 FPS）
+    private CarGhostState ghostState = new();
+    private float syncTimer;
+    private const float SyncInterval = 0.02f; // 每 0.02 秒同步一次（50 FPS）
 
     // 相位滞后距离，单位米，调整追踪距离
     [SerializeField]
-    private float phaseLagDistance = 1.0f;
+    private float phaseLagDistance = 0.5f;
 
     public override void Spawned()
     {        
@@ -112,64 +112,26 @@ public class CarNetworkController : NetworkBehaviour
         car.carRigidbody.angularVelocity = Vector3.Lerp(car.carRigidbody.angularVelocity, ghostState.AngularVelocity, lerpFactor);
 
         car.steeringAxis = Mathf.Lerp(car.steeringAxis, ghostState.SteeringAxis, lerpFactor);
-        switch (ghostState.IsDrifting)
-        {
-            case true:
-                car.PlayDriftEffects();
-                break;
-            case false:
-                car.StopDriftEffects();
-                break;
-        }
+        car.isDrifting = ghostState.IsDrifting;
+        car.PlayDriftEffects();
     }
 
     private void SimulateCar()
     {
-        if (IsNitroPressed && car.currentNitro > 0 && IsAccelerating)
-        {
-            car.isNitroActive = true;
-            car.currentNitro -= car.nitroConsumptionRate * Runner.DeltaTime;
-            if (car.currentNitro < 0f)
-            {
-                car.currentNitro = 0f;
-                car.isNitroActive = false;
-            }
-        }
-        else
-        {
-            car.isNitroActive = false;
-            if (car.currentNitro < car.nitroCapacity)
-            {
-                car.currentNitro += car.nitroRechargeRate * Runner.DeltaTime;
-                if (car.currentNitro > car.nitroCapacity)
-                    car.currentNitro = car.nitroCapacity;
-            }
-        }
-
         if (IsAccelerating)
         {
-            CancelInvoke(nameof(car.DecelerateCar));
-            car.deceleratingCar = false;
             car.GoForward();
         }
         if (IsBraking)
         {
-            CancelInvoke(nameof(car.DecelerateCar));
-            car.deceleratingCar = false;
             car.GoReverse();
         }
         if (IsTurningLeft) car.TurnLeft();
         if (IsTurningRight) car.TurnRight();
-
         car.TryDrift(IsHandbraking);
-
         if (!IsAccelerating && !IsBraking) car.ThrottleOff();
-        if (!IsAccelerating && !IsBraking && !IsHandbraking && !car.deceleratingCar)
-            car.deceleratingCar = true;
-
         if (!IsTurningLeft && !IsTurningRight && car.steeringAxis != 0f)
             car.ResetSteeringAngle();
-
         car.UpdateData();
     }
 

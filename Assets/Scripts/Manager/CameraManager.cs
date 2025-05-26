@@ -10,7 +10,7 @@ namespace Manager
         public Transform loginTarget; // 登录界面旋转目标
         public float rotationSpeed = 30f;
         public float switchTime = 1f;
-        [SerializeField] private Camera camera;
+        [SerializeField] private new Camera camera;
         [SerializeField] private GameObject carCamera;
         private int cameraMode;
         private float switchTimer;

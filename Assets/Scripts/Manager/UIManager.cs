@@ -11,6 +11,7 @@ namespace Manager
     {
         [SerializeField] private Text playerSpeedText;
         [SerializeField] private Text timeText;
+        [SerializeField] private Image Nitro;
         [SerializeField] private GameObject gameMenu;
         [SerializeField] private List<GameObject> displayUI;
         public void SetPlayerSpeedText(int speed)
@@ -20,6 +21,10 @@ namespace Manager
         public void SetTimeText(float time)
         {
             timeText.text = time.ToString("F3") + "s";
+        }
+        public void SetPlayerNitro(float nitro)
+        {
+            Nitro.fillAmount = nitro;
         }
         public void ShowGameMenu()
         {

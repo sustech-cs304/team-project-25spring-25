@@ -30,14 +30,12 @@ namespace Scripts
             if (steering < -0.4f) car.TurnLeft();
             else if (steering > 0.4f) car.TurnRight();
             else if (car.steeringAxis != 0f) car.ResetSteeringAngle();
-            if (car.carSpeed>=maxSpeed && !car.deceleratingCar) {
+            if (car.carSpeed>=maxSpeed) {
                 car.GoReverse();
             }
             else
             {
                 if (distance > brakingDistance) {
-                    CancelInvoke(nameof(car.DecelerateCar));
-                    car.deceleratingCar = false;
                     car.GoForward();
                 }
             }
