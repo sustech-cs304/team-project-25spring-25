@@ -9,15 +9,6 @@ namespace Manager
         // public SettingData settingsData; // 你的ScriptableObject设置数据
         public GameObject settingsPanel; // 设置界面面板
         public Image settingBackgroundImage; // 设置界面的背景Image（需拖拽赋值）
-        
-        // [Header("音频设置")]
-        // public Slider volumeSlider;
-        // public Slider musicSlider;
-        // public Slider sfxSlider;
-        //
-        // [Header("游戏设置")]
-        // public Slider sensitivitySlider;
-        // public Toggle fullscreenToggle;
         private void Start()
         {
             // 初始状态关闭
