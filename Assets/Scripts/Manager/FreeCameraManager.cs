@@ -9,7 +9,7 @@ public class FreelookCameraManager : MonoBehaviour
     
     [Header("Sensitivity Configuration")]
     [Tooltip("Base multiplier for X axis rotation speed")]
-    [SerializeField] private float xAxisSensitivityMultiplier = 1f;
+    [SerializeField] private float xAxisSensitivityMultiplier = 6f;
     [Tooltip("Y axis speed will be X axis speed divided by this value")]
     [SerializeField] private float yAxisDivider = 150f;
     [Tooltip("Smoothness for acceleration/deceleration (seconds)")]
