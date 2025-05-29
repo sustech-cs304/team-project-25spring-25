@@ -9,7 +9,7 @@ public class Car : MonoBehaviour
       [Range(10, 120)] public int maxReverseSpeed = 45; 
       [Range(1, 10)] public int accelerationMultiplier = 2; 
       [Range(10, 45)] public int maxSteeringAngle = 27; 
-      [Range(0.01f, 10f)] public float steeringSpeed = 10f; 
+      [Range(0.01f, 100f)] public float steeringSpeed = 10f; 
       [Range(100, 1000)] public int brakeForce = 350; 
       [Range(0, 1)] public float rollingFrictionCoefficient = 0.01f; 
       [Range(0, 10)] public float airDragCoefficient = 5f; 
@@ -160,7 +160,7 @@ public class Car : MonoBehaviour
       }
     }
     
-    private void SetSteeringAngle(float targetSteeringAxis) {
+    public void SetSteeringAngle(float targetSteeringAxis) {
       steeringAxis = Mathf.Clamp(targetSteeringAxis, -1f, 1f);
       var steeringAngle = steeringAxis * maxSteeringAngle;
       frontLeftCollider.steerAngle = steeringAngle;

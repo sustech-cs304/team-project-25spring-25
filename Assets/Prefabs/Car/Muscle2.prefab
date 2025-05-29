@@ -116,7 +116,8 @@ MonoBehaviour:
   maxSteeringAngle: 35
   steeringSpeed: 0.3
   brakeForce: 550
-  decelerationMultiplier: 2
+  rollingFrictionCoefficient: 0.001
+  airDragCoefficient: 2.7
   bodyMassCenter: {x: 0, y: 0, z: 0}
   frontLeftMesh: {fileID: 8649133034589738184}
   frontLeftCollider: {fileID: 2239677824950174677}
@@ -126,7 +127,7 @@ MonoBehaviour:
   rearLeftCollider: {fileID: 8615825633152659129}
   rearRightMesh: {fileID: 2077481708272809950}
   rearRightCollider: {fileID: 8706808774334851022}
-  useEffects: 1
+  useUI: 0
   RLWTireSkid: {fileID: 7045468751846977024}
   RRWTireSkid: {fileID: 7045468751210077382}
   NitroParticleSystem: {fileID: 0}
@@ -140,7 +141,6 @@ MonoBehaviour:
   carSpeed: 0
   carRigidbody: {fileID: 0}
   steeringAxis: 0
-  deceleratingCar: 0
   currentNitro: 0
   isNitroActive: 0
   isDrifting: 0
