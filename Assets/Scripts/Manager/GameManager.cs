@@ -13,7 +13,7 @@ namespace Manager
             TimeManager.Instance.CurrentTime = 0;
             MenuManager.Instance.ShowGamePanel();
             MenuManager.Instance.HideMenuPanel();
-            CarManager.Instance.InitCarSinglePlayer(4,1);
+            CarManager.Instance.InitCarSinglePlayer(2,1);
             CameraManager.Instance.SetPlayerCamera(CarManager.Instance.GetCarTransform());
         }
         public void InitNetworkRace()
