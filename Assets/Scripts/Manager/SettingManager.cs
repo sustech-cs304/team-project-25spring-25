@@ -6,13 +6,51 @@ namespace Manager
 {
     public class SettingsManager : MonoBehaviour, IPointerClickHandler
     {
-        // public SettingData settingsData; // 你的ScriptableObject设置数据
+        [Header("数据配置")]
+        public SettingData settingsData; // 拖拽赋值你的 ScriptableObject
+
+        [Header("UI 组件")]
         public GameObject settingsPanel; // 设置界面面板
-        public Image settingBackgroundImage; // 设置界面的背景Image（需拖拽赋值）
+        public Image settingBackgroundImage; // 设置界面的背景 Image
+        public Slider sensitivitySlider; // 灵敏度滑动条
+        public Slider volumeSlider; // 音量滑动条
+
         private void Start()
         {
-            // 初始状态关闭
-            // if (settingsPanel != null) settingsPanel.SetActive(false);
+            // 初始化灵敏度滑动条
+            if (sensitivitySlider != null && settingsData != null)
+            {
+                sensitivitySlider.value = settingsData.sensitivity;
+                sensitivitySlider.onValueChanged.AddListener(OnSensitivityChanged);
+            }
+
+            // 初始化音量滑动条
+            if (volumeSlider != null && settingsData != null)
+            {
+                volumeSlider.value = settingsData.volume;
+                volumeSlider.onValueChanged.AddListener(OnVolumeChanged);
+            }
+        }
+
+        // 灵敏度变化回调
+        private void OnSensitivityChanged(float value)
+        {
+            if (settingsData != null)
+            {
+                settingsData.sensitivity = value;
+                Debug.Log($"灵敏度已更新: {value}"); // 可选：调试日志
+            }
+        }
+
+        // 音量变化回调
+        private void OnVolumeChanged(float value)
+        {
+            if (settingsData != null)
+            {
+                settingsData.volume = value;
+                AudioListener.volume = value; // 直接控制全局音量（可选）
+                Debug.Log($"音量已更新: {value}"); // 可选：调试日志
+            }
         }
 
         // 打开设置界面
@@ -27,18 +65,13 @@ namespace Manager
             if (settingsPanel != null) settingsPanel.SetActive(false);
         }
 
-        // 检测全局点击事件
+        // 检测全局点击事件（点击空白处关闭面板）
         public void OnPointerClick(PointerEventData eventData)
         {
-            // 检查点击是否在 settingBackgroundImage 上
-            bool isClickOnImage = RectTransformUtility.RectangleContainsScreenPoint(
+            if (!RectTransformUtility.RectangleContainsScreenPoint(
                 settingBackgroundImage.rectTransform,
                 eventData.position,
-                eventData.pressEventCamera
-            );
-
-            // 如果点击不在 Image 上，则关闭设置界面
-            if (!isClickOnImage)
+                eventData.pressEventCamera))
             {
                 CloseSettings();
             }
