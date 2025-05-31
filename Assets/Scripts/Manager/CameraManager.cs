@@ -41,12 +41,14 @@ namespace Manager
             else if (cameraMode == 1)
             {
                 // 登录摄像机旋转展示
+                loginCamera.enabled = true;
                 loginCamera.transform.RotateAround(loginTarget.position, Vector3.up, rotationSpeed * Time.deltaTime);
                 camera.enabled = false;
             }
             else if (cameraMode == 2)
             {
-                
+                loginCamera.enabled = true;
+                camera.enabled = false;
             }
         }
 
@@ -59,7 +61,7 @@ namespace Manager
         {
             loginCamera.transform.position = new Vector3(0, 2, -6);
             loginCamera.transform.rotation = Quaternion.Euler(20f, 0f, 0f);
-            cameraMode = 2;
+            cameraMode = 3;
         }
         public void OnLogin()
         {
@@ -71,6 +73,11 @@ namespace Manager
             if (cinemachine == null) return;
             cinemachine.LookAt = carTransform;
             cinemachine.Follow = carTransform;
+        }
+
+        public void OnGameExit()
+        {
+            cameraMode = 1;
         }
     }
 }
