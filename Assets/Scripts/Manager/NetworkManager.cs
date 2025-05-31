@@ -27,25 +27,18 @@ namespace Manager
         
         public async void StartHost()
         {
-            try
+            await networkRunner.StartGame(new StartGameArgs
             {
-                await networkRunner.StartGame(new StartGameArgs
-                {
-                    GameMode = GameMode.Host,
-                    SessionName = roomName,
-                    Scene = SceneRef.FromIndex(SceneManager.GetActiveScene().buildIndex),
-                    SceneManager = networkRunner.gameObject.AddComponent<NetworkSceneManagerDefault>(),
-                    PlayerCount = playerCount,
-                    IsVisible = true,    
-                    IsOpen = true
-                });
-                var obj = networkRunner.Spawn(rpcControllerPrefab, Vector3.zero, Quaternion.identity);
-                rpcController = obj.GetComponent<RpcController>();
-            }
-            catch (Exception e)
-            {
-                throw; 
-            }
+                GameMode = GameMode.Host,
+                SessionName = roomName,
+                Scene = SceneRef.FromIndex(SceneManager.GetActiveScene().buildIndex),
+                SceneManager = networkRunner.gameObject.AddComponent<NetworkSceneManagerDefault>(),
+                PlayerCount = playerCount,
+                IsVisible = true,    
+                IsOpen = true
+            });
+            var obj = networkRunner.Spawn(rpcControllerPrefab, Vector3.zero, Quaternion.identity);
+            rpcController = obj.GetComponent<RpcController>();
         }
 
         public NetworkRunner Runner

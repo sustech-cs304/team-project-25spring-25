@@ -4,14 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78889eac-6809-43a2-b93d-020be0b95b99" name="Changes" comment="achieve Nitro accelerate">
+    <list default="true" id="78889eac-6809-43a2-b93d-020be0b95b99" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/shelf/Uncommitted_changes_before_Update_at_2025_5_24_13_59_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/shelf/Uncommitted_changes_before_Update_at_2025_5_24_13_59__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/shelf/Uncommitted_changes_before_Update_at_2025_5_24_16_13_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/shelf/Uncommitted_changes_before_Update_at_2025_5_24_16_13__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car/Muscle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car/Muscle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car/Muscle2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car/Muscle2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car/Roadster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car/Roadster.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car/SUV.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car/SUV.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car/Sports.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car/Sports.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SUSTech-Car-Racing-CarControl/.idea/.idea.SUSTech-Car-Racing-CarControl/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SUSTech-Car-Racing-CarControl/.idea/.idea.SUSTech-Car-Racing-CarControl/.idea/projectSettingsUpdater.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SUSTech-Car-Racing-CarControl/.idea/.idea.SUSTech-Car-Racing-CarControl/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Car.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Car.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/FreeCameraManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/FreeCameraManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/NetworkManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/NetworkManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/SettingManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/SettingManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/GameMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/GameMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Speedometer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Speedometer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +199,11 @@
       <workItem from="1748144365870" duration="108000" />
       <workItem from="1748147452723" duration="384000" />
       <workItem from="1748238270368" duration="1825000" />
-      <workItem from="1748240665534" duration="12290000" />
+      <workItem from="1748240665534" duration="12560000" />
+      <workItem from="1748321457247" duration="65000" />
+      <workItem from="1748674530195" duration="2797000" />
+      <workItem from="1748678821814" duration="1122000" />
+      <workItem from="1748683153352" duration="1378000" />
     </task>
     <task id="LOCAL-00001" summary="merge the branch main">
       <option name="closed" value="true" />
@@ -318,7 +333,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748251319487</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fix Main.unity Error">
+      <option name="closed" value="true" />
+      <created>1748254624021</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1748254624021</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,7 +396,8 @@
     <MESSAGE value="modify the garage system" />
     <MESSAGE value="achieve game room" />
     <MESSAGE value="achieve Nitro accelerate" />
-    <option name="LAST_COMMIT_MESSAGE" value="achieve Nitro accelerate" />
+    <MESSAGE value="fix Main.unity Error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix Main.unity Error" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

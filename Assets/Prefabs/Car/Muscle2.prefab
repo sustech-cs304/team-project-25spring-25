@@ -112,7 +112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 120
   maxReverseSpeed: 45
-  accelerationMultiplier: 6
+  accelerationMultiplier: 7
   maxSteeringAngle: 35
   steeringSpeed: 0.3
   brakeForce: 550
@@ -135,8 +135,9 @@ MonoBehaviour:
   carEngineSound: {fileID: 0}
   tireScreechSound: {fileID: 0}
   nitroCapacity: 100
-  nitroConsumptionRate: 10
-  nitroRechargeRate: 5
+  nitroConsumptionRate: 20
+  nitroDriftingRechargeRate: 20
+  nitroAutoRechargeRate: 5
   nitroBoostMultiplier: 2
   carSpeed: 0
   carRigidbody: {fileID: 0}

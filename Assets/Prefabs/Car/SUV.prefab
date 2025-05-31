@@ -503,12 +503,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 80
   maxReverseSpeed: 45
-  accelerationMultiplier: 6
+  accelerationMultiplier: 7
   maxSteeringAngle: 35
   steeringSpeed: 0.3
   brakeForce: 550
-  decelerationMultiplier: 4
-  handbrakeDriftMultiplier: 10
+  rollingFrictionCoefficient: 0.01
+  airDragCoefficient: 5
   bodyMassCenter: {x: 0, y: 0, z: 0}
   frontLeftMesh: {fileID: 7056119995135616667}
   frontLeftCollider: {fileID: 416552938901889459}
@@ -518,9 +518,7 @@ MonoBehaviour:
   rearLeftCollider: {fileID: 7811808426580139784}
   rearRightMesh: {fileID: 8053122826367256907}
   rearRightCollider: {fileID: 846619418522492586}
-  useEffects: 1
-  RLWParticleSystem: {fileID: 6513152015697920529}
-  RRWParticleSystem: {fileID: 6553451882434384081}
+  useUI: 0
   RLWTireSkid: {fileID: 7865014246151170473}
   RRWTireSkid: {fileID: 8002081786955023754}
   NitroParticleSystem: {fileID: 0}
@@ -528,13 +526,13 @@ MonoBehaviour:
   carEngineSound: {fileID: 0}
   tireScreechSound: {fileID: 0}
   nitroCapacity: 100
-  nitroConsumptionRate: 10
-  nitroRechargeRate: 5
+  nitroConsumptionRate: 20
+  nitroDriftingRechargeRate: 20
+  nitroAutoRechargeRate: 5
   nitroBoostMultiplier: 2
   carSpeed: 0
-  isTractionLocked: 0
+  carRigidbody: {fileID: 0}
   steeringAxis: 0
-  deceleratingCar: 0
   currentNitro: 0
   isNitroActive: 0
   isDrifting: 0
@@ -1279,11 +1277,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4121091811543137509, guid: ddf4ea2625767fd4bb4153e7e4009ad5, type: 3}
   m_PrefabInstance: {fileID: 7156873377614814832}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &6513152015697920529 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 4121091811527957601, guid: ddf4ea2625767fd4bb4153e7e4009ad5, type: 3}
-  m_PrefabInstance: {fileID: 7156873377614814832}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7188737765397810352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1356,10 +1349,5 @@ PrefabInstance:
 --- !u!4 &6553451882419089493 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4121091811543137509, guid: ddf4ea2625767fd4bb4153e7e4009ad5, type: 3}
-  m_PrefabInstance: {fileID: 7188737765397810352}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &6553451882434384081 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 4121091811527957601, guid: ddf4ea2625767fd4bb4153e7e4009ad5, type: 3}
   m_PrefabInstance: {fileID: 7188737765397810352}
   m_PrefabAsset: {fileID: 0}

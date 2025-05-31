@@ -47,7 +47,7 @@ public class FreelookCameraManager : MonoBehaviour
 
     private void Update()
     {
-        if (settingsData != null && !Mathf.Approximately(lastSensitivityValue, settingsData.sensitivity))
+        if (settingsData && !Mathf.Approximately(lastSensitivityValue, settingsData.sensitivity))
         {
             UpdateCameraSensitivity(settingsData.sensitivity);
             lastSensitivityValue = settingsData.sensitivity;
@@ -57,8 +57,8 @@ public class FreelookCameraManager : MonoBehaviour
     private void UpdateCameraSensitivity(float sensitivity)
     {
         // Calculate speeds
-        float xSpeed = sensitivity * xAxisSensitivityMultiplier;
-        float ySpeed = xSpeed / yAxisDivider;
+        var xSpeed = sensitivity * xAxisSensitivityMultiplier;
+        var ySpeed = xSpeed / yAxisDivider;
 
         // Apply to X axis (horizontal rotation)
         freeLookCamera.m_XAxis.m_MaxSpeed = xSpeed;

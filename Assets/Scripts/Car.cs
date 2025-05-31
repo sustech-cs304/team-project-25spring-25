@@ -40,7 +40,8 @@ public class Car : MonoBehaviour
       [Space(10)]
       public float nitroCapacity = 100f;
       public float nitroConsumptionRate = 10f;
-      public float nitroRechargeRate = 5f;
+      public float nitroDriftingRechargeRate = 5f;
+      public float nitroAutoRechargeRate = 5f;
       public float nitroBoostMultiplier = 2f;
       
       public float carSpeed;
@@ -114,8 +115,9 @@ public class Car : MonoBehaviour
         currentNitro -= nitroConsumptionRate * Time.deltaTime;
       }
 
-      if (isDrifting && currentNitro < nitroCapacity) {
-        currentNitro += nitroRechargeRate * Time.deltaTime;
+      if (currentNitro < nitroCapacity) {
+        // currentNitro += nitroAutoRechargeRate * Time.deltaTime;
+        currentNitro += isDrifting? nitroDriftingRechargeRate * Time.deltaTime : 0;
       }
     }
     public void Update()
@@ -124,7 +126,6 @@ public class Car : MonoBehaviour
           UIManager.Instance.SetPlayerSpeedText(Mathf.RoundToInt(Mathf.Abs(carSpeed)));
           UIManager.Instance.SetPlayerNitro(currentNitro/nitroCapacity);
       }
-      ApplyAirResistance();
       ApplyRollingFriction();
       UpdateNitro();
     }
@@ -133,18 +134,13 @@ public class Car : MonoBehaviour
     {
       var velocity = carRigidbody.velocity;
       var frictionForce = rollingFrictionCoefficient * carRigidbody.mass;
+      var dragForce = airDragCoefficient * velocity.magnitude * velocity.magnitude;
       if (velocity.magnitude > 0.01f)
-        SetBrakeTorque(frictionForce/4 + (isDrifting? brakeForce: 0 * 3f));
+        SetBrakeTorque(frictionForce/4 + (isDrifting? brakeForce: 0 * 1.6f) + dragForce);
       else
         carRigidbody.velocity = Vector3.zero;
     }
-
-    private void ApplyAirResistance()
-    {
-      var velocity = carRigidbody.velocity;
-      var dragForce = velocity * (-airDragCoefficient * velocity.magnitude);
-      carRigidbody.AddForce(dragForce);
-    }
+  
     public void CarSounds(){
       if(useSounds){
           if(carEngineSound != null){
@@ -200,7 +196,7 @@ public class Car : MonoBehaviour
       if(localVelocityZ < -1f){
         Brakes();
       }else{
-        if(Mathf.RoundToInt(carSpeed) < (isNitroActive ? 10000f : maxSpeed)){
+        if(Mathf.RoundToInt(carSpeed) < (isNitroActive&&currentNitro>0 ? 10000f : maxSpeed)&&!isDrifting){
           SetBrakeTorque(0);
           SetMotorTorque(accelerationMultiplier * 50f * (isNitroActive&&currentNitro>0 ? nitroBoostMultiplier : 1) * throttleAxis);
         }else {
@@ -248,7 +244,6 @@ public class Car : MonoBehaviour
     public void TryNitroActive(bool isNitroActiveKeyPressed)
     {
       isNitroActive = isNitroActiveKeyPressed;
-      PlayDriftEffects();
     }
     public void PlayDriftEffects()
     {

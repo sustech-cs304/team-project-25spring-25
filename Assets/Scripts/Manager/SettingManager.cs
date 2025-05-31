@@ -14,7 +14,8 @@ namespace Manager
         public Image settingBackgroundImage; // 设置界面的背景 Image
         public Slider sensitivitySlider; // 灵敏度滑动条
         public Slider volumeSlider; // 音量滑动条
-
+        
+        
         private void Start()
         {
             // 初始化灵敏度滑动条
@@ -25,11 +26,9 @@ namespace Manager
             }
 
             // 初始化音量滑动条
-            if (volumeSlider != null && settingsData != null)
-            {
-                volumeSlider.value = settingsData.volume;
-                volumeSlider.onValueChanged.AddListener(OnVolumeChanged);
-            }
+            if (volumeSlider == null || settingsData == null) return;
+            volumeSlider.value = settingsData.volume;
+            volumeSlider.onValueChanged.AddListener(OnVolumeChanged);
         }
 
         // 灵敏度变化回调
