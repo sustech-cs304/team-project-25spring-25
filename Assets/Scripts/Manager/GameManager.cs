@@ -13,6 +13,7 @@ namespace Manager
             TimeManager.Instance.CurrentTime = 0;
             MenuManager.Instance.ShowGamePanel();
             MenuManager.Instance.HideMenuPanel();
+            SettingsManager.Instance.ShowExitButton();
             CarManager.Instance.InitCarSinglePlayer(2,1);
             CameraManager.Instance.SetPlayerCamera(CarManager.Instance.GetCarTransform());
         }
@@ -23,6 +24,7 @@ namespace Manager
             TimeManager.Instance.CurrentTime = 0;
             MenuManager.Instance.ShowGamePanel();
             MenuManager.Instance.HideMenuPanel();
+            SettingsManager.Instance.ShowExitButton();
             CarManager.Instance.InitCarNetwork(NetworkManager.Instance.connectedPlayers);
             CameraManager.Instance.SetPlayerCamera(CarManager.Instance.GetCarTransform());
         }
@@ -32,6 +34,15 @@ namespace Manager
             {
                 UIManager.Instance.HandleClick();
             }
+        }
+
+        public void ExitRace()
+        {
+            MenuManager.Instance.HideGamePanel();
+            MenuManager.Instance.ShowMenuPanel();
+            CarManager.Instance.RemoveCars();
+            CameraManager.Instance.OnGameExit();
+            SettingsManager.Instance.HideExitButton();
         }
     }
 }

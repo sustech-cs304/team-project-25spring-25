@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace Manager
 {
-    public class SettingsManager : MonoBehaviour, IPointerClickHandler
+    public class SettingsManager : Singleton<SettingsManager>, IPointerClickHandler
     {
         [Header("数据配置")]
         public SettingData settingsData; // 拖拽赋值你的 ScriptableObject
@@ -14,7 +14,7 @@ namespace Manager
         public Image settingBackgroundImage; // 设置界面的背景 Image
         public Slider sensitivitySlider; // 灵敏度滑动条
         public Slider volumeSlider; // 音量滑动条
-        
+        public Button exitButton;
         
         private void Start()
         {
@@ -29,6 +29,12 @@ namespace Manager
             if (volumeSlider == null || settingsData == null) return;
             volumeSlider.value = settingsData.volume;
             volumeSlider.onValueChanged.AddListener(OnVolumeChanged);
+            exitButton.onClick.AddListener(OnExitClick);
+        }
+
+        private void OnExitClick()
+        {
+            GameManager.Instance.ExitRace();
         }
 
         // 灵敏度变化回调
@@ -64,6 +70,14 @@ namespace Manager
             if (settingsPanel != null) settingsPanel.SetActive(false);
         }
 
+        public void HideExitButton()
+        {
+            exitButton.gameObject.SetActive(false);
+        }
+        public void ShowExitButton()
+        {
+            exitButton.gameObject.SetActive(true);
+        }
         // 检测全局点击事件（点击空白处关闭面板）
         public void OnPointerClick(PointerEventData eventData)
         {

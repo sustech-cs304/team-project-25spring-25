@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Fusion;
 using Scripts;
 using UnityEngine;
@@ -134,6 +135,15 @@ namespace Manager
         {
             get => carSync;
             set => carSync = value;
+        }
+
+        public void RemoveCars()
+        {
+            foreach (var car in cars.ToList())
+            {
+                cars.Remove(car);
+                Destroy(car.gameObject);
+            }
         }
     }   
 }
