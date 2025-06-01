@@ -37,12 +37,26 @@ namespace Manager
                     car.isPlayer = true;
                     carObj.AddComponent<PlayerController>();  // 本地控制
                     car.useUI = true;
+                    if (MiniMapSystem.Instance == null) {
+                        Debug.LogError("小地图系统未初始化！");
+                        return;
+                    }
+                    // 设置小地图玩家车辆
+                    if (MiniMapSystem.Instance != null)
+                    {
+                        MiniMapSystem.Instance.SetPlayerCar(carObj.transform);
+                        Debug.LogError($"MiniMapSystem已经初始化了");
+                    }
                 }
                 else {
                     aiStartPositions[i - playerNum] = carObj.transform;
                     car.isPlayer = false;
                     var aiCtrl = carObj.AddComponent<AiController>();
                     aiCtrl.targets = checkpoints;
+                    
+                    // 添加敌人标记
+                    if (MiniMapSystem.Instance != null)
+                        MiniMapSystem.Instance.AddEnemyCar(car);
                 }
                 cars.Add(car);
             }
@@ -69,6 +83,18 @@ namespace Manager
                 var car = netObj.GetComponent<Car>();
                 car.isPlayer = true;
                 netObj.transform.SetParent(carsContainer, false);
+                if (netObj.HasInputAuthority)
+                {
+                    // 设置小地图玩家车辆
+                    if (MiniMapSystem.Instance != null)
+                        MiniMapSystem.Instance.SetPlayerCar(netObj.transform);
+                }
+                else
+                {
+                    // 添加敌人标记
+                    if (MiniMapSystem.Instance != null)
+                        MiniMapSystem.Instance.AddEnemyCar(car);
+                }
             }
             var carSyncObject = NetworkManager.Instance.Runner.Spawn(carSyncPrefab);
             carSync = carSyncObject.GetComponent<CarSync>();
@@ -139,6 +165,9 @@ namespace Manager
 
         public void RemoveCars()
         {
+            if (MiniMapSystem.Instance != null)
+                MiniMapSystem.Instance.ClearAllMarkers();
+        
             foreach (var car in cars.ToList())
             {
                 cars.Remove(car);

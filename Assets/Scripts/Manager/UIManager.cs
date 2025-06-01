@@ -14,6 +14,18 @@ namespace Manager
         [SerializeField] private Image Nitro;
         [SerializeField] private GameObject gameMenu;
         [SerializeField] private List<GameObject> displayUI;
+        
+        void Awake() {
+            var uiRoots = new List<GameObject> {
+                playerSpeedText.transform.root.gameObject,
+                timeText.transform.root.gameObject,
+                Nitro.transform.root.gameObject
+            };
+    
+            foreach(var root in uiRoots) {
+                if(root != null) DontDestroyOnLoad(root);
+            }
+        }
         public void SetPlayerSpeedText(int speed)
         {
             playerSpeedText.text = speed.ToString();
