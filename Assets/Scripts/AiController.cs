@@ -18,6 +18,7 @@ namespace Scripts
         }
         private void Update()
         {
+            if (currentTargetIndex + 1 >= targets.Length) return;
             if (targets == null || targets.Length == 0) return;
             var target = targets[currentTargetIndex];
             var toTarget = target.position - transform.position;

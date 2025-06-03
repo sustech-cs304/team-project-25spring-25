@@ -4,7 +4,7 @@ namespace Scripts
 {
     using UnityEngine;
 
-    public class PlayerController : MonoBehaviour
+    public class TestPlayerController : MonoBehaviour
     {
         public TestCar car;
 
