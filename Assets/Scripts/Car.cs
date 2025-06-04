@@ -111,6 +111,12 @@ public class Car : MonoBehaviour
       localVelocityX = transform.InverseTransformDirection(carRigidbody.velocity).x;
       localVelocityZ = transform.InverseTransformDirection(carRigidbody.velocity).z;
       AnimateWheelMeshes();
+      if (useUI) {
+        UIManager.Instance.SetPlayerSpeedText(Mathf.RoundToInt(Mathf.Abs(carSpeed)));
+        // UIManager.Instance.SetPlayerNitro(currentNitro/nitroCapacity);
+      }
+      // ApplyRollingFriction();
+      // UpdateNitro();
     }
 
     public void UpdateNitro()
