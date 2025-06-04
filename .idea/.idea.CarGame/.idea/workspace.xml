@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78889eac-6809-43a2-b93d-020be0b95b99" name="Changes" comment="add nitro effect">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Loader/ScoreLoader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Loader/ScoreLoader.cs.meta" afterDir="false" />
+    <list default="true" id="78889eac-6809-43a2-b93d-020be0b95b99" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CheckPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CheckPoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/CarManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/CarManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/MultimodeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/MultimodeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Materials/台州楼及生科院.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Materials/台州楼及生科院.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Materials/商学院.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Materials/商学院.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main 1.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main 1.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/SplineExtrude_Spline.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/SplineExtrude_Spline.asset.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,10 +55,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Photon/Fusion/Editor/Fusion.Unity.Editor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scenes/Main.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scenes/Main.unity.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scripts/AiController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/MiniMapSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scripts/Manager/MultimodeManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/RankingManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.purchasing@4.11.0/Editor/UnityPurchasingEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Shaders/Lit.shader" root0="SKIP_HIGHLIGHTING" />
@@ -208,7 +206,8 @@
       <workItem from="1748794594989" duration="1325000" />
       <workItem from="1748852367729" duration="100000" />
       <workItem from="1749010793306" duration="213000" />
-      <workItem from="1749011029305" duration="16037000" />
+      <workItem from="1749011029305" duration="16752000" />
+      <workItem from="1749044474574" duration="1208000" />
     </task>
     <task id="LOCAL-00001" summary="merge the branch main">
       <option name="closed" value="true" />
@@ -370,7 +369,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749015426210</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="fix road">
+      <option name="closed" value="true" />
+      <created>1749043416254</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1749043416254</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,7 +436,8 @@
     <MESSAGE value="fix Nitro function" />
     <MESSAGE value="achieve exit game button" />
     <MESSAGE value="add nitro effect" />
-    <option name="LAST_COMMIT_MESSAGE" value="add nitro effect" />
+    <MESSAGE value="fix road" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix road" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
