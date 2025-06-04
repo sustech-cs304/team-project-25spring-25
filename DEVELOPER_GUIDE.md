@@ -52,6 +52,20 @@ Scripts/
 
 ---
 
+## **🧩 Module Responsibilities**
+
+| **Module/Class**             | **Responsibility**                                       |
+| ---------------------------- | -------------------------------------------------------- |
+| PlayerController.cs          | Player car input, drifting (Space), and boosting (Shift) |
+| AiController.cs              | AI car movement and navigation using Unity NavMesh       |
+| RaceManager.cs (in Manager/) | Controls race flow, lap count, game states               |
+| CarNetworkController.cs      | Multiplayer car state synchronization                    |
+| UI/                          | Displays speedometer, minimap, and nitro bar             |
+| CheckPoint.cs                | Triggers for lap progression                             |
+| Loader/                      | Async loading for assets and scenes                      |
+| CameraFollow.cs              | Keeps camera following the player car smoothly           |
+| LoginManager/                | Handles login flow and user data persistence             |
+
 ## 🔧 Tools & Dependencies
 
 The game is developed using Unity and leverages various Unity packages:
@@ -101,6 +115,28 @@ COPY . /app
 WORKDIR /app
 RUN unity -batchmode -buildWindows64Player Build/Game.exe -quit
 ```
+
+## **🚧 Extending the Game**
+
+Add a New Car
+	1.	Create a prefab in Assets/Prefabs/Cars/.
+	2.	Attach the Car script and configure physics.
+	3.	Register it in the garage UI and car selector.
+
+Add a New Race Track
+	1.	Design the environment in Unity Editor.
+	2.	Add CheckPoint components throughout the track.
+	3.	Update RaceManager to recognize the new track.
+
+Add UI Elements
+	1.	Create UI components under Canvas/.
+	2.	Hook up logic in scripts under UI/.
+	3.	Bind data using TextMeshPro and UnityEvents.
+
+## **🛠 Dev Environment**
+	•	Unity Version: 2022.3+
+	•	Code Editor: JetBrains Rider or Visual Studio
+	•	Test Framework: Unity Test Framework + NSubstitute
 
 ## **📝 Coding Guidelines**
 
