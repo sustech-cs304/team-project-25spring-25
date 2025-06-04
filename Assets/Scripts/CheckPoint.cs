@@ -13,6 +13,13 @@ public class CheckPoint : MonoBehaviour
                 renderer.enabled = false;
             }
         }
+    }
 
+    public void Restart()
+    {
+        foreach (var renderer in GetComponentsInChildren<Renderer>())
+        {
+            renderer.enabled = true;
+        }
     }
 }

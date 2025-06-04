@@ -23,7 +23,10 @@ namespace Manager
         {
             var checkpoints = new Transform[checkpointParent.childCount];
             for (var i = 0; i < checkpointParent.childCount; i++)
+            {
                 checkpoints[i] = checkpointParent.GetChild(i);
+                checkpointParent.GetChild(i).GetComponent<CheckPoint>().Restart();
+            }
             playerStartPositions = new Transform[playerNum];
             aiStartPositions = new Transform[carNum - playerNum];
             for (var i = 0; i < carNum; i++)

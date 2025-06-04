@@ -64,7 +64,6 @@ namespace Manager
         }
         private void Start()
         {
-            
             createRoomButton.onClick.AddListener(OnCreateRoomClicked);
             startGameButton.onClick.AddListener(OnStartGameClicked);
             startGameButton.gameObject.SetActive(false);
