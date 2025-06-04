@@ -16,6 +16,7 @@ namespace Manager
         public GameObject multiModePanel;  // 多人模式界面
         public GameObject settingsPanel;   // 设置界面
         public GameObject rankingPanel;// 排行榜界面
+        public GameObject levelPanel;// 排行榜界面
         public GameObject gamePanel;
 
         private void Awake()
@@ -25,6 +26,7 @@ namespace Manager
             if (multiModePanel != null) multiModePanel.SetActive(false);
             if (settingsPanel != null) settingsPanel.SetActive(false);
             if (rankingPanel != null) rankingPanel.SetActive(false);
+            if (levelPanel != null) levelPanel.SetActive(false);
             if (gamePanel != null) gamePanel.SetActive(false);
             // 添加按钮事件监听
             singleModeButton.onClick.AddListener(OnSingleModeClicked);
@@ -50,15 +52,11 @@ namespace Manager
         /// </summary>
         private void OnSingleModeClicked()
         {
-            // 隐藏菜单界面
-            menuPanel.SetActive(false);
             // 初始化游戏（根据你的GameManager实现调整）
             if (GameManager.Instance != null)
             {
-                GameManager.Instance.InitSingleRace();
+                levelPanel.SetActive(true);
             }
-            
-            Debug.Log("单机模式游戏开始");
         }
         
         
@@ -115,6 +113,7 @@ namespace Manager
             }
             
             rankingPanel.SetActive(true);
+            RankingManager.Instance.UpdateText();
         }
         /// <summary>
         /// 点击多人模式按钮的处理

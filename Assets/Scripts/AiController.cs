@@ -11,14 +11,14 @@ namespace Scripts
         public float switchTargetDistance = 10f;
         public float maxSpeed = 90f;
         public float maxSteeringAngle = 90f;
-        private int currentTargetIndex = 0;
+        private int currentTargetIndex;
         private void Awake()
         {
             car = GetComponent<Car>();
         }
         private void Update()
         {
-            if (currentTargetIndex + 1 >= targets.Length) return;
+            if (currentTargetIndex >= targets.Length) return;
             if (targets == null || targets.Length == 0) return;
             var target = targets[currentTargetIndex];
             var toTarget = target.position - transform.position;
@@ -35,7 +35,6 @@ namespace Scripts
             var directionToNextTarget = toNextTarget.normalized;
 
             var turnAngle = Vector3.Angle(directionToTarget, directionToNextTarget);
-            Debug.Log(turnAngle);
             bool isCorner = turnAngle > 60f;
             if (distance <= switchTargetDistance) currentTargetIndex = (currentTargetIndex + 1) % targets.Length;
             // if (steering < -0.4f) car.TurnLeft();

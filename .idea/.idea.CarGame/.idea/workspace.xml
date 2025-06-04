@@ -5,18 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78889eac-6809-43a2-b93d-020be0b95b99" name="Changes" comment="fix road">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LevelMenu.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LevelMenu.cs.meta" afterDir="false" />
+      <changelist_data name="cc" email="12212739@mail.sustech.edu.cn" automatic="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/FinishManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/FinishManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/LevelManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/LevelManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/ScoreManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Materials/台州楼及生科院.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Materials/台州楼及生科院.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Materials/商学院.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Materials/商学院.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/jcRoad22mA_149.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/jcRoad22mA_149.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/jcRoadT22mA_a_1604.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/jcRoadT22mA_a_1604.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car/Muscle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car/Muscle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car/Muscle2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car/Muscle2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car/Roadster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car/Roadster.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car/SUV.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car/SUV.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car/Sports.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car/Sports.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main111.unity" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main111.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AiController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Car.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Car.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CheckPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CheckPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Loader/ScoreLoader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Loader/ScoreLoader.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/CarManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/CarManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/GameMenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameMenuManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/GarageManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GarageManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/RankingManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/RankingManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LevelMenu.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LevelMenu.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/building_interior.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/building_interior.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +66,11 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/f2/6c20a64b/NotImplementedException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d038881699124df9a9f83b30bdbe99c320e00/a7/7443432e/NetAddress.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f68865d630f84dbe83e4490ea2afd98a176800/fa/5914e7f6/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Project/Rider Project/CityGame/Assets/Scripts/Loader/CityLoader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Project/Rider Project/CityGame/Assets/Scripts/Loader/SaveLoader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Project/Rider Project/CityGame/Assets/Scripts/Manager/GameManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Project/Rider Project/CityGame/Assets/Scripts/Manager/InputManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Project/Rider Project/CityGame/Assets/Scripts/Manager/SaveManager.cs" root0="SKIP_HIGHLIGHTING" />
@@ -58,6 +80,7 @@
     <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scenes/Main 1.unity.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scenes/Main.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scenes/Main.unity.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scripts/AiController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/MiniMapSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/RankingManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -101,7 +124,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeLensConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -210,7 +233,7 @@
       <workItem from="1748852367729" duration="100000" />
       <workItem from="1749010793306" duration="213000" />
       <workItem from="1749011029305" duration="16752000" />
-      <workItem from="1749044474574" duration="3529000" />
+      <workItem from="1749044474574" duration="24475000" />
     </task>
     <task id="LOCAL-00001" summary="merge the branch main">
       <option name="closed" value="true" />
@@ -388,7 +411,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749046678236</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="fix road">
+      <option name="closed" value="true" />
+      <created>1749051026065</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1749051026065</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,19 +438,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/develop" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -446,9 +465,10 @@
     <MESSAGE value="fix Main.unity Error" />
     <MESSAGE value="fix Nitro function" />
     <MESSAGE value="achieve exit game button" />
-    <MESSAGE value="add nitro effect" />
     <MESSAGE value="fix road" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix road" />
+    <MESSAGE value="add nitro effect" />
+    <MESSAGE value="Modify checkpoints locations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify checkpoints locations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

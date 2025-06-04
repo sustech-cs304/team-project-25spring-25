@@ -66,7 +66,10 @@ public class Car : MonoBehaviour
       public bool isNitroEffectPlay;
       public bool isDrifting;
       public bool isPlayer;
-    private void Awake()
+      public Vector3 resetPos;
+      public Quaternion resetRot;
+
+      private void Awake()
     {
         useUI = false;
         currentNitro = 0;
@@ -283,9 +286,20 @@ public class Car : MonoBehaviour
     }
     public void ResetPhysics()
     {
-      var rb = GetComponent<Rigidbody>();
-      if (rb == null) return;
-      rb.velocity = Vector3.zero;
-      rb.angularVelocity = Vector3.zero;
+      carRigidbody.velocity = Vector3.zero;
+      carRigidbody.angularVelocity = Vector3.zero;
+    }
+
+    public void ResetCar()
+    {
+      ResetPhysics();
+      transform.position = resetPos;
+      transform.rotation = resetRot;
+    }
+
+    public void SetResetValue(Vector3 pos, Quaternion rot)
+    {
+      resetPos = pos;
+      resetRot = rot;
     }
 }

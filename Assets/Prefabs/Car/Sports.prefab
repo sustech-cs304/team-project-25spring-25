@@ -470,22 +470,27 @@ MonoBehaviour:
   useUI: 0
   RLWTireSkid: {fileID: 7867986103829180091}
   RRWTireSkid: {fileID: 175436634213028080}
-  NitroParticleSystem: {fileID: 0}
+  NitroParticleSystem:
+  - {fileID: 1837100904085896529}
+  - {fileID: 4424077073726567673}
   useSounds: 0
   carEngineSound: {fileID: 0}
   tireScreechSound: {fileID: 0}
-  nitroCapacity: 100
+  nitroCapacity: 90
   nitroConsumptionRate: 20
-  nitroDriftingRechargeRate: 20
+  nitroDriftingRechargeRate: 25
   nitroAutoRechargeRate: 5
-  nitroBoostMultiplier: 2
+  nitroBoostMultiplier: 2.5
   carSpeed: 0
   carRigidbody: {fileID: 0}
   steeringAxis: 0
   currentNitro: 0
   isNitroActive: 0
+  isNitroEffectPlay: 0
   isDrifting: 0
   isPlayer: 0
+  resetPos: {x: 0, y: 0, z: 0}
+  resetRot: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &3960200389269561896
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,8 +856,8 @@ Transform:
   - {fileID: 5417804430849575548}
   - {fileID: 7867986103829180090}
   - {fileID: 175436634213028081}
-  - {fileID: 7429316186372891704}
-  - {fileID: 1447461897687744176}
+  - {fileID: 1837100904105293841}
+  - {fileID: 4424077073740722617}
   m_Father: {fileID: 3329180211389233846}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7764956444639209426
@@ -1114,7 +1119,7 @@ TrailRenderer:
   m_CorrespondingSourceObject: {fileID: 7344874181333496816, guid: ab4ea67cd9337c341af0bd7182c60f92, type: 3}
   m_PrefabInstance: {fileID: 639106028090203467}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1447461897687344180
+--- !u!1001 &1837100904104895125
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1124,7 +1129,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100004, guid: b129faff9037943418e319f01ef35913, type: 3}
       propertyPath: m_Name
-      value: Fire2
+      value: Fire1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b129faff9037943418e319f01ef35913, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1148,7 +1153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: b129faff9037943418e319f01ef35913, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.50000036
+      value: 0.5000002
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: b129faff9037943418e319f01ef35913, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1243,6 +1248,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: b129faff9037943418e319f01ef35913, type: 3}
+      propertyPath: VelocityModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800004, guid: b129faff9037943418e319f01ef35913, type: 3}
+      propertyPath: VelocityModule.y.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800004, guid: b129faff9037943418e319f01ef35913, type: 3}
+      propertyPath: VelocityModule.y.minScalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800004, guid: b129faff9037943418e319f01ef35913, type: 3}
       propertyPath: InitialModule.maxNumParticles
       value: 80
       objectReference: {fileID: 0}
@@ -1252,7 +1269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: b129faff9037943418e319f01ef35913, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 60
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: b129faff9037943418e319f01ef35913, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
@@ -1332,10 +1349,15 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b129faff9037943418e319f01ef35913, type: 3}
---- !u!4 &1447461897687744176 stripped
+--- !u!198 &1837100904085896529 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 19800004, guid: b129faff9037943418e319f01ef35913, type: 3}
+  m_PrefabInstance: {fileID: 1837100904104895125}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1837100904105293841 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400004, guid: b129faff9037943418e319f01ef35913, type: 3}
-  m_PrefabInstance: {fileID: 1447461897687344180}
+  m_PrefabInstance: {fileID: 1837100904104895125}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3718902299652716364
 PrefabInstance:
@@ -1411,7 +1433,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4121091811543137509, guid: ddf4ea2625767fd4bb4153e7e4009ad5, type: 3}
   m_PrefabInstance: {fileID: 3718902299652716364}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &7429316186373291708
+--- !u!1001 &4424077073740852029
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1421,7 +1443,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100004, guid: b129faff9037943418e319f01ef35913, type: 3}
       propertyPath: m_Name
-      value: Fire1
+      value: Fire2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b129faff9037943418e319f01ef35913, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1445,7 +1467,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: b129faff9037943418e319f01ef35913, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.5000002
+      value: -0.5000005
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: b129faff9037943418e319f01ef35913, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1453,7 +1475,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: b129faff9037943418e319f01ef35913, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.6000004
+      value: -2.6000018
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: b129faff9037943418e319f01ef35913, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1540,6 +1562,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: b129faff9037943418e319f01ef35913, type: 3}
+      propertyPath: VelocityModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800004, guid: b129faff9037943418e319f01ef35913, type: 3}
       propertyPath: InitialModule.maxNumParticles
       value: 80
       objectReference: {fileID: 0}
@@ -1549,7 +1575,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: b129faff9037943418e319f01ef35913, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 60
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: b129faff9037943418e319f01ef35913, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
@@ -1629,10 +1655,15 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b129faff9037943418e319f01ef35913, type: 3}
---- !u!4 &7429316186372891704 stripped
+--- !u!198 &4424077073726567673 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 19800004, guid: b129faff9037943418e319f01ef35913, type: 3}
+  m_PrefabInstance: {fileID: 4424077073740852029}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4424077073740722617 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400004, guid: b129faff9037943418e319f01ef35913, type: 3}
-  m_PrefabInstance: {fileID: 7429316186373291708}
+  m_PrefabInstance: {fileID: 4424077073740852029}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7458377248010773248
 PrefabInstance:

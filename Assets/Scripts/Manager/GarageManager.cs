@@ -13,12 +13,15 @@ namespace Manager
         [SerializeField] private GameObject map;
         [SerializeField] private GameObject garage;
         [SerializeField] private GameObject garageUI;
+        [SerializeField] private GameObject carInfoUI;
+        [SerializeField] private Text carInfo;
         [SerializeField] private Button leftButton;
         [SerializeField] private Button rightButton;
         [SerializeField] private Button confirmButton;
         
         [SerializeField] private float rotationSpeed = 20f;
         [SerializeField] private int currentIndex;
+        [SerializeField] private Quaternion carRotation;
         [SerializeField] private bool garageMode;
 
         public void Init()
@@ -27,9 +30,11 @@ namespace Manager
             map.SetActive(false);
             garage.SetActive(true);
             MenuManager.Instance.HideMenuPanel();
-            garageUI.SetActive(true);
             garageMode = true;
-            ShowVehicle(currentIndex);
+            carInfoUI.gameObject.SetActive(true);
+            carRotation = Quaternion.Euler(0, 0, 0);
+            ShowVehicle();
+            garageUI.SetActive(true);
         }
 
         public void Exit()
@@ -38,6 +43,7 @@ namespace Manager
             {
                 Destroy(currentCar);
             }
+            carInfoUI.gameObject.SetActive(false);
             CameraManager.Instance.OnLogin();
             garageUI.SetActive(false);
             map.SetActive(true);
@@ -46,10 +52,11 @@ namespace Manager
             garageMode = false;
             
         }
-        void Start()
+        void Awake()
         {
             garageMode = false;
             garageUI.SetActive(false);
+            carInfoUI.SetActive(false);
             leftButton.onClick.AddListener(() => ChangeVehicle(-1));
             rightButton.onClick.AddListener(() => ChangeVehicle(1));
             confirmButton.onClick.AddListener(Confirm);
@@ -67,13 +74,30 @@ namespace Manager
                 Destroy(currentCar);
             }
             currentIndex = (currentIndex + direction + cars.Length) % cars.Length;
-            ShowVehicle(currentIndex);
+            ShowVehicle();
         }
 
-        void ShowVehicle(int index)
+        void ShowVehicle()
         {
-            currentCar = Instantiate(cars[index], new Vector3(0,0,0), Quaternion.identity);
-            currentCar.transform.localRotation = Quaternion.identity;
+            
+            if(currentCar) carRotation = currentCar.transform.rotation;
+            currentCar = Instantiate(cars[currentIndex], new Vector3(0,0,0), Quaternion.identity);
+            currentCar.transform.rotation = carRotation;
+            UpdateCarInfo();
+        }
+        private void UpdateCarInfo()
+        {
+            var car = currentCar.GetComponent<Car>();
+            carInfo.text = 
+                $"- Name: {car.name.Replace("(Clone)","")}\n" +
+                $"- Max Speed: {car.maxSpeed} km/h\n" +
+                $"- Acceleration: x{car.accelerationMultiplier}\n" +
+                $"- Steering Angle: {car.maxSteeringAngle}°\n" +
+                $"- Steering Speed: {car.steeringSpeed:F2}\n" +
+                $"- Brake Force: {car.brakeForce} N\n" +
+                $"- Nitro Capacity: {car.nitroCapacity:F1}\n" +
+                $"- Drifting Recharge: {car.nitroDriftingRechargeRate:F1}\n" +
+                $"- Boost Multiplier: {car.nitroBoostMultiplier:F1}\n";
         }
 
         void Confirm()

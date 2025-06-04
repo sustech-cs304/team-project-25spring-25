@@ -1,20 +1,24 @@
 ﻿
 using Fusion;
+using Loader;
 using UnityEngine;
 
 namespace Manager
 {
     public class GameManager : Singleton<GameManager> 
     {
-        public void InitSingleRace()
+        public string playerName = "swk";
+        public int level;
+        public void InitSingleRace(int level)
         {
+            this.level = level;
             CameraManager.Instance.OnGameStart();
             TimeManager.Instance.ResumeGame();
             TimeManager.Instance.CurrentTime = 0;
             MenuManager.Instance.ShowGamePanel();
             MenuManager.Instance.HideMenuPanel();
             SettingsManager.Instance.ShowExitButton();
-            CarManager.Instance.InitCarSinglePlayer(2,1);
+            CarManager.Instance.InitCarSinglePlayer(2,1,level);
             CameraManager.Instance.SetPlayerCamera(CarManager.Instance.GetCarTransform());
         }
         public void InitNetworkRace()
@@ -27,9 +31,6 @@ namespace Manager
             SettingsManager.Instance.ShowExitButton();
             CarManager.Instance.InitCarNetwork(NetworkManager.Instance.connectedPlayers);
             CameraManager.Instance.SetPlayerCamera(CarManager.Instance.GetCarTransform());
-        }
-        public void FinishRace()
-        {
         }
         public void HandleClick()
         {
@@ -46,6 +47,16 @@ namespace Manager
             CarManager.Instance.RemoveCars();
             CameraManager.Instance.OnGameExit();
             SettingsManager.Instance.HideExitButton();
+        }
+
+        public void GameOver(int scoreCheck,int macScoreCheck)
+        {
+            
+            var score = TimeManager.Instance.CurrentTime + (macScoreCheck - scoreCheck) * 3;
+            FinishManager.Instance.UpdateText(score);
+            FinishManager.Instance.ShowFinishPanel();
+            ScoreManager.Instance.AddScore(playerName, scoreCheck,score );
+            ScoreManager.Instance.SaveScoreData();
         }
     }
 }

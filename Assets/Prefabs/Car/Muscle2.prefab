@@ -151,6 +151,8 @@ MonoBehaviour:
   isNitroEffectPlay: 0
   isDrifting: 0
   isPlayer: 0
+  resetPos: {x: 0, y: 0, z: 0}
+  resetRot: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &934883528070179459
 GameObject:
   m_ObjectHideFlags: 0
@@ -1486,11 +1488,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: b129faff9037943418e319f01ef35913, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: b129faff9037943418e319f01ef35913, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 60
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: b129faff9037943418e319f01ef35913, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
@@ -1726,11 +1728,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: b129faff9037943418e319f01ef35913, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: b129faff9037943418e319f01ef35913, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 60
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: b129faff9037943418e319f01ef35913, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b

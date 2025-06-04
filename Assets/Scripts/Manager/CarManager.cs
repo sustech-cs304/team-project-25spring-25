@@ -12,16 +12,25 @@ namespace Manager
         public GameObject carPrefab;               // 本地单机Prefab
         public NetworkObject networkCarPrefab;     // 联网车Prefab，需带NetworkObject组件
         public NetworkObject carSyncPrefab;        // 联网车同步Prefab，需带NetworkObject组件
+        public List<Transform> checkpointParents;
         public Transform checkpointParent;
+        public List<Vector3> startingPoints;
+        public List<Vector3> startingRots;
+        public List<Vector3> startingOffsets;
         public Transform carsContainer;
         private List<Car> cars = new();
         private Car playerCar;
         private Transform[] playerStartPositions;
         private Transform[] aiStartPositions;
         private CarSync carSync;
-        public void InitCarSinglePlayer(int carNum, int playerNum)
+        public void InitCarSinglePlayer(int carNum, int playerNum,int level)
         {
+            checkpointParent = checkpointParents[level];
+            var pos = startingPoints[level];
+            var rot = startingRots[level];
+            var offset = startingOffsets[level];
             var checkpoints = new Transform[checkpointParent.childCount];
+            checkpointParent.gameObject.SetActive(true);
             for (var i = 0; i < checkpointParent.childCount; i++)
             {
                 checkpoints[i] = checkpointParent.GetChild(i);
@@ -31,14 +40,15 @@ namespace Manager
             aiStartPositions = new Transform[carNum - playerNum];
             for (var i = 0; i < carNum; i++)
             {
-                var spawnPos = new Vector3(187 + i * 2, -50, 680 + i * 0.8f);
-                var spawnRot = Quaternion.Euler(0, 160, 0);
+                var spawnPos = pos + i * offset;
+                var spawnRot = Quaternion.Euler(rot);
                 var carObj = Instantiate(carPrefab, spawnPos, spawnRot, carsContainer);
                 var car = carObj.GetComponent<Car>();
                 if (i < playerNum) {
                     playerStartPositions[i] = carObj.transform;
                     car.isPlayer = true;
-                    carObj.AddComponent<PlayerController>();  // 本地控制
+                    var playerCtrl = carObj.AddComponent<PlayerController>();  // 本地控制
+                    playerCtrl.SetCheckPoints(checkpoints);
                     car.useUI = true;
                     if (MiniMapSystem.Instance == null) {
                         Debug.Log("小地图系统未初始化！");
@@ -167,12 +177,12 @@ namespace Manager
         {
             if (MiniMapSystem.Instance != null)
                 MiniMapSystem.Instance.ClearAllMarkers();
-        
             foreach (var car in cars.ToList())
             {
                 cars.Remove(car);
                 Destroy(car.gameObject);
             }
+            checkpointParent.gameObject.SetActive(false);
         }
     }   
 }
