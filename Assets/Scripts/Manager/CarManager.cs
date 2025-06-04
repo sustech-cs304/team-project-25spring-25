@@ -83,18 +83,6 @@ namespace Manager
                 var car = netObj.GetComponent<Car>();
                 car.isPlayer = true;
                 netObj.transform.SetParent(carsContainer, false);
-                if (netObj.HasInputAuthority)
-                {
-                    // 设置小地图玩家车辆
-                    if (MiniMapSystem.Instance != null)
-                        MiniMapSystem.Instance.SetPlayerCar(netObj.transform);
-                }
-                else
-                {
-                    // 添加敌人标记
-                    if (MiniMapSystem.Instance != null)
-                        MiniMapSystem.Instance.AddEnemyCar(car);
-                }
             }
             var carSyncObject = NetworkManager.Instance.Runner.Spawn(carSyncPrefab);
             carSync = carSyncObject.GetComponent<CarSync>();
@@ -142,6 +130,15 @@ namespace Manager
             {
                 playerCar = car;
                 car.useUI = true;
+                // 设置小地图玩家车辆(绿色)
+                if (MiniMapSystem.Instance != null)
+                    MiniMapSystem.Instance.SetPlayerCar(car.transform);
+            }
+            else
+            {
+                // 添加敌人标记(红色)
+                if (MiniMapSystem.Instance != null)
+                    MiniMapSystem.Instance.AddEnemyCar(car);
             }
             cars.Add(car);
         }

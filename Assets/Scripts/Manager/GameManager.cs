@@ -14,7 +14,7 @@ namespace Manager
             MenuManager.Instance.ShowGamePanel();
             MenuManager.Instance.HideMenuPanel();
             SettingsManager.Instance.ShowExitButton();
-            CarManager.Instance.InitCarSinglePlayer(2,1);
+            CarManager.Instance.InitCarSinglePlayer(4,1);
             CameraManager.Instance.SetPlayerCamera(CarManager.Instance.GetCarTransform());
         }
         public void InitNetworkRace()
