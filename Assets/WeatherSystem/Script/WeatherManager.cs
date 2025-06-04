@@ -49,6 +49,7 @@ public class WeatherManager : MonoBehaviour {
             case WeatherType.Sunny:
                 rainParticle.SetActive(false);
                 volume.profile = sunnyProfile;
+                ambientAudioSource.clip = null; // 停止雨声
                 break;
             case WeatherType.Rainy:
                 volume.profile = rainyProfile;
