@@ -29,12 +29,12 @@ namespace Scripts
             car.SetSteeringAngle(angleToTarget / maxSteeringAngle);
             // var steering = Mathf.Clamp(angleToTarget / maxSteeringAngle, -1f, 1f);
 
-            int nextTargetIndex = (currentTargetIndex + 1) % targets.Length;
+            var nextTargetIndex = (currentTargetIndex + 1) % targets.Length;
             var nextTarget = targets[nextTargetIndex];
             var toNextTarget = nextTarget.position - target.position;
             var directionToNextTarget = toNextTarget.normalized;
 
-            float turnAngle = Vector3.Angle(directionToTarget, directionToNextTarget);
+            var turnAngle = Vector3.Angle(directionToTarget, directionToNextTarget);
             Debug.Log(turnAngle);
             bool isCorner = turnAngle > 60f;
             if (distance <= switchTargetDistance) currentTargetIndex = (currentTargetIndex + 1) % targets.Length;

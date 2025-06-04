@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Manager;
 using UnityEngine;
 using UnityEngine.UI;
@@ -29,7 +30,7 @@ public class Car : MonoBehaviour
       public bool useUI;
       public TrailRenderer RLWTireSkid;
       public TrailRenderer RRWTireSkid;
-      public ParticleSystem NitroParticleSystem;
+      public List<ParticleSystem> NitroParticleSystem;
       
       [Space(10)]
       public bool useSounds;
@@ -62,6 +63,7 @@ public class Car : MonoBehaviour
       private float RRWextremumSlip;
       public float currentNitro;
       public bool isNitroActive;
+      public bool isNitroEffectPlay;
       public bool isDrifting;
       public bool isPlayer;
     private void Awake()
@@ -86,7 +88,10 @@ public class Car : MonoBehaviour
         }
         if(RLWTireSkid != null) RLWTireSkid.emitting = false;
         if(RRWTireSkid != null) RRWTireSkid.emitting = false;
-        if(NitroParticleSystem != null) NitroParticleSystem.Stop();
+        foreach (var nitroParticle in NitroParticleSystem)
+        {
+          nitroParticle.Stop();
+        }
     }
     private void InitializeWheelFriction(WheelCollider collider, ref WheelFrictionCurve wheelFriction, ref float extremumSlip)
     {
@@ -244,11 +249,31 @@ public class Car : MonoBehaviour
     public void TryNitroActive(bool isNitroActiveKeyPressed)
     {
       isNitroActive = isNitroActiveKeyPressed;
+      PlayNitroEffects();
     }
     public void PlayDriftEffects()
     {
       RLWTireSkid.emitting = isDrifting;
       RRWTireSkid.emitting = isDrifting;
+    }
+    public void PlayNitroEffects()
+    {
+      if (isNitroActive && currentNitro>0 && !isNitroEffectPlay)
+      {
+        isNitroEffectPlay = true;
+        foreach (var nitroParticle in NitroParticleSystem)
+        {
+          nitroParticle.Play();
+        }
+      }
+      else if (!isNitroActive && isNitroEffectPlay)
+      {
+        isNitroEffectPlay = false;
+        foreach (var nitroParticle in NitroParticleSystem)
+        {
+          nitroParticle.Stop();
+        }
+      }
     }
     public void ResetPhysics()
     {

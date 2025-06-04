@@ -4,13 +4,462 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78889eac-6809-43a2-b93d-020be0b95b99" name="Changes" comment="fix Nitro function">
+    <list default="true" id="78889eac-6809-43a2-b93d-020be0b95b99" name="Changes" comment="add nitro effect">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/shelf/Uncommitted_changes_before_Update_at_2025_5_31_17_29_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/shelf/Uncommitted_changes_before_Update_at_2025_5_31_17_29__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/shelf/Uncommitted_changes_before_Update_at_2025_6_1_2_04_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/shelf/Uncommitted_changes_before_Update_at_2025_6_1_2_04__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/shelf/Uncommitted_changes_before_Update_at_2025_6_4_12_20_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/shelf/Uncommitted_changes_before_Update_at_2025_6_4_12_20__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Fire.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Fire/Gray Smoke.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Fire/Gray Smoke/WFX_GazFireBig (Gray Smoke).prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Fire/Gray Smoke/WFX_GazFireBig (Gray Smoke).prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Bullet Holes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Fire.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Fire/Gray Smoke.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Fire/Gray Smoke/WFX_GazFireBig (Gray Smoke).prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Fire/Gray Smoke/WFX_GazFireBig (Gray Smoke).prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Flames.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Flames/WFX_M_ExplosionFlames Add.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Flames/WFX_M_ExplosionFlames Add.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Flames/WFX_M_FlameBig Add.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Flames/WFX_M_FlameBig Add.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Flames/WFX_M_FlameMine Add.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Flames/WFX_M_FlameMine Add.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Flames/WFX_M_FlameSmall 4F Add.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Flames/WFX_M_FlameSmall 4F Add.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Flames/WFX_M_FlameSmall Add.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Flames/WFX_M_FlameSmall Add.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Flames/WFX_M_FlameSmall ScrollAdd.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Flames/WFX_M_FlameSmall ScrollAdd.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Flames/WFX_M_FlameThrower Stream.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Flames/WFX_M_FlameThrower Stream.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Flames/WFX_M_NukeFlames ScrollAdd.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Flames/WFX_M_NukeFlames ScrollAdd.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Flames/WFX_M_StarFlames.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Flames/WFX_M_StarFlames.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Impacts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Impacts/WFX_M_Impact Debris.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Impacts/WFX_M_Impact Debris.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Impacts/WFX_M_Impact Smoke.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Impacts/WFX_M_Impact Smoke.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Impacts/WFX_M_Impact WoodDebris.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Impacts/WFX_M_Impact WoodDebris.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Impacts/WFX_M_Sparks Metal.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Impacts/WFX_M_Sparks Metal.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Flames.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Flames/WFX_M_ExplosionFlames Add.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Flames/WFX_M_ExplosionFlames Add.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Flames/WFX_M_FlameBig Add.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Flames/WFX_M_FlameBig Add.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Flames/WFX_M_FlameMine Add.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Flames/WFX_M_FlameMine Add.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Flames/WFX_M_FlameSmall 4F Add.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Flames/WFX_M_FlameSmall 4F Add.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Flames/WFX_M_FlameSmall Add.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Flames/WFX_M_FlameSmall Add.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Flames/WFX_M_FlameSmall ScrollAdd.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Flames/WFX_M_FlameSmall ScrollAdd.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Flames/WFX_M_FlameThrower Stream.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Flames/WFX_M_FlameThrower Stream.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Flames/WFX_M_NukeFlames ScrollAdd.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Flames/WFX_M_NukeFlames ScrollAdd.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Flames/WFX_M_StarFlames.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Flames/WFX_M_StarFlames.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Impacts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Impacts/WFX_M_Impact Debris.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Impacts/WFX_M_Impact Debris.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Impacts/WFX_M_Impact Smoke.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Impacts/WFX_M_Impact Smoke.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Impacts/WFX_M_Impact WoodDebris.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Impacts/WFX_M_Impact WoodDebris.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Impacts/WFX_M_Sparks Metal.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Impacts/WFX_M_Sparks Metal.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Misc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Misc/WFX_M_GlowCircle Add.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Misc/WFX_M_GlowCircle Add.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Misc/WFX_M_GlowPalet Add.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Misc/WFX_M_GlowPalet Add.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Misc/WFX_M_GroundGlow Add.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Misc/WFX_M_GroundGlow Add.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Misc/WFX_M_SmallDots Add.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Misc/WFX_M_SmallDots Add.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Misc/WFX_M_SmallDotsInv Mult.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Misc/WFX_M_SmallDotsInv Mult.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Misc/WFX_M_StretchPalet.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Misc/WFX_M_StretchPalet.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/MuzzleFlashes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/MuzzleFlashes/WFX_M_MF FrontRear RIFLE1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/MuzzleFlashes/WFX_M_MF FrontRear RIFLE1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/MuzzleFlashes/WFX_M_MF FrontRear RIFLE2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/MuzzleFlashes/WFX_M_MF FrontRear RIFLE2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/MuzzleFlashes/WFX_M_MF FrontRear RIFLE3.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/MuzzleFlashes/WFX_M_MF FrontRear RIFLE3.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/MuzzleFlashes/WFX_M_MF Glow.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/MuzzleFlashes/WFX_M_MF Glow.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/MuzzleFlashes/WFX_M_MF Side RIFLE1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/MuzzleFlashes/WFX_M_MF Side RIFLE1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/MuzzleFlashes/WFX_M_MF Side RIFLE2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/MuzzleFlashes/WFX_M_MF Side RIFLE2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/MuzzleFlashes/WFX_M_MF Side RIFLE3.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/MuzzleFlashes/WFX_M_MF Side RIFLE3.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/MuzzleFlashes/WFX_M_MF Sparks RIFLE1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/MuzzleFlashes/WFX_M_MF Sparks RIFLE1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/MuzzleFlashes/WFX_M_MF Sparks RIFLE2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/MuzzleFlashes/WFX_M_MF Sparks RIFLE2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/MuzzleFlashes/WFX_M_MF Sparks RIFLE3.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/MuzzleFlashes/WFX_M_MF Sparks RIFLE3.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Smoke.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Smoke/WFX_M_ExplosiveSmoke.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Smoke/WFX_M_ExplosiveSmoke.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Smoke/WFX_M_Smoke SoftMult.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Smoke/WFX_M_Smoke SoftMult.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Smoke/WFX_M_Smoke.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Smoke/WFX_M_Smoke.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Smoke/WFX_M_SmokeGrenade AB.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Smoke/WFX_M_SmokeGrenade AB.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Smoke/WFX_M_SmokeGrenadeWhite.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Smoke/WFX_M_SmokeGrenadeWhite.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Smoke/WFX_M_SmokeNoise.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Smoke/WFX_M_SmokeNoise.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Smoke/WFX_M_SmokeScroll Add.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Smoke/WFX_M_SmokeScroll Add.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Smoke/WFX_M_SmokeScroll SoftMult Average.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Smoke/WFX_M_SmokeScroll SoftMult Average.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Smoke/WFX_M_SmokeScroll SoftMult.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Smoke/WFX_M_SmokeScroll SoftMult.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Smoke/WFX_M_SmokeSpikeStretched.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Materials/Smoke/WFX_M_SmokeSpikeStretched.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Misc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Misc/WFX_M_GlowCircle Add.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Misc/WFX_M_GlowCircle Add.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Misc/WFX_M_GlowPalet Add.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Misc/WFX_M_GlowPalet Add.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Misc/WFX_M_GroundGlow Add.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Misc/WFX_M_GroundGlow Add.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Misc/WFX_M_SmallDots Add.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Misc/WFX_M_SmallDots Add.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Misc/WFX_M_SmallDotsInv Mult.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Misc/WFX_M_SmallDotsInv Mult.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Misc/WFX_M_StretchPalet.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Misc/WFX_M_StretchPalet.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/MuzzleFlashes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/MuzzleFlashes/WFX_M_MF FrontRear RIFLE1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/MuzzleFlashes/WFX_M_MF FrontRear RIFLE1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/MuzzleFlashes/WFX_M_MF FrontRear RIFLE2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/MuzzleFlashes/WFX_M_MF FrontRear RIFLE2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/MuzzleFlashes/WFX_M_MF FrontRear RIFLE3.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/MuzzleFlashes/WFX_M_MF FrontRear RIFLE3.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/MuzzleFlashes/WFX_M_MF Glow.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/MuzzleFlashes/WFX_M_MF Glow.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/MuzzleFlashes/WFX_M_MF Side RIFLE1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/MuzzleFlashes/WFX_M_MF Side RIFLE1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/MuzzleFlashes/WFX_M_MF Side RIFLE2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/MuzzleFlashes/WFX_M_MF Side RIFLE2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/MuzzleFlashes/WFX_M_MF Side RIFLE3.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/MuzzleFlashes/WFX_M_MF Side RIFLE3.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/MuzzleFlashes/WFX_M_MF Sparks RIFLE1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/MuzzleFlashes/WFX_M_MF Sparks RIFLE1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/MuzzleFlashes/WFX_M_MF Sparks RIFLE2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/MuzzleFlashes/WFX_M_MF Sparks RIFLE2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/MuzzleFlashes/WFX_M_MF Sparks RIFLE3.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/MuzzleFlashes/WFX_M_MF Sparks RIFLE3.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/Color Variants.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/Color Variants/WFX_SmokeGrenade AlphaBlend Blue.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/Color Variants/WFX_SmokeGrenade AlphaBlend Blue.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/Color Variants/WFX_SmokeGrenade AlphaBlend Green.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/Color Variants/WFX_SmokeGrenade AlphaBlend Green.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/Color Variants/WFX_SmokeGrenade AlphaBlend Purple.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/Color Variants/WFX_SmokeGrenade AlphaBlend Purple.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/Color Variants/WFX_SmokeGrenade AlphaBlend Red.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/Color Variants/WFX_SmokeGrenade AlphaBlend Red.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/Color Variants/WFX_SmokeGrenade Blue.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/Color Variants/WFX_SmokeGrenade Blue.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/Color Variants/WFX_SmokeGrenade Green.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/Color Variants/WFX_SmokeGrenade Green.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/Color Variants/WFX_SmokeGrenade Red.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/Color Variants/WFX_SmokeGrenade Red.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/Color Variants/WFX_SmokeGrenade Yellow.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/Color Variants/WFX_SmokeGrenade Yellow.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_M_ExplosiveSmoke.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_M_ExplosiveSmoke.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_M_Smoke SoftMult.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_M_Smoke SoftMult.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_M_Smoke.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_M_Smoke.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_M_SmokeGrenade AB.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_M_SmokeGrenade AB.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_M_SmokeGrenadeWhite.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_M_SmokeGrenadeWhite.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_M_SmokeNoise.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_M_SmokeNoise.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_M_SmokeScroll Add.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_M_SmokeScroll Add.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_M_SmokeScroll SoftMult Average.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_M_SmokeScroll SoftMult Average.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_M_SmokeScroll SoftMult.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_M_SmokeScroll SoftMult.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_M_SmokeSpikeStretched.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_M_SmokeSpikeStretched.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_SmokeGrenade Additive.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_SmokeGrenade Additive.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_SmokeGrenade AlphaBlend Black.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_SmokeGrenade AlphaBlend Black.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_SmokeGrenade AlphaBlend Gray.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_SmokeGrenade AlphaBlend Gray.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_SmokeGrenade Black.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_SmokeGrenade Black.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_SmokeGrenade Gray.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_SmokeGrenade Gray.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_SmokeGrenade White.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Smoke/WFX_SmokeGrenade White.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Flames.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Flames/WFX_T_DoubleFlames A8.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Flames/WFX_T_DoubleFlames A8.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Flames/WFX_T_FlameMine A8.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Flames/WFX_T_FlameMine A8.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Flames/WFX_T_FlameThrower Stream.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Flames/WFX_T_FlameThrower Stream.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Flames/WFX_T_FlamesBig A8.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Flames/WFX_T_FlamesBig A8.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Flames/WFX_T_FlamesBig.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Flames/WFX_T_FlamesBig.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Flames/WFX_T_FlamesSmall 4frm.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Flames/WFX_T_FlamesSmall 4frm.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Flames/WFX_T_FlamesSmallLoopAlpha.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Flames/WFX_T_FlamesSmallLoopAlpha.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Flames/WFX_T_NukeFlames.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Flames/WFX_T_NukeFlames.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Flames/WFX_T_StarFlames A8.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Flames/WFX_T_StarFlames A8.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Misc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Misc/WFX_T_Debris Generic.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Misc/WFX_T_Debris Generic.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Misc/WFX_T_Debris Wood.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Misc/WFX_T_Debris Wood.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Misc/WFX_T_GlowCircle A8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Misc/WFX_T_GlowCircle A8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Misc/WFX_T_GlowPalet A8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Misc/WFX_T_GlowPalet A8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Misc/WFX_T_GroundGlow A8.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Misc/WFX_T_GroundGlow A8.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Misc/WFX_T_SmallDots A8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Misc/WFX_T_SmallDots A8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Misc/WFX_T_SmallDots Inversed A8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Misc/WFX_T_SmallDots Inversed A8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Misc/WFX_T_Sparks Metal A8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Misc/WFX_T_Sparks Metal A8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Misc/WFX_T_StretchPalet A8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Misc/WFX_T_StretchPalet A8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/MuzzleFlashes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/MuzzleFlashes/WFX_T_MF FrontRear RIFLE1 A8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/MuzzleFlashes/WFX_T_MF FrontRear RIFLE1 A8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/MuzzleFlashes/WFX_T_MF FrontRear RIFLE2 A8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/MuzzleFlashes/WFX_T_MF FrontRear RIFLE2 A8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/MuzzleFlashes/WFX_T_MF FrontRear RIFLE3 A8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/MuzzleFlashes/WFX_T_MF FrontRear RIFLE3 A8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/MuzzleFlashes/WFX_T_MF Side RIFLE1 A8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/MuzzleFlashes/WFX_T_MF Side RIFLE1 A8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/MuzzleFlashes/WFX_T_MF Side RIFLE2 A8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/MuzzleFlashes/WFX_T_MF Side RIFLE2 A8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/MuzzleFlashes/WFX_T_MF Side RIFLE3 A8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/MuzzleFlashes/WFX_T_MF Side RIFLE3 A8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/MuzzleFlashes/WFX_T_MF Sparks RIFLE1 A8.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/MuzzleFlashes/WFX_T_MF Sparks RIFLE1 A8.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/MuzzleFlashes/WFX_T_MF Sparks RIFLE2 A8.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/MuzzleFlashes/WFX_T_MF Sparks RIFLE2 A8.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/MuzzleFlashes/WFX_T_MF Sparks RIFLE3 A8.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/MuzzleFlashes/WFX_T_MF Sparks RIFLE3 A8.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Smoke.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Smoke/WFX_T_SmokeLoopAlpha Average.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Smoke/WFX_T_SmokeLoopAlpha Average.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Smoke/WFX_T_SmokeLoopAlpha.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Smoke/WFX_T_SmokeLoopAlpha.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Smoke/WFX_T_SmokeNoise.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Smoke/WFX_T_SmokeNoise.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Smoke/WFX_T_SmokeSpikeStretched A8.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Materials/Textures/Smoke/WFX_T_SmokeSpikeStretched A8.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Smoke.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Bullet Holes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Bullet Holes/WFX_T_BulletHoles Concrete.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Bullet Holes/WFX_T_BulletHoles Concrete.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Bullet Holes/WFX_T_BulletHoles Generic.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Bullet Holes/WFX_T_BulletHoles Generic.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Bullet Holes/WFX_T_BulletHoles Metal.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Bullet Holes/WFX_T_BulletHoles Metal.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Bullet Holes/WFX_T_BulletHoles Wood.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Bullet Holes/WFX_T_BulletHoles Wood.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Flames.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Flames/WFX_T_DoubleFlames A8.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Flames/WFX_T_DoubleFlames A8.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Flames/WFX_T_FlameMine A8.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Flames/WFX_T_FlameMine A8.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Flames/WFX_T_FlameThrower Stream.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Flames/WFX_T_FlameThrower Stream.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Flames/WFX_T_FlamesBig A8.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Flames/WFX_T_FlamesBig A8.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Flames/WFX_T_FlamesBig.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Flames/WFX_T_FlamesBig.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Flames/WFX_T_FlamesSmall 4frm.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Flames/WFX_T_FlamesSmall 4frm.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Flames/WFX_T_FlamesSmallLoopAlpha.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Flames/WFX_T_FlamesSmallLoopAlpha.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Flames/WFX_T_NukeFlames.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Flames/WFX_T_NukeFlames.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Flames/WFX_T_StarFlames A8.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Flames/WFX_T_StarFlames A8.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Misc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Misc/WFX_T_Debris Generic.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Misc/WFX_T_Debris Generic.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Misc/WFX_T_Debris Wood.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Misc/WFX_T_Debris Wood.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Misc/WFX_T_GlowCircle A8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Misc/WFX_T_GlowCircle A8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Misc/WFX_T_GlowPalet A8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Misc/WFX_T_GlowPalet A8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Misc/WFX_T_GroundGlow A8.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Misc/WFX_T_GroundGlow A8.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Misc/WFX_T_SmallDots A8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Misc/WFX_T_SmallDots A8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Misc/WFX_T_SmallDots Inversed A8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Misc/WFX_T_SmallDots Inversed A8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Misc/WFX_T_Sparks Metal A8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Misc/WFX_T_Sparks Metal A8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Misc/WFX_T_StretchPalet A8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Misc/WFX_T_StretchPalet A8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/MuzzleFlashes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/MuzzleFlashes/WFX_T_MF FrontRear RIFLE1 A8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/MuzzleFlashes/WFX_T_MF FrontRear RIFLE1 A8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/MuzzleFlashes/WFX_T_MF FrontRear RIFLE2 A8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/MuzzleFlashes/WFX_T_MF FrontRear RIFLE2 A8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/MuzzleFlashes/WFX_T_MF FrontRear RIFLE3 A8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/MuzzleFlashes/WFX_T_MF FrontRear RIFLE3 A8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/MuzzleFlashes/WFX_T_MF Side RIFLE1 A8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/MuzzleFlashes/WFX_T_MF Side RIFLE1 A8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/MuzzleFlashes/WFX_T_MF Side RIFLE2 A8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/MuzzleFlashes/WFX_T_MF Side RIFLE2 A8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/MuzzleFlashes/WFX_T_MF Side RIFLE3 A8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/MuzzleFlashes/WFX_T_MF Side RIFLE3 A8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/MuzzleFlashes/WFX_T_MF Sparks RIFLE1 A8.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/MuzzleFlashes/WFX_T_MF Sparks RIFLE1 A8.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/MuzzleFlashes/WFX_T_MF Sparks RIFLE2 A8.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/MuzzleFlashes/WFX_T_MF Sparks RIFLE2 A8.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/MuzzleFlashes/WFX_T_MF Sparks RIFLE3 A8.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/MuzzleFlashes/WFX_T_MF Sparks RIFLE3 A8.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Smoke.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Smoke/WFX_T_SmokeLoopAlpha Average.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Smoke/WFX_T_SmokeLoopAlpha Average.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Smoke/WFX_T_SmokeLoopAlpha.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Smoke/WFX_T_SmokeLoopAlpha.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Smoke/WFX_T_SmokeNoise.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Smoke/WFX_T_SmokeNoise.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Smoke/WFX_T_SmokeSpikeStretched A8.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/Textures/Smoke/WFX_T_SmokeSpikeStretched A8.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/!WarFX Readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/!WarFX Readme.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/Mesh.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/Shaders.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/Shaders/WFX_S Add Scroll.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/Shaders/WFX_S Add Scroll.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/Shaders/WFX_S Alpha-Diffuse TintColor.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/Shaders/WFX_S Alpha-Diffuse TintColor.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/Shaders/WFX_S Alpha-Specular TintColor.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/Shaders/WFX_S Alpha-Specular TintColor.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/Shaders/WFX_S AlphaBlend NoSoftParticles.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/Shaders/WFX_S AlphaBlend NoSoftParticles.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/Shaders/WFX_S AlphaBlend Scroll.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/Shaders/WFX_S AlphaBlend Scroll.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/Shaders/WFX_S Multiply Soft Scroll.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/Shaders/WFX_S Multiply Soft Scroll.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/Shaders/WFX_S Multiply Soft.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/Shaders/WFX_S Multiply Soft.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/Shaders/WFX_S Particle Add A8.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/Shaders/WFX_S Particle Add A8.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/Shaders/WFX_S Particle AddSoft A8.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/Shaders/WFX_S Particle AddSoft A8.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/Shaders/WFX_S Particle Multiply A8.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/Shaders/WFX_S Particle Multiply A8.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/Shaders/WFX_S Smoke Scroll.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/Shaders/WFX_S Smoke Scroll.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Bullet Impacts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_Explosion LandMine.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_Explosion LandMine.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_Explosion Simple.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_Explosion Simple.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_Explosion Small.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_Explosion Small.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_Explosion StarSmoke.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_Explosion StarSmoke.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_Explosion.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_Explosion.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_ExplosiveSmoke Big Alt.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_ExplosiveSmoke Big Alt.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_ExplosiveSmoke Big.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_ExplosiveSmoke Big.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_ExplosiveSmoke Small.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_ExplosiveSmoke Small.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_ExplosiveSmoke.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_ExplosiveSmoke.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_ExplosiveSmokeGround Big Alt.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_ExplosiveSmokeGround Big Alt.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_ExplosiveSmokeGround Big.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_ExplosiveSmokeGround Big.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_ExplosiveSmokeGround Small.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_ExplosiveSmokeGround Small.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_ExplosiveSmokeGround.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_ExplosiveSmokeGround.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_Nuke.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/Explosions/WFX_Nuke.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/MuzzleFlashes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/MuzzleFlashes/!MuzzleFlash Differences.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/MuzzleFlashes/!MuzzleFlash Differences.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/MuzzleFlashes/4Planes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/MuzzleFlashes/4Planes/WFX_MF 4P RIFLE1.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/MuzzleFlashes/4Planes/WFX_MF 4P RIFLE1.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/MuzzleFlashes/4Planes/WFX_MF 4P RIFLE2.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/MuzzleFlashes/4Planes/WFX_MF 4P RIFLE2.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/MuzzleFlashes/4Planes/WFX_MF 4P RIFLE3.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/MuzzleFlashes/4Planes/WFX_MF 4P RIFLE3.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/MuzzleFlashes/FPS.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/MuzzleFlashes/FPS/WFX_MF FPS RIFLE1.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/MuzzleFlashes/FPS/WFX_MF FPS RIFLE1.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/MuzzleFlashes/FPS/WFX_MF FPS RIFLE2.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/MuzzleFlashes/FPS/WFX_MF FPS RIFLE2.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/MuzzleFlashes/FPS/WFX_MF FPS RIFLE3.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/MuzzleFlashes/FPS/WFX_MF FPS RIFLE3.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/MuzzleFlashes/Sprites.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/MuzzleFlashes/Sprites/WFX_MF Spr RIFLE1.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/MuzzleFlashes/Sprites/WFX_MF Spr RIFLE1.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/MuzzleFlashes/Sprites/WFX_MF Spr RIFLE2.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/MuzzleFlashes/Sprites/WFX_MF Spr RIFLE2.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/MuzzleFlashes/Sprites/WFX_MF Spr RIFLE3.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Particles/WarFX/_Effects/MuzzleFlashes/Sprites/WFX_MF Spr RIFLE3.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/shelf/Uncommitted_changes_before_Update_at_2025_5_26_13_45_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/shelf/Uncommitted_changes_before_Update_at_2025_5_26_13_45__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FullOpaqueVFX/Prefabs/VFX/VFX_FullOpaqueRain_Lit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FullOpaqueVFX/Prefabs/VFX/VFX_FullOpaqueRain_Lit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FullOpaqueVFX/Prefabs/VFX/VFX_FullOpaqueRain_Unlit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FullOpaqueVFX/Prefabs/VFX/VFX_FullOpaqueRain_Unlit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car/Muscle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car/Muscle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car/Muscle2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car/Muscle2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car/Roadster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car/Roadster.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car/SUV.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car/SUV.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car/Sports.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car/Sports.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/CameraManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/CameraManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/CarManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/CarManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/SettingManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/SettingManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AiController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Car.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Car.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/MiniMapSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/MiniMapSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/MiniMapTexture.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/MiniMapTexture.renderTexture" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,16 +499,13 @@
     <setting file="file://$PROJECT_DIR$/../../../../Project/Rider Project/CityGame/Assets/Scripts/UI/GameMenu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Photon/Fusion/Editor/Fusion.Unity.Editor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scripts/AiController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scripts/CarNetworkController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scripts/Manager/CameraManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scripts/Manager/MultimodeManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/MiniMapSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/RankingManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.purchasing@4.11.0/Editor/UnityPurchasingEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Shaders/Lit.shader" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.7/Scripts/Runtime/TMPro_UGUI_Private.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../CarGame_copy/Assets/Scripts/Car.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../CarGame_copy/Assets/Scripts/Manager/CarManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../CarGame_copy/Assets/Scripts/Manager/MultimodeManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -78,6 +524,9 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2vm0PonOyVFIbZqUcnqVnnt1raf" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -191,7 +640,17 @@
       <workItem from="1748321457247" duration="65000" />
       <workItem from="1748674530195" duration="2797000" />
       <workItem from="1748678821814" duration="1122000" />
-      <workItem from="1748683153352" duration="3922000" />
+      <workItem from="1748683153352" duration="6953000" />
+      <workItem from="1748704213479" duration="949000" />
+      <workItem from="1748706704221" duration="3129000" />
+      <workItem from="1748714458609" duration="75000" />
+      <workItem from="1748714548549" duration="1652000" />
+      <workItem from="1748775908035" duration="337000" />
+      <workItem from="1748779093774" duration="8000" />
+      <workItem from="1748794594989" duration="1325000" />
+      <workItem from="1748852367729" duration="100000" />
+      <workItem from="1749010793306" duration="213000" />
+      <workItem from="1749011029305" duration="2968000" />
     </task>
     <task id="LOCAL-00001" summary="merge the branch main">
       <option name="closed" value="true" />
@@ -337,7 +796,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748684667923</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="achieve exit game button">
+      <option name="closed" value="true" />
+      <created>1748687294070</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1748687294070</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +829,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="develop" />
+                        <option value="origin/develop" />
                       </list>
                     </value>
                   </entry>
@@ -394,7 +861,9 @@
     <MESSAGE value="achieve Nitro accelerate" />
     <MESSAGE value="fix Main.unity Error" />
     <MESSAGE value="fix Nitro function" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix Nitro function" />
+    <MESSAGE value="achieve exit game button" />
+    <MESSAGE value="add nitro effect" />
+    <option name="LAST_COMMIT_MESSAGE" value="add nitro effect" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

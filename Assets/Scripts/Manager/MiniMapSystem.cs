@@ -65,7 +65,7 @@ public class MiniMapSystem : MonoBehaviour
         // 更新所有敌人标记位置
         foreach (var kvp in enemyMarkers)
         {
-            if (kvp.Key != null && kvp.Value != null)
+            if (kvp.Key && kvp.Value)
             {
                 kvp.Value.transform.position = new Vector3(
                     kvp.Key.transform.position.x,
