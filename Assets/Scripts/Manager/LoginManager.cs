@@ -49,14 +49,15 @@ namespace Manager
             {
                 string id = idInput.text;
                 string password = passwordInput.text;
-                if (id == "123" && password == "123")
-                {
-                    OnLoginSuccess();
-                }
-                else
-                {
-                    Debug.LogError("Invalid ID or Password");
-                }
+                // if (id == "123" && password == "123")
+                // {
+                //     OnLoginSuccess();
+                // }
+                // else
+                // {
+                //     Debug.LogError("Invalid ID or Password");
+                // }
+                OnLoginSuccess();
             }
             else
             {
