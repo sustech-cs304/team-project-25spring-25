@@ -30,7 +30,7 @@ namespace Manager
         // 检测全局点击事件
         public void OnPointerClick(PointerEventData eventData)
         {
-            // 检查点击是否在 settingBackgroundImage 上
+            // 检查点击是否在 rankingBackgroundImage 上
             bool isClickOnImage = RectTransformUtility.RectangleContainsScreenPoint(
                 rankingBackgroundImage.rectTransform,
                 eventData.position,
