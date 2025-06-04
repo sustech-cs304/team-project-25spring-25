@@ -28,6 +28,9 @@ namespace Manager
             CarManager.Instance.InitCarNetwork(NetworkManager.Instance.connectedPlayers);
             CameraManager.Instance.SetPlayerCamera(CarManager.Instance.GetCarTransform());
         }
+        public void FinishRace()
+        {
+        }
         public void HandleClick()
         {
             if (UIManager.Instance.IsUIOn())

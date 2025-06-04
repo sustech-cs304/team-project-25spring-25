@@ -41,14 +41,14 @@ namespace Manager
                     carObj.AddComponent<PlayerController>();  // 本地控制
                     car.useUI = true;
                     if (MiniMapSystem.Instance == null) {
-                        Debug.LogError("小地图系统未初始化！");
+                        Debug.Log("小地图系统未初始化！");
                         return;
                     }
                     // 设置小地图玩家车辆
                     if (MiniMapSystem.Instance != null)
                     {
                         MiniMapSystem.Instance.SetPlayerCar(carObj.transform);
-                        Debug.LogError($"MiniMapSystem已经初始化了");
+                        Debug.Log($"MiniMapSystem已经初始化了");
                     }
                 }
                 else {
