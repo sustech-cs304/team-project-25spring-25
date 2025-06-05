@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,11 +13,13 @@ public class MiniMapSystem : MonoBehaviour
     public bool rotateWithPlayer = true;   // 是否随玩家旋转
     
     [Header("References")]
+    
     public Camera miniMapCamera;           // 小地图摄像头
     public RawImage miniMapImage;          // UI上的小地图图像
     public GameObject playerMarkerPrefab;  // 玩家标记预制体
     public GameObject enemyMarkerPrefab;   // 敌人标记预制体
-    
+    public GameObject road;
+        
     private Transform playerCar;           // 玩家车辆
     private GameObject playerMarker;       // 玩家标记实例
     private readonly System.Collections.Generic.Dictionary<Car, GameObject> enemyMarkers = 
@@ -35,7 +38,6 @@ public class MiniMapSystem : MonoBehaviour
     private void LateUpdate()
     {
         if (playerCar == null) return;
-        
         // 更新小地图摄像头位置
         Vector3 newPosition = playerCar.position;
         newPosition.y = miniMapHeight;
@@ -98,6 +100,11 @@ public class MiniMapSystem : MonoBehaviour
         // 设置小地图摄像头
         miniMapCamera.orthographicSize = miniMapSize;
         miniMapCamera.cullingMask = miniMapLayer;
+        for (int i = 0; i < road.transform.childCount; i++)
+        {
+            road.transform.GetChild(i).gameObject.layer = 8;
+        }
+        road.layer = 8;
     }
     
     // 添加敌人车辆标记

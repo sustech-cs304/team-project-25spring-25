@@ -89,7 +89,7 @@ namespace Manager
             // Host 负责生成所有车辆
             for (var i = 0; i < playerRefs.Count; i++)
             {
-                var spawnPos = new Vector3(187 + i * 2, -50, 680 + i * 0.8f);
+                var spawnPos = new Vector3(188 + i * 3, -50, 681 + i * 1.2f);
                 var spawnRot = Quaternion.Euler(0, 160, 0);
                 var authority = playerRefs[i];
                 var netObj = NetworkManager.Instance.Runner.Spawn(networkCarPrefab, spawnPos, spawnRot, authority);
