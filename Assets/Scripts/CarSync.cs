@@ -27,7 +27,8 @@ public class CarSync : NetworkBehaviour
                 Velocity = car.carRigidbody.velocity,
                 AngularVelocity = car.carRigidbody.angularVelocity,
                 SteeringAxis = car.steeringAxis,
-                IsDrifting = car.isDrifting
+                IsDrifting = car.isDrifting,
+                CurrentNitro = car.currentNitro
             };
             CarStates.Set(id, data);
         }
@@ -46,4 +47,5 @@ public struct CarSyncData : INetworkStruct
     public Vector3 AngularVelocity;
     public float SteeringAxis;
     public bool IsDrifting;
+    public float CurrentNitro;
 }

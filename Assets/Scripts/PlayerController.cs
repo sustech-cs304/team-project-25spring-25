@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
   public void Check(Vector3 pos, Quaternion rot,int check)
   {
     scoreCheck += check;
+    car.currentNitro += check * 20f;
     car.SetResetValue(pos, rot);
   }
   public void SetCheckPoints(Transform[] checkPointTransforms)

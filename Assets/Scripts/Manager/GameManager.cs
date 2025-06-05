@@ -51,11 +51,10 @@ namespace Manager
 
         public void GameOver(int scoreCheck,int macScoreCheck)
         {
-            
             var score = TimeManager.Instance.CurrentTime + (macScoreCheck - scoreCheck) * 3;
             FinishManager.Instance.UpdateText(score);
             FinishManager.Instance.ShowFinishPanel();
-            ScoreManager.Instance.AddScore(playerName, scoreCheck,score );
+            ScoreManager.Instance.AddScore(playerName,level,score);
             ScoreManager.Instance.SaveScoreData();
         }
     }

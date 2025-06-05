@@ -25,6 +25,7 @@ public class CarNetworkController : NetworkBehaviour
         public Vector3 AngularVelocity;
         public float SteeringAxis;
         public bool IsDrifting;
+        public float CurrentNitro;
     }
 
     private CarGhostState ghostState = new();
@@ -75,7 +76,8 @@ public class CarNetworkController : NetworkBehaviour
                 ghostState.Velocity = syncData.Velocity;
                 ghostState.AngularVelocity = syncData.AngularVelocity;
                 ghostState.SteeringAxis = syncData.SteeringAxis;
-                ghostState.IsDrifting = syncData.IsDrifting; 
+                ghostState.IsDrifting = syncData.IsDrifting;
+                ghostState.CurrentNitro = syncData.CurrentNitro;
             }
             // Debug.Log($"[Ghost Sync] ID: {Object.Id}\n" +
             //           $"Pos: {syncData.Position}, Rot: {syncData.Rotation.eulerAngles}\n" +
@@ -110,9 +112,10 @@ public class CarNetworkController : NetworkBehaviour
 
         car.carRigidbody.velocity = Vector3.Lerp(car.carRigidbody.velocity, ghostState.Velocity, lerpFactor);
         car.carRigidbody.angularVelocity = Vector3.Lerp(car.carRigidbody.angularVelocity, ghostState.AngularVelocity, lerpFactor);
-
+        
         car.steeringAxis = Mathf.Lerp(car.steeringAxis, ghostState.SteeringAxis, lerpFactor);
         car.isDrifting = ghostState.IsDrifting;
+        car.currentNitro = ghostState.CurrentNitro;
         car.PlayDriftEffects();
     }
 
@@ -128,10 +131,11 @@ public class CarNetworkController : NetworkBehaviour
         }
         if (IsTurningLeft) car.TurnLeft();
         if (IsTurningRight) car.TurnRight();
-        car.TryDrift(IsHandbraking);
         if (!IsAccelerating && !IsBraking) car.ThrottleOff();
         if (!IsTurningLeft && !IsTurningRight && car.steeringAxis != 0f)
             car.ResetSteeringAngle();
+        car.TryDrift(IsHandbraking);
+        car.TryNitroActive(IsNitroPressed);
         car.UpdateData();
     }
 

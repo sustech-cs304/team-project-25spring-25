@@ -59,8 +59,8 @@ namespace Manager
         }
         public void OnGarage()
         {
-            loginCamera.transform.position = new Vector3(0, 2, -6);
-            loginCamera.transform.rotation = Quaternion.Euler(20f, 0f, 0f);
+            loginCamera.transform.position = new Vector3(3, 5, -8);
+            loginCamera.transform.rotation = Quaternion.Euler(30f, 0f, 0f);
             cameraMode = 3;
         }
         public void OnLogin()

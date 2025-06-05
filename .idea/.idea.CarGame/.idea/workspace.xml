@@ -4,38 +4,495 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78889eac-6809-43a2-b93d-020be0b95b99" name="Changes" comment="fix road">
-      <changelist_data name="cc" email="12212739@mail.sustech.edu.cn" automatic="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/FinishManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/FinishManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/LevelManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/LevelManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/ScoreManager.cs" afterDir="false" />
+    <list default="true" id="78889eac-6809-43a2-b93d-020be0b95b99" name="Changes" comment="Add CarInfoUI, LevelUI, FinishUI. Achieve Ranking Function and Finish Race Function">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CarGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Materials/台州楼及生科院.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Materials/台州楼及生科院.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Materials/商学院.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Materials/商学院.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car/Muscle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car/Muscle.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car/Muscle2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car/Muscle2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car/Roadster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car/Roadster.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car/SUV.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car/SUV.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Car/Sports.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Car/Sports.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Animations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Animations/Camera Movement.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Animations/Camera Movement.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/Alpha-Diffuse.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/Alpha-Diffuse.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Asphalt_Cross and Corner.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Asphalt_Cross and Corner.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Asphalt_Road Texture_M_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Asphalt_Road Texture_M_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Building_B_diffuse.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Building_B_diffuse.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Footpath.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Footpath.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Plants_Alpha.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Plants_Alpha.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_SkyBox.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_SkyBox.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Sky_Scrappers_diffuse.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Sky_Scrappers_diffuse.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Tree_Bark.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Materials/MC_Tree_Bark.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Models/MC_City_Pack_01.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Models/MC_City_Pack_01.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Models/MC_Collider_02.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Models/MC_Collider_02.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Asphalt_Cross and Corner.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Asphalt_Cross and Corner.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Asphalt_Road Texture_M_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Asphalt_Road Texture_M_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Building_B_diffuse.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Building_B_diffuse.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Footpath.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Footpath.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/No Name.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/No Name.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Plants_Alpha.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Plants_Alpha.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Sky_Scrappers_diffuse.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Sky_Scrappers_diffuse.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Tree_Bark.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Models/Materials/Tree_Bark.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_A.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_A.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_B.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_B.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_C.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_C.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_D.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_D.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_E.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_E.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_F.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_F.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_G.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_G.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_H.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_H.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_I.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Apartments/MC_Apartment_I.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_A.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_A.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_B.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_B.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_C.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_C.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_D.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_D.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_E.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_E.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_F.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_F.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_G.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_G.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_I.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_I.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_J.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_J.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_K.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_K.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_L.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/LargeBuildings/MC_LargeBuilding_L.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_A.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_A.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_B.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_B.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_C.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_C.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_D.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_D.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_E.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_E.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_F.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_F.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_G.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_G.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_H.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_H.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_I.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_I.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_J.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/Skyscrapers/MC_Skyscraper_J.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_A.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_A.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_B.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_B.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_C.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_C.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_D.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_D.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_E.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_E.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_F.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_F.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_G.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Buildings/SmallBuildings/MC_SmallBuilding_G.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/City.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/City/MC_CityPrefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/City/MC_CityPrefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/City/MC_CityPrefabWithColliders.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/City/MC_CityPrefabWithColliders.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/MC_Colliders.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/MC_Colliders.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/MC_RoadBlock.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/MC_RoadBlock.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_03.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_03.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_04.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_04.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_05.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_05.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_06.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_06.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_07.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_07.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_08.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_08.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_09.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_09.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_10.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_10.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_11.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_11.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_12.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_12.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_13.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_13.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_14.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_14.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_15.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_15.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_16.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_16.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_17.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_17.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_18.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_18.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_19.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_19.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_20.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_20.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_21.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_21.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_22.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_22.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_23.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_23.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_24.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_24.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_25.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_25.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_26.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_26.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_27.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_27.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_28.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_28.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_29.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_29.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_30.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_30.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_31.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_31.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_32.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_32.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_33.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_33.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_34.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_34.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_35.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_35.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_36.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_36.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_37.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_37.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_38.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_38.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_39.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_39.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_40.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_40.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_41.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_41.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_42.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_42.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_43.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_43.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_44.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_44.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_45.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_45.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_46.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_46.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_47.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_47.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_48.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Patches/MC_Patch_48.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_02.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_02.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_03.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_03.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_04.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_04.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_05.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_05.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_06.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_06.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_07.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_07.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_08.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_08.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_09.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_09.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_10.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_10.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_11.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_11.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_12.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_12.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_13.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_13.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_14.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_14.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_15.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_15.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_16.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_16.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_17.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_17.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_18.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_18.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_19.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_19.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_20.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_20.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_21.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_21.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_22.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_22.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_23.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_23.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_24.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_24.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_25.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_25.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_26.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_26.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_27.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_27.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_28.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_28.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_29.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_29.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_30.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_30.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_31.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_31.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_32.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_32.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_33.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_33.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_34.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_34.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_35.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_35.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_36.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_36.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_37.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_37.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_38.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_38.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_39.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_39.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_40.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_40.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_41.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_41.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_42.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_42.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_43.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_43.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_44.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_44.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_45.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_45.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_46.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_46.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_47.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_47.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_48.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PatchesWithColliders/MC_Patch_48.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Bench.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Bench.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Bench_Single.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Bench_Single.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Bus_Stop.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Bus_Stop.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Bush.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Bush.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Hydrant.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Hydrant.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Mail_Box.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Mail_Box.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Newspaper_Machine.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Newspaper_Machine.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Plant.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Plant.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Plant2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Plant2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Plant3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Plant3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Rectangle_Grass.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Rectangle_Grass.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Rounded_Grass.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Rounded_Grass.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Speed_Limit_Sign.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Speed_Limit_Sign.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Street_Lamp.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Street_Lamp.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Street_Lamp_Small.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Street_Lamp_Small.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Street_Lamp_double.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Street_Lamp_double.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Taxi_Pole.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Taxi_Pole.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Telephone_Booth.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Telephone_Booth.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Traffic_Signal.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Traffic_Signal.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Trash_Can.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Trash_Can.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Trash_Can2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Trash_Can2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Tree.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/Props/MC_Tree.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Bench.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Bench.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Bench_Single.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Bench_Single.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Bus_Stop.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Bus_Stop.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Bush.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Bush.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Hydrant.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Hydrant.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Mail_Box.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Mail_Box.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Newspaper_Machine.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Newspaper_Machine.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Plant.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Plant.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Plant2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Plant2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Plant3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Plant3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Rectangle_Grass.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Rectangle_Grass.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Rounded_Grass.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Rounded_Grass.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Speed_Limit_Sign.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Speed_Limit_Sign.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Street_Lamp.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Street_Lamp.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Street_Lamp_Small.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Street_Lamp_Small.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Street_Lamp_double.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Street_Lamp_double.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Taxi_Pole.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Taxi_Pole.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Telephone_Booth.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Telephone_Booth.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Traffic_Signal.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Traffic_Signal.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Trash_Can.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Trash_Can.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Trash_Can2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Trash_Can2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Tree.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Prefabs/PropsWithColliders/MC_Tree.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/DemoWithColliders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/DemoWithColliders/LightingData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/DemoWithColliders/LightingData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/DemoWithColliders/MC_ReflectionProbe-0.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/DemoWithColliders/MC_ReflectionProbe-0.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/DemoWithColliders/MC_ReflectionProbe-1.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/DemoWithColliders/MC_ReflectionProbe-1.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/DemoWithCollidersSettings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/DemoWithCollidersSettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/MC_DemoWithColliders.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/MC_DemoWithColliders.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/MC_DemoWithReflections.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/MC_DemoWithReflections.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/MC_DemoWithReflectionsSettings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/MC_DemoWithReflectionsSettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/main.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/main/MC_ReflectionProbe-0.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/main/MC_ReflectionProbe-0.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/main/MC_ReflectionProbe-1.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Scenes/main/MC_ReflectionProbe-1.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/Camera.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/Camera.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/CameraAnimation.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/CameraAnimation.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_04-23_Day_B.hdr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_04-23_Day_B.hdr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Asphalt_Cross and Corner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Asphalt_Cross and Corner.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Asphalt_NRM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Asphalt_NRM.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Asphalt_Road Texture_M_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Asphalt_Road Texture_M_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Buildings_n_Props[Normal].png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Buildings_n_Props[Normal].png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Buildings_n_Props_Emessive_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Buildings_n_Props_Emessive_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Buildings_n_Props_diffuse_N.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Buildings_n_Props_diffuse_N.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Buildings_n_Props_specular.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Buildings_n_Props_specular.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Footpath.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Footpath.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Pavement_NRM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Pavement_NRM.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Plants_Alpha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Plants_Alpha.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Sky_Scrappers[Normal].png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Sky_Scrappers[Normal].png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Sky_Scrappers_Emessive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Sky_Scrappers_Emessive.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Sky_Scrappers_diffuse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Sky_Scrappers_diffuse.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Sky_Scrappers_specular.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Sky_Scrappers_specular.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Tree_Bark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Tree_Bark.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Tree_Bark_NRM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Modular City Pack/Textures/All Textures/MC_Tree_Bark_NRM.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main111.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main111.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AiController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Car.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Car.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CheckPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CheckPoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Loader/ScoreLoader.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Loader/ScoreLoader.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/CarManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/CarManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CarNetworkController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CarNetworkController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CarSync.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CarSync.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/CameraManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/CameraManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/GameMenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameMenuManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/GarageManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GarageManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/RankingManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/RankingManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/LevelManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LevelMenu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LevelMenu.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/building_interior.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/building_interior.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Save/Score.json" beforeDir="false" afterPath="$PROJECT_DIR$/Save/Score.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +507,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="cc &lt;12212739@mail.sustech.edu.cn&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
@@ -77,6 +539,8 @@
     <setting file="file://$PROJECT_DIR$/../../../../Project/Rider Project/CityGame/Assets/Scripts/Manager/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Project/Rider Project/CityGame/Assets/Scripts/UI/GameMenu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Photon/Fusion/Editor/Fusion.Unity.Editor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scenes/Main 1.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scenes/Main 1.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scenes/Main 1.unity.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scenes/Main.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Users/weixuan/RiderProjects/CarGame/Assets/Scenes/Main.unity.meta" root0="SKIP_HIGHLIGHTING" />
@@ -233,7 +697,7 @@
       <workItem from="1748852367729" duration="100000" />
       <workItem from="1749010793306" duration="213000" />
       <workItem from="1749011029305" duration="16752000" />
-      <workItem from="1749044474574" duration="24475000" />
+      <workItem from="1749044474574" duration="27482000" />
     </task>
     <task id="LOCAL-00001" summary="merge the branch main">
       <option name="closed" value="true" />
@@ -419,7 +883,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749051026065</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Add CarInfoUI, LevelUI, FinishUI. Achieve Ranking Function and Finish Race Function">
+      <option name="closed" value="true" />
+      <created>1749077260850</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1749077260850</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -438,7 +910,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/develop" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -468,7 +952,8 @@
     <MESSAGE value="fix road" />
     <MESSAGE value="add nitro effect" />
     <MESSAGE value="Modify checkpoints locations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modify checkpoints locations" />
+    <MESSAGE value="Add CarInfoUI, LevelUI, FinishUI. Achieve Ranking Function and Finish Race Function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add CarInfoUI, LevelUI, FinishUI. Achieve Ranking Function and Finish Race Function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -18,9 +18,9 @@ namespace Manager
 
         private void Awake()
         {
-            maxLevel = 2;
-            level = 1;
-            levelText.text = "Level " + level;
+            maxLevel = 3;
+            level = 0;
+            levelText.text = "Level " + (level + 1);
             leftButton.onClick.AddListener(() => ChangeLevel(-1));
             rightButton.onClick.AddListener(() => ChangeLevel(1));
             confirmButton.onClick.AddListener(Confirm);
